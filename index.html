@@ -5,10 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TapePhoto | Carlos Martinez Photography</title>
     <meta name="description" content="Official portfolio of Carlos Martinez. Capturing motorsport, aerial drone views, street photography, and travel stories with a cinematic editorial style.">
+    <link rel="canonical" href="https://tapephoto.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="TapePhoto">
+    <meta property="og:title" content="TapePhoto | Carlos Martinez Photography">
+    <meta property="og:description" content="Motorsport, aerial drone, concert, street and travel photography with a cinematic editorial style. Based in Coquimbo, Chile.">
+    <meta property="og:url" content="https://tapephoto.com/">
+    <meta property="og:image" content="https://tapephoto.com/images/tape_aerial_coast.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://tapephoto.com/#carlos",
+          "name": "Carlos Martinez",
+          "jobTitle": "Photographer",
+          "url": "https://tapephoto.com/",
+          "image": "https://tapephoto.com/images/tape_portrait_carlos.jpg",
+          "email": "carlos@netwebmedia.com",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Coquimbo",
+            "addressRegion": "Región de Coquimbo",
+            "addressCountry": "CL"
+          },
+          "knowsAbout": [
+            "Motorsport photography",
+            "Aerial drone photography",
+            "Concert photography",
+            "Street photography",
+            "Travel photography"
+          ],
+          "sameAs": [
+            "https://instagram.com/tapephotocom",
+            "https://facebook.com/tapephoto"
+          ]
+        },
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://tapephoto.com/#business",
+          "name": "TapePhoto - Carlos Martinez Photography",
+          "url": "https://tapephoto.com/",
+          "image": "https://tapephoto.com/images/tape_aerial_coast.jpg",
+          "email": "carlos@netwebmedia.com",
+          "telephone": "+1-442-385-4585",
+          "founder": { "@id": "https://tapephoto.com/#carlos" },
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Coquimbo",
+            "addressRegion": "Región de Coquimbo",
+            "addressCountry": "CL"
+          },
+          "areaServed": [
+            { "@type": "City", "name": "La Serena" },
+            { "@type": "City", "name": "Coquimbo" },
+            { "@type": "AdministrativeArea", "name": "Región de Coquimbo, Chile" }
+          ],
+          "sameAs": [
+            "https://instagram.com/tapephotocom",
+            "https://facebook.com/tapephoto"
+          ]
+        }
+      ]
+    }
+    </script>
+    <!-- GA4: pending property creation -->
 </head>
 <body>
 
@@ -25,6 +91,7 @@
             </button>
             <nav class="nav">
                 <a href="#work">Work</a>
+                <a href="services.html">Services</a>
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
                 <a href="https://instagram.com/tapephotocom" target="_blank" rel="noopener" class="nav-ig">@tapephotocom</a>
@@ -241,10 +308,15 @@
                     <img src="images/logo.svg" alt="tapephoto" />
                 </a>
                 <p>Carlos Martinez Photography<br>Coquimbo, Chile</p>
+                <div class="footer-contact">
+                    <a href="mailto:carlos@netwebmedia.com">carlos@netwebmedia.com</a>
+                    <a href="https://wa.me/14423854585" target="_blank" rel="noopener">WhatsApp +1 (442) 385-4585</a>
+                </div>
             </div>
             <div class="footer-links">
                 <h4>Navigate</h4>
                 <a href="#work">Work</a>
+                <a href="services.html">Services</a>
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
             </div>
@@ -253,16 +325,10 @@
                 <a href="https://instagram.com/tapephotocom" target="_blank" rel="noopener">Instagram &mdash; @tapephotocom</a>
                 <a href="https://facebook.com/tapephoto" target="_blank" rel="noopener">Facebook</a>
             </div>
-            <div class="footer-newsletter">
-                <h4>Stay in Touch</h4>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="your@email.com" required>
-                    <button type="submit">Subscribe</button>
-                </form>
-            </div>
         </div>
         <div class="footer-bottom">
             <p>&copy; 2026 TapePhoto &mdash; <a href="https://instagram.com/tapephotocom" target="_blank" rel="noopener">@tapephotocom</a>. All rights reserved.</p>
+            <p class="footer-credit">Web design by <a href="https://netwebmedia.com" target="_blank" rel="noopener">NetWebMedia</a></p>
         </div>
     </footer>
 

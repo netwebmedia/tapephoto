@@ -80,28 +80,122 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Newsletter form
-    const newsletterForm = document.querySelector('.newsletter-form');
-    if (newsletterForm) {
-        newsletterForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const input = newsletterForm.querySelector('input');
-            const name = input.value.split('@')[0];
-            newsletterForm.innerHTML = `<p style="font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;opacity:0.7;padding:12px 0;">Thanks, ${name}!</p>`;
-        });
-    }
+    // (Footer newsletter form removed 2026-07-13 — it was a non-functional
+    //  mock that silently discarded emails. Reinstate only wired to a real
+    //  endpoint and with explicit disclosure of who sends what.)
 
-    // Contact form
+    // Contact form — posts to the NetWebMedia public forms API.
+    // Success = HTTP 2xx with JSON { ok: true }; errors return { error: "..." }.
     const contactForm = document.querySelector('.contact-form');
     if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
+        const FORM_ENDPOINT = 'https://netwebmedia.com/api/public/forms/submit';
+        const submitBtn = contactForm.querySelector('.submit-btn');
+        const statusBox = contactForm.querySelector('.form-status');
+        const submitLabel = submitBtn ? submitBtn.textContent : '';
+
+        // Page language drives both UI strings and the lang key sent to the
+        // API (so any follow-up email goes out in the visitor's language).
+        const isES = (document.documentElement.lang || 'en').toLowerCase().indexOf('es') === 0;
+        const T = isES ? {
+            sending: 'Enviando…',
+            sentTitle: 'Mensaje Enviado.',
+            sentBody: 'Gracias — te responderé a la brevedad.',
+            newMessage: 'Nuevo Mensaje',
+            errPrefix: 'No se pudo enviar tu mensaje: ',
+            errGeneric: 'No se pudo enviar tu mensaje en este momento.',
+            errNetwork: 'Error de red — tu mensaje no fue enviado.',
+            fallback: 'También puedes escribirme directo: ',
+            or: ' o '
+        } : {
+            sending: 'Sending…',
+            sentTitle: 'Message Sent.',
+            sentBody: 'Thanks — I’ll get back to you shortly.',
+            newMessage: 'New Message',
+            errPrefix: 'Your message could not be sent: ',
+            errGeneric: 'Your message could not be sent right now.',
+            errNetwork: 'Network error — your message was not sent.',
+            fallback: 'You can also reach me directly: ',
+            or: ' or '
+        };
+
+        function fieldValue(name) {
+            const el = contactForm.querySelector('[name="' + name + '"]');
+            return el ? el.value.trim() : '';
+        }
+
+        function showError(message) {
+            if (!statusBox) return;
+            statusBox.textContent = '';
+            const msg = document.createElement('p');
+            msg.textContent = message; // textContent — never inject server text as HTML
+            const fallback = document.createElement('p');
+            fallback.className = 'form-status-fallback';
+            fallback.append(T.fallback);
+            const mail = document.createElement('a');
+            mail.href = 'mailto:carlos@netwebmedia.com';
+            mail.textContent = 'carlos@netwebmedia.com';
+            const wa = document.createElement('a');
+            wa.href = 'https://wa.me/14423854585';
+            wa.target = '_blank';
+            wa.rel = 'noopener';
+            wa.textContent = 'WhatsApp +1 (442) 385-4585';
+            fallback.append(mail, T.or, wa, '.');
+            statusBox.append(msg, fallback);
+            statusBox.hidden = false;
+        }
+
+        contactForm.addEventListener('submit', async (e) => {
             e.preventDefault();
-            contactForm.innerHTML = `
-                <div style="text-align:center;padding:60px 0;">
-                    <h2 style="font-family:var(--serif);font-size:2rem;margin-bottom:16px;">Message Sent.</h2>
-                    <p style="opacity:0.5;margin-bottom:30px;">We'll get back to you shortly.</p>
-                    <button onclick="location.reload()" style="padding:12px 28px;border:1px solid rgba(255,255,255,0.3);background:none;color:white;cursor:pointer;text-transform:uppercase;font-size:0.7rem;font-weight:600;letter-spacing:0.15em;">New Message</button>
-                </div>`;
+            if (statusBox) { statusBox.hidden = true; statusBox.textContent = ''; }
+            if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = T.sending; }
+            try {
+                const res = await fetch(FORM_ENDPOINT, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        form_id: 'tapephoto-contact',
+                        data: {
+                            name: fieldValue('name'),
+                            email: fieldValue('email'),
+                            phone: fieldValue('phone'),
+                            message: fieldValue('message'),
+                            source: 'tapephoto.com',
+                            lang: isES ? 'es' : 'en',
+                            // Honeypot — humans leave this hidden field empty.
+                            // DOM field is named nwm_hp_2 (Chrome address autofill
+                            // can populate "website"-named inputs despite
+                            // autocomplete=off); the API key stays nwm_website
+                            // because that's what the server checks.
+                            nwm_website: fieldValue('nwm_hp_2') || fieldValue('nwm_website')
+                        }
+                    })
+                });
+                let data = {};
+                try { data = await res.json(); } catch (_) { /* non-JSON response */ }
+                if (res.ok && data.ok) {
+                    contactForm.textContent = '';
+                    const wrap = document.createElement('div');
+                    wrap.style.cssText = 'text-align:center;padding:60px 0;';
+                    const h = document.createElement('h2');
+                    h.style.cssText = 'font-family:var(--serif);font-size:2rem;margin-bottom:16px;';
+                    h.textContent = T.sentTitle;
+                    const p = document.createElement('p');
+                    p.style.cssText = 'opacity:0.5;margin-bottom:30px;';
+                    p.textContent = T.sentBody;
+                    const btn = document.createElement('button');
+                    btn.style.cssText = 'padding:12px 28px;border:1px solid rgba(255,255,255,0.3);background:none;color:white;cursor:pointer;text-transform:uppercase;font-size:0.7rem;font-weight:600;letter-spacing:0.15em;';
+                    btn.textContent = T.newMessage;
+                    btn.addEventListener('click', () => location.reload());
+                    wrap.append(h, p, btn);
+                    contactForm.append(wrap);
+                } else {
+                    showError(data.error ? T.errPrefix + data.error : T.errGeneric);
+                    if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = submitLabel; }
+                }
+            } catch (err) {
+                showError(T.errNetwork);
+                if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = submitLabel; }
+            }
         });
     }
 

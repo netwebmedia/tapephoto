@@ -791,3 +791,304 @@ body {
 
     .hero-content h1 { font-size: 2.5rem; }
 }
+
+/* ============ FOOTER CONTACT ============ */
+.footer-contact { margin-top: 14px; }
+
+.footer-contact a {
+    display: block;
+    color: var(--white);
+    text-decoration: none;
+    font-size: 0.8rem;
+    padding: 2px 0;
+    opacity: 0.55;
+    transition: opacity 0.3s;
+}
+
+.footer-contact a:hover { opacity: 1; }
+
+.footer-credit { margin-top: 10px; }
+
+.footer-credit a {
+    color: var(--white);
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer-credit a:hover { text-decoration: underline; }
+
+/* ============ CONTACT FORM STATES ============ */
+.hp-field {
+    position: absolute !important;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.form-status {
+    border: 1px solid rgba(255, 120, 120, 0.4);
+    background: rgba(255, 80, 80, 0.08);
+    padding: 14px 16px;
+    font-size: 0.85rem;
+    line-height: 1.6;
+}
+
+.form-status a { color: var(--white); }
+
+.form-status-fallback {
+    opacity: 0.7;
+    margin-top: 6px;
+}
+
+.submit-btn:disabled {
+    opacity: 0.5;
+    cursor: wait;
+}
+
+/* ============ DIRECT CONTACT / CTA ROW ============ */
+.contact-direct {
+    margin-top: 48px;
+    max-width: 480px;
+}
+
+.contact-direct-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    opacity: 0.5;
+    margin-bottom: 16px;
+}
+
+.cta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    align-items: center;
+}
+
+.btn-whatsapp {
+    display: inline-block;
+    color: #25D366;
+    text-decoration: none;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    padding: 14px 36px;
+    border: 1px solid rgba(37, 211, 102, 0.5);
+    transition: all 0.4s var(--ease);
+}
+
+.btn-whatsapp:hover {
+    background: #25D366;
+    border-color: #25D366;
+    color: var(--black);
+}
+
+/* ============ SERVICES PAGE ============ */
+.services-page {
+    background: var(--black);
+    padding-top: 140px;
+}
+
+.lang-switch {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.lang-switch a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    opacity: 0.5;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    padding-bottom: 2px;
+    transition: opacity 0.3s;
+}
+
+.lang-switch a:hover { opacity: 1; }
+
+.services-intro {
+    text-align: center;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.services-intro h1 {
+    font-family: var(--serif);
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 700;
+    letter-spacing: -2px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.services-lead {
+    font-size: 1rem;
+    line-height: 1.8;
+    opacity: 0.6;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px;
+    max-width: 1200px;
+    margin: 70px auto 0;
+    padding: 0 24px;
+}
+
+.service-card {
+    border: 1px solid rgba(255,255,255,0.12);
+    background: rgba(255,255,255,0.02);
+    padding: 48px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-tag {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    opacity: 0.5;
+    margin-bottom: 12px;
+}
+
+.service-card h2 {
+    font-family: var(--serif);
+    font-size: 1.7rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 10px;
+}
+
+.service-price {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-bottom: 20px;
+}
+
+.service-card p {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    opacity: 0.65;
+    margin-bottom: 16px;
+}
+
+.service-card ul {
+    list-style: none;
+    margin: 0 0 24px;
+    font-size: 0.9rem;
+    line-height: 2;
+    opacity: 0.7;
+}
+
+.service-card ul li::before {
+    content: '\2014\00a0';
+    opacity: 0.5;
+}
+
+.service-card .cta-row {
+    margin-top: auto;
+    padding-top: 10px;
+}
+
+.service-card .btn-whatsapp,
+.service-card .btn-outline {
+    padding: 12px 24px;
+    font-size: 0.7rem;
+}
+
+/* NWM bundle cross-sell */
+.bundle-section {
+    max-width: 1200px;
+    margin: 60px auto 0;
+    padding: 0 24px;
+}
+
+.bundle-inner {
+    border: 1px solid rgba(255,255,255,0.15);
+    background: rgba(255,255,255,0.03);
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.bundle-inner h2 {
+    font-family: var(--serif);
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin-bottom: 14px;
+}
+
+.bundle-inner p {
+    max-width: 620px;
+    margin: 0 auto 30px;
+    opacity: 0.65;
+    line-height: 1.8;
+}
+
+/* FAQ */
+.faq-section {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 90px 24px 110px;
+}
+
+.faq-section h2 {
+    font-family: var(--serif);
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    font-weight: 700;
+    letter-spacing: -1px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.faq-item {
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.faq-item summary {
+    cursor: pointer;
+    list-style: none;
+    padding: 22px 34px 22px 0;
+    font-size: 1rem;
+    font-weight: 500;
+    position: relative;
+}
+
+.faq-item summary::-webkit-details-marker { display: none; }
+
+.faq-item summary::after {
+    content: '+';
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.3rem;
+    opacity: 0.5;
+}
+
+.faq-item[open] summary::after { content: '\2013'; }
+
+.faq-item p {
+    padding: 0 0 24px;
+    font-size: 0.95rem;
+    line-height: 1.8;
+    opacity: 0.65;
+}
+
+@media (max-width: 860px) {
+    .services-page { padding-top: 110px; }
+    .services-grid { grid-template-columns: 1fr; }
+    .service-card { padding: 36px 24px; }
+    .bundle-inner { padding: 44px 24px; }
+    .faq-section { padding: 70px 24px 80px; }
+}

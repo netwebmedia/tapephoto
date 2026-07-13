@@ -1,0 +1,64 @@
+name: Deploy to tapephoto.com
+
+# tapephoto.com is an addon domain on the NetWebMedia InMotion cPanel account.
+# Its docroot is OUTSIDE the netwebmedia root FTP user's chroot (probed
+# 2026-07-13), so this repo needs its own scoped FTP account — same setup as
+# the realiracing repo:
+#   1. cPanel → FTP Accounts → Create: user e.g. deploy@tapephoto.com,
+#      directory = the tapephoto.com docroot (do NOT leave the default subdir).
+#   2. Repo Settings → Secrets → Actions: add FTP_HOST, FTP_USER, FTP_PASSWORD.
+#   3. Re-run this workflow (or push to main).
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-tapephoto
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Preflight — verify secrets
+        run: |
+          if [ -z "${{ secrets.FTP_HOST }}" ] || [ -z "${{ secrets.FTP_USER }}" ] || [ -z "${{ secrets.FTP_PASSWORD }}" ]; then
+            echo "::error::FTP secrets not configured. Add FTP_HOST, FTP_USER, FTP_PASSWORD in repo Settings → Secrets → Actions (see header comment for cPanel steps)."
+            exit 1
+          fi
+          echo "Secrets present — proceeding."
+
+      - name: Deploy via FTPS
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          port: 21
+          local-dir: ./
+          server-dir: ./
+          dangerous-clean-slate: false
+          log-level: standard
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/.github/**
+            **/node_modules/**
+            **/.DS_Store
+            **/Thumbs.db
+
+      - name: Smoke check
+        run: |
+          sleep 5
+          for u in "https://tapephoto.com/" "https://tapephoto.com/services.html" "https://tapephoto.com/servicios.html"; do
+            code=$(curl -s -o /dev/null -w "%{http_code}" -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" "$u")
+            echo "$u → HTTP $code"
+            [ "$code" = "200" ] || { echo "::error::$u returned $code"; exit 1; }
+          done
