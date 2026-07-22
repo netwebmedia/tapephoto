@@ -118,6 +118,12 @@ document.addEventListener('DOMContentLoaded', () => {
             or: ' or '
         };
 
+        // Which page produced the lead. Landing pages set data-source
+        // (e.g. "lp-inmobiliaria") so the CRM shows what converted; the
+        // plain contact page keeps the historical "tapephoto.com" value.
+        const pageSource = contactForm.getAttribute('data-source');
+        const formSource = pageSource ? 'tapephoto.com/' + pageSource : 'tapephoto.com';
+
         function fieldValue(name) {
             const el = contactForm.querySelector('[name="' + name + '"]');
             return el ? el.value.trim() : '';
@@ -153,13 +159,18 @@ document.addEventListener('DOMContentLoaded', () => {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({
+                        // form_id stays 'tapephoto-contact' on EVERY page. That exact
+                        // slug sits in api-php's $seqExcludedFormSlugs, which is what
+                        // keeps TapePhoto leads out of NetWebMedia's web-agency drip
+                        // (cross-brand nurture is opt-in only). Landing-page
+                        // attribution therefore rides in `source`, not in a new slug.
                         form_id: 'tapephoto-contact',
                         data: {
                             name: fieldValue('name'),
                             email: fieldValue('email'),
                             phone: fieldValue('phone'),
                             message: fieldValue('message'),
-                            source: 'tapephoto.com',
+                            source: formSource,
                             lang: isES ? 'es' : 'en',
                             // Honeypot — humans leave this hidden field empty.
                             // DOM field is named nwm_hp_2 (Chrome address autofill

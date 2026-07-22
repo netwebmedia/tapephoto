@@ -57,7 +57,10 @@ jobs:
       - name: Smoke check
         run: |
           sleep 5
-          for u in "https://tapephoto.com/" "https://tapephoto.com/services.html" "https://tapephoto.com/servicios.html"; do
+          for u in "https://tapephoto.com/" "https://tapephoto.com/services.html" "https://tapephoto.com/servicios.html" \
+                   "https://tapephoto.com/fotografia-inmobiliaria-la-serena.html" \
+                   "https://tapephoto.com/fotografia-hoteles-turismo-la-serena.html" \
+                   "https://tapephoto.com/fotografia-empresas-la-serena.html"; do
             code=$(curl -s -o /dev/null -w "%{http_code}" -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" "$u")
             echo "$u → HTTP $code"
             [ "$code" = "200" ] || { echo "::error::$u returned $code"; exit 1; }

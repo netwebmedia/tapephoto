@@ -9,7 +9,7 @@
   </url>
   <url>
     <loc>https://tapephoto.com/services.html</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://tapephoto.com/servicios.html"/>
@@ -17,7 +17,7 @@
   </url>
   <url>
     <loc>https://tapephoto.com/servicios.html</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://tapephoto.com/services.html"/>
@@ -44,5 +44,23 @@
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://tapephoto.com/contacto.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tapephoto.com/contact.html"/>
+  </url>
+  <url>
+    <loc>https://tapephoto.com/fotografia-inmobiliaria-la-serena.html</loc>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tapephoto.com/fotografia-hoteles-turismo-la-serena.html</loc>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tapephoto.com/fotografia-empresas-la-serena.html</loc>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
 </urlset>

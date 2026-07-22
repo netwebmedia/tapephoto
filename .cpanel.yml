@@ -2,6 +2,6 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/tapephoto/public_html/
-    - /bin/cp -R ./about.html ./contact.html ./contacto.html ./index.html ./services.html ./servicios.html ./main.js ./style.css ./robots.txt ./sitemap.xml $DEPLOYPATH
+    - /bin/cp -R ./about.html ./contact.html ./contacto.html ./index.html ./services.html ./servicios.html ./fotografia-inmobiliaria-la-serena.html ./fotografia-hoteles-turismo-la-serena.html ./fotografia-empresas-la-serena.html ./main.js ./style.css ./robots.txt ./sitemap.xml $DEPLOYPATH
     - /bin/cp -R ./images $DEPLOYPATH
     - /bin/cp ./.htaccess $DEPLOYPATH
