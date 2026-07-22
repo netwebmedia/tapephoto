@@ -1,5 +1,37 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+    // Analytics. analytics.js always defines window.gtag — a real one when a
+    // GA4 property exists, a no-op stub when it doesn't — so callers never
+    // need to feature-check. Keeping the calls live now means the day the
+    // Measurement ID is filled in, history starts immediately with no code change.
+    const trackEvent = (name, params) => {
+        try {
+            if (typeof window.gtag === 'function') window.gtag('event', name, params || {});
+        } catch (_) { /* analytics must never break the page */ }
+    };
+
+    // Which page the event came from — matches the `source` sent to the CRM,
+    // so GA4 and the CRM can be reconciled on the same key.
+    const pageSource = () => {
+        const f = document.querySelector('.contact-form[data-source]');
+        return f ? 'tapephoto.com/' + f.getAttribute('data-source')
+                 : 'tapephoto.com' + location.pathname;
+    };
+
+    // WhatsApp is the primary conversion channel for this market, and it
+    // leaves the site — so it has to be measured here or not at all.
+    document.addEventListener('click', (e) => {
+        const a = e.target.closest && e.target.closest('a[href*="wa.me"]');
+        if (!a) return;
+        trackEvent('whatsapp_click', {
+            page_source: pageSource(),
+            link_context: a.closest('.lp-hero') ? 'hero'
+                        : a.closest('.service-card') ? 'service_card'
+                        : a.closest('.lp-convert') ? 'closing'
+                        : a.closest('.footer') ? 'footer' : 'other'
+        });
+    }, true);
+
     // Mobile menu toggle
     const menuToggle = document.querySelector('.menu-toggle');
     const nav = document.querySelector('.nav');
@@ -184,6 +216,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 let data = {};
                 try { data = await res.json(); } catch (_) { /* non-JSON response */ }
                 if (res.ok && data.ok) {
+                    // GA4's recommended lead event — mark this as a key event
+                    // in the GA4 UI so it shows up as a conversion.
+                    trackEvent('generate_lead', { page_source: formSource });
                     contactForm.textContent = '';
                     const wrap = document.createElement('div');
                     wrap.style.cssText = 'text-align:center;padding:60px 0;';
@@ -200,10 +235,14 @@ document.addEventListener('DOMContentLoaded', () => {
                     wrap.append(h, p, btn);
                     contactForm.append(wrap);
                 } else {
+                    // Worth measuring: a lead that tried to reach Carlos and
+                    // couldn't is strictly worse than one that never tried.
+                    trackEvent('form_error', { page_source: formSource, reason: (data.error || 'unknown').slice(0, 100) });
                     showError(data.error ? T.errPrefix + data.error : T.errGeneric);
                     if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = submitLabel; }
                 }
             } catch (err) {
+                trackEvent('form_error', { page_source: formSource, reason: 'network' });
                 showError(T.errNetwork);
                 if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = submitLabel; }
             }
