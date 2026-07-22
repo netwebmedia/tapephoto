@@ -1293,3 +1293,20 @@ body {
     .lp-section { padding: 64px 24px; }
     .lp-convert { grid-template-columns: 1fr; gap: 48px; padding: 64px 24px 80px; }
 }
+
+/* Language entry point on the English pages.
+   The portfolio is English-first, but the paying market is Spanish-speaking
+   Coquimbo — a local business landing on the homepage previously had no route
+   into the Spanish services pages at all. Slightly emphasised so it reads as a
+   language switch rather than another nav item. */
+.nav-es {
+    opacity: 0.75;
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    padding: 4px 10px !important;
+    border-radius: 3px;
+    transition: opacity 0.3s var(--ease), border-color 0.3s var(--ease);
+}
+
+.nav-es::after { display: none; }
+
+.nav-es:hover { opacity: 1; border-color: var(--white); }
