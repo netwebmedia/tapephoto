@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Which page the event came from — matches the `source` sent to the CRM,
     // so GA4 and the CRM can be reconciled on the same key.
-    const pageSource = () => {
+    const eventSource = () => {
         const f = document.querySelector('.contact-form[data-source]');
         return f ? 'tapephoto.com/' + f.getAttribute('data-source')
                  : 'tapephoto.com' + location.pathname;
@@ -24,8 +24,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const a = e.target.closest && e.target.closest('a[href*="wa.me"]');
         if (!a) return;
         trackEvent('whatsapp_click', {
-            page_source: pageSource(),
-            link_context: a.closest('.lp-hero') ? 'hero'
+            page_source: eventSource(),
+            link_context: a.classList.contains('wa-fab') ? 'fab'
+                        : a.closest('.lp-hero') ? 'hero'
                         : a.closest('.service-card') ? 'service_card'
                         : a.closest('.lp-convert') ? 'closing'
                         : a.closest('.footer') ? 'footer' : 'other'
@@ -36,14 +37,21 @@ document.addEventListener('DOMContentLoaded', () => {
     const menuToggle = document.querySelector('.menu-toggle');
     const nav = document.querySelector('.nav');
     if (menuToggle) {
+        const setMenuState = (open) => {
+            menuToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+            menuToggle.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+        };
+        setMenuState(false);
         menuToggle.addEventListener('click', () => {
-            nav.classList.toggle('open');
+            const open = nav.classList.toggle('open');
             menuToggle.classList.toggle('active');
+            setMenuState(open);
         });
         nav.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
                 nav.classList.remove('open');
                 menuToggle.classList.remove('active');
+                setMenuState(false);
             });
         });
     }
@@ -101,16 +109,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Smooth scroll for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(link => {
-        link.addEventListener('click', (e) => {
-            const target = document.querySelector(link.getAttribute('href'));
-            if (target) {
-                e.preventDefault();
-                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
-        });
-    });
+    // In-page anchors deliberately use NATIVE fragment navigation.
+    // A previous JS handler called preventDefault() + scrollIntoView(), which
+    // scrolled the viewport but never moved the sequential focus navigation
+    // point — so a keyboard user clicking "Pedir cotización" was scrolled to
+    // the form while focus stayed on the hero, and a screen-reader cursor
+    // didn't move at all. style.css sets `html { scroll-behavior: smooth }`,
+    // which gives the same animation with correct focus and a shareable
+    // #cotizar URL. Do not reintroduce the handler.
 
     // (Footer newsletter form removed 2026-07-13 — it was a non-functional
     //  mock that silently discarded emails. Reinstate only wired to a real
@@ -133,8 +139,8 @@ document.addEventListener('DOMContentLoaded', () => {
             sentTitle: 'Mensaje Enviado.',
             sentBody: 'Gracias — te responderé a la brevedad.',
             newMessage: 'Nuevo Mensaje',
-            errPrefix: 'No se pudo enviar tu mensaje: ',
             errGeneric: 'No se pudo enviar tu mensaje en este momento.',
+            errRate: 'Demasiados envíos desde esta conexión. Espera unos minutos e inténtalo de nuevo.',
             errNetwork: 'Error de red — tu mensaje no fue enviado.',
             fallback: 'También puedes escribirme directo: ',
             or: ' o '
@@ -143,8 +149,8 @@ document.addEventListener('DOMContentLoaded', () => {
             sentTitle: 'Message Sent.',
             sentBody: 'Thanks — I’ll get back to you shortly.',
             newMessage: 'New Message',
-            errPrefix: 'Your message could not be sent: ',
             errGeneric: 'Your message could not be sent right now.',
+            errRate: 'Too many submissions from this connection. Please wait a few minutes and try again.',
             errNetwork: 'Network error — your message was not sent.',
             fallback: 'You can also reach me directly: ',
             or: ' or '
@@ -178,8 +184,9 @@ document.addEventListener('DOMContentLoaded', () => {
             wa.rel = 'noopener';
             wa.textContent = 'WhatsApp +1 (442) 385-4585';
             fallback.append(mail, T.or, wa, '.');
-            statusBox.append(msg, fallback);
+            // Unhide first: mutations inside a hidden live region are not announced.
             statusBox.hidden = false;
+            statusBox.append(msg, fallback);
         }
 
         contactForm.addEventListener('submit', async (e) => {
@@ -229,16 +236,32 @@ document.addEventListener('DOMContentLoaded', () => {
                     p.style.cssText = 'opacity:0.5;margin-bottom:30px;';
                     p.textContent = T.sentBody;
                     const btn = document.createElement('button');
+                    // MUST be type=button. createElement defaults to "submit",
+                    // and this button is appended back INSIDE .contact-form —
+                    // where every required field has just been removed, so the
+                    // form validates trivially and a click fired a second POST
+                    // with empty fields but a valid form_id and source, writing
+                    // a blank lead row and a blank "New lead" admin email.
+                    btn.type = 'button';
                     btn.style.cssText = 'padding:12px 28px;border:1px solid rgba(255,255,255,0.3);background:none;color:white;cursor:pointer;text-transform:uppercase;font-size:0.7rem;font-weight:600;letter-spacing:0.15em;';
                     btn.textContent = T.newMessage;
                     btn.addEventListener('click', () => location.reload());
+                    // The form (and with it the .form-status live region and
+                    // the focused submit button) has just been destroyed, so the
+                    // confirmation has to announce itself and take focus.
+                    wrap.setAttribute('role', 'status');
+                    wrap.tabIndex = -1;
                     wrap.append(h, p, btn);
                     contactForm.append(wrap);
+                    wrap.focus();
                 } else {
                     // Worth measuring: a lead that tried to reach Carlos and
                     // couldn't is strictly worse than one that never tried.
-                    trackEvent('form_error', { page_source: formSource, reason: (data.error || 'unknown').slice(0, 100) });
-                    showError(data.error ? T.errPrefix + data.error : T.errGeneric);
+                    // The endpoint answers in English and can leak raw PDO text
+                    // on its 500 path; the `lang` we send is never read server-side.
+                    // So the detail goes to analytics, never to the visitor.
+                    trackEvent('form_error', { page_source: formSource, status: res.status, reason: (data.error || 'unknown').slice(0, 100) });
+                    showError(res.status === 429 ? T.errRate : T.errGeneric);
                     if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = submitLabel; }
                 }
             } catch (err) {

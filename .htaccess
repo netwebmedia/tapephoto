@@ -2,6 +2,12 @@
 
 Options -Indexes
 
+# Never serve dotfiles (.cpanel.yml, .git*, editor droppings). FilesMatch tests
+# the filename only, so /.well-known/<token> ACME challenges still resolve.
+<FilesMatch "^\.">
+  Require all denied
+</FilesMatch>
+
 RewriteEngine On
 
 # Force HTTPS + canonical non-www host

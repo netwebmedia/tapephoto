@@ -50,6 +50,7 @@ jobs:
             **/.git*
             **/.git*/**
             **/.github/**
+            **/.cpanel.yml
             **/node_modules/**
             **/.DS_Store
             **/Thumbs.db
