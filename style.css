@@ -969,6 +969,16 @@ body {
     flex-direction: column;
 }
 
+/* Fixed-price SKU (e.g. the Marpolis-bundled real-estate package) —
+   same card shape, a brighter border/background sets it apart from the
+   quote-only cards around it without adding a new brand color. */
+.service-card-fixed {
+    border-color: rgba(255,255,255,0.35);
+    background: rgba(255,255,255,0.05);
+}
+
+.services-grid-3 { grid-template-columns: repeat(3, 1fr); }
+
 .service-tag {
     font-size: 0.65rem;
     text-transform: uppercase;
