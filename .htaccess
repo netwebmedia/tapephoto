@@ -32,3 +32,19 @@ RewriteRule ^(.*)$ https://tapephoto.com/$1 [L,R=301]
     Header set Cache-Control "public, max-age=300, must-revalidate"
   </FilesMatch>
 </IfModule>
+
+# Security headers
+#
+# Added 2026-08-01 after a portfolio audit found tapephoto.com serving ZERO
+# security headers — no HSTS, no nosniff, no framing policy, no referrer
+# policy — while the canonical-host redirects above were already working. The
+# redirect half of this file was right; the header half was simply absent.
+#
+# No 'preload' and no 'includeSubDomains' on HSTS: subdomain usage on this
+# domain isn't audited, and preload is effectively irreversible.
+<IfModule mod_headers.c>
+  Header always set Strict-Transport-Security "max-age=31536000"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set X-Frame-Options "SAMEORIGIN"
+</IfModule>
