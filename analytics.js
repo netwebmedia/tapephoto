@@ -16,7 +16,7 @@
 (function () {
     'use strict';
 
-    var GA4_ID = ''; // <-- put "G-XXXXXXXXXX" here to activate
+    var GA4_ID = 'G-0ZZHDP00H6'; // tapephoto.com property, created 2026-08-03
 
     window.TAPEPHOTO_GA4_ID = GA4_ID;
 
