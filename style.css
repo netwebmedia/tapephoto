@@ -1431,3 +1431,177 @@ body {
     /* Four stacked proof images pushed the closing CTA ~28% further down. */
     .lp-proof figure:nth-child(n + 3) { display: none; }
 }
+
+/* ─── Blog / Journal (blog/) ──────────────────────────────────────────────
+   Pages under /blog/ are rendered by _deploy/blog-publish.js. They reuse the
+   site chrome (.header/.footer), .faq-item, .cta-row, .btn-whatsapp and
+   .btn-outline; everything blog-specific lives below. Same dark editorial
+   look: Playfair headings, Inter body, generous air. */
+
+.blog-page {
+    background: var(--black);
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 150px 24px 90px;
+}
+
+.blog-intro { text-align: center; margin-bottom: 60px; }
+
+.blog-intro h1 {
+    font-family: var(--serif);
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 700;
+    letter-spacing: -2px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.blog-lead {
+    font-size: 1rem;
+    line-height: 1.8;
+    opacity: 0.6;
+    max-width: 620px;
+    margin: 0 auto;
+}
+
+.blog-card {
+    border-top: 1px solid rgba(255,255,255,0.12);
+    padding: 36px 0;
+}
+
+.blog-card h2 {
+    font-family: var(--serif);
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 8px;
+}
+
+.blog-card h2 a {
+    color: var(--white);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s;
+}
+
+.blog-card h2 a:hover { border-color: var(--white); }
+
+.blog-card-meta {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    opacity: 0.45;
+    margin-bottom: 14px;
+}
+
+.blog-card-desc {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    opacity: 0.65;
+}
+
+/* Article pages */
+
+.article-tag {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    opacity: 0.5;
+    margin-bottom: 14px;
+}
+
+.article h1 {
+    font-family: var(--serif);
+    font-size: clamp(2rem, 4.5vw, 3.2rem);
+    font-weight: 700;
+    letter-spacing: -1.5px;
+    line-height: 1.12;
+    margin-bottom: 16px;
+}
+
+.article-meta {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    opacity: 0.45;
+    margin-bottom: 36px;
+}
+
+.article-lede {
+    font-size: 1.15rem;
+    line-height: 1.75;
+    opacity: 0.85;
+    margin-bottom: 36px;
+}
+
+.article h2 {
+    font-family: var(--serif);
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin: 44px 0 16px;
+}
+
+.article h3 {
+    font-family: var(--serif);
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 32px 0 12px;
+}
+
+.article p {
+    font-size: 0.98rem;
+    line-height: 1.85;
+    opacity: 0.75;
+    margin-bottom: 18px;
+}
+
+.article ul {
+    list-style: none;
+    margin: 0 0 24px;
+    font-size: 0.95rem;
+    line-height: 2;
+    opacity: 0.75;
+}
+
+.article ul li::before {
+    content: '\2014\00a0';
+    opacity: 0.5;
+}
+
+.article .faq-item p { opacity: 0.65; }
+
+.article-cta {
+    border: 1px solid rgba(255,255,255,0.12);
+    background: rgba(255,255,255,0.02);
+    padding: 36px 32px;
+    margin: 56px 0 36px;
+    text-align: center;
+}
+
+.article-cta-label {
+    font-size: 1rem;
+    opacity: 0.8;
+    margin-bottom: 22px;
+}
+
+.article-cta .cta-row { justify-content: center; }
+
+.article-back { margin-top: 10px; }
+
+.article-back a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+}
+
+.article-back a:hover { opacity: 1; }
+
+@media (max-width: 760px) {
+    .blog-page { padding-top: 120px; }
+    .article-cta { padding: 28px 20px; }
+}
