@@ -40,12 +40,12 @@ const esc = (s) => String(s == null ? '' : s)
 // For JSON-LD: collapse whitespace so nothing breaks the block.
 const jsonText = (s) => String(s == null ? '' : s).replace(/\s+/g, ' ').trim();
 
-const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June',
-  'July', 'August', 'September', 'October', 'November', 'December'];
+const MONTHS = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio',
+  'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
 
 function dateLabel(iso) {
   const [y, m, d] = iso.split('-').map(Number);
-  return `${d} ${MONTHS[m - 1]} ${y}`;
+  return `${d} de ${MONTHS[m - 1]} de ${y}`;
 }
 
 // ─── Shared chrome ───────────────────────────────────────────────────────────
@@ -146,11 +146,11 @@ function renderPost(post) {
   };
 
   return `<!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>${esc(post.title)} | TapePhoto Journal</title>
+    <title>${esc(post.title)} | Blog TapePhoto</title>
     <meta name="description" content="${esc(post.description)}">
     <link rel="canonical" href="${ORIGIN}/blog/${post.slug}.html">
     <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
@@ -181,24 +181,24 @@ ${HEADER}
         <article class="article">
             <p class="article-tag">${esc(post.tag)}</p>
             <h1>${esc(post.title)}</h1>
-            <p class="article-meta">Published ${esc(label)} &middot; ${esc(post.readTime)} read</p>
+            <p class="article-meta">Publicado el ${esc(label)} &middot; ${esc(post.readTime)} de lectura</p>
 
             <p class="article-lede">${esc(post.lede)}</p>
 
 ${body}
 
-            <h2>Frequently asked</h2>
+            <h2>Preguntas frecuentes</h2>
 ${faqHtml}
 
             <div class="article-cta">
-                <p class="article-cta-label">Shooting in Chile — or want work like this for your own project?</p>
+                <p class="article-cta-label">&iquest;Necesitas fotograf&iacute;a as&iacute; para tu propiedad o tu negocio?</p>
                 <div class="cta-row">
-                    <a class="btn-whatsapp" href="https://wa.me/14423854585?text=Hi!%20I%20read%20the%20TapePhoto%20journal%20(${encodeURIComponent(post.slug)})" target="_blank" rel="noopener">Say hi on WhatsApp</a>
-                    <a class="btn-outline" href="../services.html">See services</a>
+                    <a class="btn-whatsapp" href="https://wa.me/14423854585?text=Hola!%20Le%C3%AD%20el%20art%C3%ADculo%20de%20TapePhoto%20(${encodeURIComponent(post.slug)})" target="_blank" rel="noopener">Escr&iacute;beme por WhatsApp</a>
+                    <a class="btn-outline" href="../servicios.html">Ver servicios</a>
                 </div>
             </div>
 
-            <p class="article-back"><a href="./">&larr; Back to the journal</a></p>
+            <p class="article-back"><a href="./">&larr; Volver al blog</a></p>
         </article>
     </main>
 
@@ -210,13 +210,13 @@ ${FOOTER}
 `;
 }
 
-// ─── Journal index — fully re-rendered every run ─────────────────────────────
+// ─── Índice del blog — se re-renderiza completo en cada run ──────────────────
 
 function renderIndex(db) {
   const cards = db.items.map((it) => `            <article class="blog-card">
                 <p class="article-tag">${esc(it.tag)}</p>
                 <h2><a href="${esc(it.slug)}.html">${esc(it.title)}</a></h2>
-                <p class="blog-card-meta">${esc(dateLabel(it.published))} &middot; ${esc(it.readTime)} read</p>
+                <p class="blog-card-meta">${esc(dateLabel(it.published))} &middot; ${esc(it.readTime)} de lectura</p>
                 <p class="blog-card-desc">${esc(it.description)}</p>
             </article>`).join('\n\n');
 
@@ -224,25 +224,25 @@ function renderIndex(db) {
     '@context': 'https://schema.org',
     '@type': 'Blog',
     '@id': `${ORIGIN}/blog/`,
-    name: 'TapePhoto Journal',
+    name: 'Blog TapePhoto',
     url: `${ORIGIN}/blog/`,
-    description: 'Notes on 35mm film, instant cameras, tape aesthetics, home developing and the analog side of photography.',
+    description: 'Guías de fotografía inmobiliaria, corporativa, de hoteles y drone en La Serena y Coquimbo.',
     author: { '@type': 'Person', '@id': `${ORIGIN}/#carlos`, name: 'Carlos Martinez' },
   };
 
   return `<!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Journal | TapePhoto - Film, Instant &amp; Analog Photography Notes</title>
-    <meta name="description" content="The TapePhoto journal: practical notes on 35mm film, instant cameras, tape aesthetics, home developing, scanning negatives and the analog side of photography.">
+    <title>Blog | Fotograf&iacute;a Inmobiliaria y Comercial en La Serena - TapePhoto</title>
+    <meta name="description" content="Gu&iacute;as pr&aacute;cticas de fotograf&iacute;a inmobiliaria, corporativa, de hoteles y drone en La Serena y Coquimbo: c&oacute;mo preparar la sesi&oacute;n y qu&eacute; esperar del proceso.">
     <link rel="canonical" href="${ORIGIN}/blog/">
     <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="TapePhoto">
-    <meta property="og:title" content="TapePhoto Journal — Film, Instant &amp; Analog Photography Notes">
-    <meta property="og:description" content="Practical notes on 35mm film, instant cameras, tape aesthetics, home developing and scanning negatives.">
+    <meta property="og:title" content="Blog TapePhoto — Fotograf&iacute;a Inmobiliaria y Comercial en La Serena">
+    <meta property="og:description" content="Gu&iacute;as de fotograf&iacute;a inmobiliaria, corporativa, de hoteles y drone en La Serena y Coquimbo.">
     <meta property="og:url" content="${ORIGIN}/blog/">
     <meta property="og:image" content="${ORIGIN}/images/tape_lifestyle_setup.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -261,11 +261,11 @@ ${HEADER}
 
     <main class="blog-page">
         <section class="blog-intro">
-            <h1>the journal.</h1>
+            <h1>el blog.</h1>
             <p class="blog-lead">
-                Notes from the analog side — 35mm and instant film, tape-era aesthetics,
-                developing at home, scanning negatives and the cameras that make it fun.
-                Written by a photographer who still burns real film between race weekends.
+                Gu&iacute;as pr&aacute;cticas de fotograf&iacute;a inmobiliaria, corporativa, de hoteles y a&eacute;rea
+                con drone en La Serena y Coquimbo: c&oacute;mo preparar la propiedad o el negocio antes
+                de la sesi&oacute;n, qu&eacute; esperar del proceso y c&oacute;mo se ven las fotos que s&iacute; venden.
             </p>
         </section>
 
