@@ -1,0 +1,3 @@
+# Keeps the queue directory tracked by git when it is empty.
+# The publisher drains *.json from here; an untracked empty dir would make
+# publish-blogs.yml fail its `find` step on a fresh checkout.

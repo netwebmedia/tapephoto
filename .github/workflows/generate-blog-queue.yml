@@ -1,0 +1,84 @@
+name: Generate Blog Queue (Weekly)
+
+# Refills _deploy/posts-queue/ with English analog-photography drafts via the
+# Claude API. Runs Mondays 11:00 UTC (07:00 Santiago) — after the NetWebMedia
+# (10:00) and EntrePoker (09:00) generators so the portfolio's machines never
+# contend for the same API budget window.
+#
+# ~10 posts/week against a ~1/day publish cadence keeps roughly a 3-day buffer,
+# which absorbs GitHub's cron throttling without the queue running dry.
+#
+# Requires the ANTHROPIC_API_KEY repo secret. Without it the job fails loudly
+# rather than shipping nothing quietly — add it at
+# https://github.com/netwebmedia/tapephoto/settings/secrets/actions/new
+
+on:
+  schedule:
+    - cron: '0 11 * * 1'
+  workflow_dispatch:
+    inputs:
+      count:
+        description: 'Number of posts to generate'
+        default: '10'
+        required: false
+
+concurrency:
+  group: tapephoto-blog-queue
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Preflight — ANTHROPIC_API_KEY present
+        env:
+          KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          if [ -z "$KEY" ]; then
+            echo "::error::ANTHROPIC_API_KEY is not set — add it at https://github.com/netwebmedia/tapephoto/settings/secrets/actions/new"
+            exit 1
+          fi
+          echo "✓ key present"
+
+      - name: Generate posts
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          COUNT="${{ github.event.inputs.count || '10' }}"
+          node _deploy/blog-queue.js --count "$COUNT"
+
+      - name: Commit new drafts
+        run: |
+          git config user.name "TapePhoto Blog Bot"
+          git config user.email "bot@netwebmedia.com"
+          git config --global url."https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/".insteadOf "https://github.com/"
+          git add _deploy/posts-queue/
+          git diff --cached --quiet && echo "Nothing new to commit" && exit 0
+          git commit -m "chore(blog): queue $(git diff --cached --name-only | wc -l | tr -d ' ') draft(s)"
+          for attempt in 1 2 3 4 5 6 7 8; do
+            git fetch origin main
+            if git rebase --autostash origin/main; then
+              if git push origin HEAD:main; then
+                echo "Pushed on attempt $attempt"
+                exit 0
+              fi
+            else
+              git rebase --abort 2>/dev/null || true
+            fi
+            echo "Push attempt $attempt failed — retrying with backoff"
+            sleep $(( attempt * 4 + RANDOM % 7 ))
+          done
+          echo "::error::Failed to push after 8 attempts"
+          exit 1

@@ -1,0 +1,121 @@
+name: Publish Blog Posts (Scheduled)
+
+# Drains _deploy/posts-queue/ into real pages on tapephoto.com:
+#   blog/<slug>.html · blog/index.html · sitemap.xml
+# then dispatches deploy.yml (FTPS to InMotion) so the post actually goes live.
+#
+# Cadence: two windows a day, 1 post per fire — same reasoning as the
+# EntrePoker machine. GitHub throttles scheduled workflows on busy queues and
+# routinely drops fires, so two windows is what it takes to reliably land
+# ~1 post/day. If both fire, two posts ship — which the weekly queue (~10) is
+# sized for. Raise `limit` on a manual run to drain a backlog.
+#
+# No API key needed here — the writing already happened in the queue job, so
+# this step is deterministic and safe to re-run.
+
+on:
+  schedule:
+    - cron: '0 14 * * *'   # 10:00 Santiago
+    - cron: '0 20 * * *'   # 16:00 Santiago
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: 'Posts to publish this run (default 1)'
+        default: '1'
+        required: false
+      dry_run:
+        description: 'Render nothing, just report what would publish'
+        type: boolean
+        default: false
+
+concurrency:
+  group: tapephoto-blog-publish
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  actions: write   # to dispatch deploy.yml after pushing — see the last step
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Check queue
+        id: queue
+        run: |
+          COUNT=$(find _deploy/posts-queue -maxdepth 1 -name '*.json' 2>/dev/null | wc -l)
+          echo "pending=$COUNT" >> "$GITHUB_OUTPUT"
+          echo "Pending: $COUNT"
+          if [ "$COUNT" = "0" ]; then
+            echo "::warning::TapePhoto queue is empty — run generate-blog-queue.yml to refill."
+          fi
+
+      - name: Publish
+        id: publish
+        if: steps.queue.outputs.pending != '0'
+        run: |
+          FLAGS=""
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then FLAGS="--dry-run"; fi
+          node _deploy/blog-publish.js --limit "${{ github.event.inputs.limit || '1' }}" $FLAGS
+          echo "changed=$(git status --porcelain | wc -l)" >> "$GITHUB_OUTPUT"
+
+      - name: Validate published output
+        if: steps.publish.outputs.changed != '0' && github.event.inputs.dry_run != 'true'
+        run: |
+          set -e
+          # A schema-broken page is worse than a missing one on a site whose
+          # whole point is being found — parse before shipping.
+          python3 -c "import json;json.load(open('_deploy/blog-index.json',encoding='utf-8'));print('OK blog-index.json parses')"
+          python3 -c "import xml.dom.minidom;xml.dom.minidom.parse('sitemap.xml');print('OK sitemap.xml parses')"
+          NEW=$(git status --porcelain blog | awk '{print $2}' | grep '\.html$' || true)
+          for f in $NEW; do
+            grep -q 'application/ld+json' "$f" || { echo "::error::$f is missing JSON-LD"; exit 1; }
+            grep -q 'rel="canonical"' "$f" || { echo "::error::$f is missing a canonical URL"; exit 1; }
+            echo "OK $f"
+          done
+
+      - name: Commit and push
+        if: steps.publish.outputs.changed != '0' && github.event.inputs.dry_run != 'true'
+        run: |
+          git config user.name "TapePhoto Blog Bot"
+          git config user.email "bot@netwebmedia.com"
+          git config --global url."https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/".insteadOf "https://github.com/"
+          git add blog/ sitemap.xml _deploy/posts-queue/ _deploy/blog-index.json
+          git diff --cached --quiet && echo "Nothing to commit" && exit 0
+          git commit -m "publish: auto-publish $(date -u '+%Y-%m-%d %H:%M') UTC"
+          for attempt in 1 2 3 4 5 6 7 8; do
+            git fetch origin main
+            if git rebase --autostash origin/main; then
+              if git push origin HEAD:main; then
+                echo "pushed=1" >> "$GITHUB_ENV"
+                echo "Pushed on attempt $attempt"
+                exit 0
+              fi
+            else
+              git rebase --abort 2>/dev/null || true
+            fi
+            echo "Push attempt $attempt failed — retrying with backoff"
+            sleep $(( attempt * 4 + RANDOM % 7 ))
+          done
+          echo "::error::Failed to push after 8 attempts"
+          exit 1
+
+      # A push made with GITHUB_TOKEN does NOT trigger other workflows — GitHub
+      # blocks that to prevent loops. So deploy.yml never sees this commit and
+      # the post would sit on main, published but not live. Dispatch it.
+      - name: Trigger the deploy
+        if: env.pushed == '1' && github.event.inputs.dry_run != 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh workflow run deploy.yml --ref main
+          echo "Dispatched deploy.yml — the post goes live on that run."
