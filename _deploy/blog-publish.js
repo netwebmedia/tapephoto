@@ -124,7 +124,7 @@ function renderPost(post) {
     description: jsonText(post.description),
     datePublished: post.published,
     dateModified: post.published,
-    inLanguage: 'en',
+    inLanguage: 'es',
     mainEntityOfPage: `${ORIGIN}/blog/${post.slug}.html`,
     author: {
       '@type': 'Person',
