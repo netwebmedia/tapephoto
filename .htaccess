@@ -47,4 +47,31 @@ RewriteRule ^(.*)$ https://tapephoto.com/$1 [L,R=301]
   Header always set X-Content-Type-Options "nosniff"
   Header always set Referrer-Policy "strict-origin-when-cross-origin"
   Header always set X-Frame-Options "SAMEORIGIN"
+
+  # Enforced CSP (not Report-Only). Audited 2026-08-18 over every page in this
+  # repo AND the live blog output, because the blog machine publishes here
+  # unattended and its pages are what a repo-only audit would miss.
+  #
+  # This policy is FULLY STRICT — no 'unsafe-inline' anywhere — which this site
+  # can afford because it has zero executable inline script, zero on*= handlers,
+  # zero style="" attributes and zero <style> blocks. The only inline <script>
+  # tags are type="application/ld+json"; those are data blocks the browser never
+  # executes, so script-src does not apply to them and the structured data keeps
+  # working. Keep it that way: adding one inline handler or one style="" here
+  # breaks silently under this header.
+  #
+  # connect-src carries netwebmedia.com because THE CONTACT FORM POSTS THERE —
+  # main.js sends to https://netwebmedia.com/api/public/forms/submit. Drop that
+  # origin and the form fails with a console error and no lead, which is this
+  # site's only conversion path. It is not decoration.
+  #
+  # js/analytics.js injects gtag at runtime, so googletagmanager needs script-src
+  # and the collect beacon + pixel need connect-src and img-src. All three are
+  # required — miss one and GA4 reports nothing while the page looks perfect.
+  # Google Fonts is the only other third party: the stylesheet from
+  # fonts.googleapis.com, the faces from fonts.gstatic.com.
+  #
+  # Outbound links (instagram.com, facebook.com, wa.me) are anchor hrefs, not
+  # resource loads, so they need no entry here.
+  Header always set Content-Security-Policy "default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://*.google-analytics.com https://*.googletagmanager.com; connect-src 'self' https://netwebmedia.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; object-src 'none'; frame-ancestors 'self'; base-uri 'self'; form-action 'self'"
 </IfModule>
