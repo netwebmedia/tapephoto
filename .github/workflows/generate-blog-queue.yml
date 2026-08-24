@@ -1,16 +1,29 @@
 name: Generate Blog Queue (Weekly)
 
-# Refills _deploy/posts-queue/ with English analog-photography drafts via the
-# Claude API. Runs Mondays 11:00 UTC (07:00 Santiago) — after the NetWebMedia
-# (10:00) and EntrePoker (09:00) generators so the portfolio's machines never
-# contend for the same API budget window.
+# Refills _deploy/posts-queue/ with drafts via the Claude API. Runs Mondays
+# 11:00 UTC (07:00 Santiago) — after the NetWebMedia (10:00) and EntrePoker
+# (09:00) generators so the portfolio's machines never contend for the same API
+# budget window.
+#
+# The drafts are Spanish, about commercial and real-estate photography in La
+# Serena and Coquimbo — see the SUBJECTS matrix in _deploy/blog-queue.js, which
+# is the source of truth. (This header used to say "English analog-photography";
+# that was never what shipped.)
 #
 # ~10 posts/week against a ~1/day publish cadence keeps roughly a 3-day buffer,
 # which absorbs GitHub's cron throttling without the queue running dry.
 #
-# Requires the ANTHROPIC_API_KEY repo secret. Without it the job fails loudly
-# rather than shipping nothing quietly — add it at
-# https://github.com/netwebmedia/tapephoto/settings/secrets/actions/new
+# THE API IS AN OPTIONAL REFILL, NOT THE ONLY SUPPLY (2026-08-24). This repo has
+# no ANTHROPIC_API_KEY, and the shared Anthropic account is out of credit, so
+# this job failed every Monday on a hard preflight — a red run and an email that
+# said nothing new each week. Drafts are also written by hand straight into
+# _deploy/posts-queue/ (the format is in _published/), which costs no credit at
+# all and is how the queue is actually being kept stocked.
+#
+# So the preflight now alarms on the thing that actually matters — the queue
+# running dry — instead of on the key being absent. No key + a stocked queue is
+# a notice. No key + a dry queue is a failure, because then the blog really is
+# about to go quiet and somebody has to write or fund something.
 
 on:
   schedule:
@@ -42,17 +55,37 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Preflight — ANTHROPIC_API_KEY present
+      - name: Queue depth
+        id: queue
+        run: |
+          COUNT=$(find _deploy/posts-queue -maxdepth 1 -name '*.json' | wc -l)
+          echo "pending=$COUNT" >> "$GITHUB_OUTPUT"
+          echo "Drafts pending: $COUNT"
+
+      - name: Preflight — can the API refill run, and does it need to?
+        id: gate
         env:
           KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          PENDING: ${{ steps.queue.outputs.pending }}
         run: |
-          if [ -z "$KEY" ]; then
-            echo "::error::ANTHROPIC_API_KEY is not set — add it at https://github.com/netwebmedia/tapephoto/settings/secrets/actions/new"
-            exit 1
+          # ~1 post published per day, so 3 drafts ≈ 3 days of runway — enough to
+          # absorb one missed Monday without the blog going quiet.
+          LOW_WATER=3
+          if [ -n "$KEY" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+            echo "✓ key present — refilling via the API"
+            exit 0
           fi
-          echo "✓ key present"
+          echo "run=false" >> "$GITHUB_OUTPUT"
+          if [ "$PENDING" -ge "$LOW_WATER" ]; then
+            echo "::notice::No ANTHROPIC_API_KEY in this repo, so the API refill is skipped — but $PENDING draft(s) are queued (low-water mark: $LOW_WATER), so publishing continues. Nothing to do."
+            exit 0
+          fi
+          echo "::error::TapePhoto's blog queue is down to $PENDING draft(s) and there is no ANTHROPIC_API_KEY to refill it — the blog goes quiet within days. Either add drafts to _deploy/posts-queue/ (copy the shape of any file in _deploy/posts-queue/_published/), or add the key at https://github.com/netwebmedia/tapephoto/settings/secrets/actions/new and fund the account at https://console.anthropic.com/settings/billing"
+          exit 1
 
       - name: Generate posts
+        if: steps.gate.outputs.run == 'true'
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
@@ -60,6 +93,7 @@ jobs:
           node _deploy/blog-queue.js --count "$COUNT"
 
       - name: Commit new drafts
+        if: steps.gate.outputs.run == 'true'
         run: |
           git config user.name "TapePhoto Blog Bot"
           git config user.email "bot@netwebmedia.com"
