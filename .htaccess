@@ -2,6 +2,12 @@
 
 Options -Indexes
 
+# Branded error page. Without this Apache serves its own 236-byte
+# "Error 404 - Not Found": no branding, no nav, no link back, so every stale
+# inbound link is a guaranteed bounce. Same pattern already live on dongaston,
+# marpolis and entrepoker.
+ErrorDocument 404 /404.html
+
 # Never serve dotfiles (.cpanel.yml, .git*, editor droppings). FilesMatch tests
 # the filename only, so /.well-known/<token> ACME challenges still resolve.
 <FilesMatch "^\.">
