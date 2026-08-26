@@ -7,7 +7,9 @@
       "tag": "Empresas",
       "description": "Cómo se encarga una sesión de fotos de producto: qué mandar, cuántas tomas necesita cada artículo, fondo blanco o ambientado, y qué archivos pedir para que sirvan en el sitio, en redes y en el catálogo.",
       "readTime": "8 min",
-      "published": "2026-08-25"
+      "published": "2026-08-25",
+      "img": "/assets/photos/empresas-calle-sm.jpg",
+      "imgAlt": "Escena urbana en una estación"
     },
     {
       "slug": "fotografia-restaurantes-checklist",
@@ -15,7 +17,9 @@
       "tag": "Turismo",
       "description": "Qué preparar en un restaurante o café antes de una sesión de fotos: hora del día, montaje de mesas, qué platos elegir, el estado del local y los permisos. Checklist práctico para no perder la sesión.",
       "readTime": "7 min",
-      "published": "2026-08-25"
+      "published": "2026-08-25",
+      "img": "/assets/photos/turismo-ciudad-sm.jpg",
+      "imgAlt": "Panorámica urbana desde un cerro"
     },
     {
       "slug": "fotografia-eventos-que-esperar",
@@ -23,7 +27,9 @@
       "tag": "Eventos",
       "description": "Cómo funciona la cobertura fotográfica de un evento de empresa: qué información necesita el fotógrafo, qué se cubre durante la jornada, en cuánto llegan las fotos y qué pedir para redes el mismo día.",
       "readTime": "7 min",
-      "published": "2026-08-24"
+      "published": "2026-08-24",
+      "img": "/assets/photos/eventos-concierto-sm.jpg",
+      "imgAlt": "Un cantante en vivo, fotografiado en blanco y negro"
     },
     {
       "slug": "fotografia-empresas-vale-la-pena",
@@ -31,7 +37,9 @@
       "tag": "Empresas",
       "description": "Cuándo una empresa necesita fotografía propia y cuándo un banco de imágenes resuelve igual: criterios por tipo de negocio, qué nota realmente un cliente y en qué orden conviene invertir.",
       "readTime": "7 min",
-      "published": "2026-08-24"
+      "published": "2026-08-24",
+      "img": "/assets/photos/empresas-retrato-2-sm.jpg",
+      "imgAlt": "Retrato en primer plano con luz de tarde"
     },
     {
       "slug": "retratos-corporativos-y-fotos-de-equipo-que-esperar",
@@ -39,7 +47,9 @@
       "tag": "Empresas",
       "description": "Qué preparar antes de una sesión de retratos corporativos y fotos de equipo en La Serena o Coquimbo: ropa, lugar, tiempos, cuántas fotos por persona y dónde se usan después.",
       "readTime": "7 min",
-      "published": "2026-08-21"
+      "published": "2026-08-21",
+      "img": "/assets/photos/empresas-retrato-2-sm.jpg",
+      "imgAlt": "Retrato en primer plano con luz de tarde"
     },
     {
       "slug": "que-fotos-necesita-un-hotel-o-cabana-para-publicarse",
@@ -47,7 +57,9 @@
       "tag": "Turismo",
       "description": "Las fotos que un hotel, hostal o cabaña en La Serena, Coquimbo o el Valle del Elqui necesita para publicarse: qué se fotografía, en qué orden se muestra y qué dejar listo.",
       "readTime": "8 min",
-      "published": "2026-08-17"
+      "published": "2026-08-17",
+      "img": "/assets/photos/turismo-atardecer-sm.jpg",
+      "imgAlt": "Atardecer sobre la bahía"
     },
     {
       "slug": "fotografia-con-drone-para-propiedades-y-terrenos-cuando-aporta",
@@ -55,7 +67,9 @@
       "tag": "Drone",
       "description": "Cuándo una toma aérea con drone ayuda a vender o arrendar una propiedad o un terreno en La Serena, Coquimbo y el Elqui, cuándo sobra y qué preparar antes del vuelo.",
       "readTime": "8 min",
-      "published": "2026-08-17"
+      "published": "2026-08-17",
+      "img": "/assets/photos/drone-coquimbo-sm.jpg",
+      "imgAlt": "Coquimbo visto desde el aire"
     },
     {
       "slug": "fotografia-inmobiliaria-checklist",
@@ -63,7 +77,9 @@
       "tag": "Inmobiliaria",
       "description": "Que dejar listo antes de que llegue el fotografo inmobiliario en La Serena y Coquimbo: orden, luz, exteriores y los detalles que arruinan una foto buena.",
       "readTime": "8 min",
-      "published": "2026-08-07"
+      "published": "2026-08-07",
+      "img": "/assets/photos/inmobiliaria-aerea-sm.jpg",
+      "imgAlt": "Vista aérea de un sector residencial"
     }
   ]
 }
