@@ -17,6 +17,8 @@
 const fs = require('fs');
 const path = require('path');
 
+const photos = require('./lib/photos.js');
+
 process.chdir(path.join(__dirname, '..'));
 
 const QUEUE_DIR = path.join('_deploy', 'posts-queue');
@@ -117,6 +119,14 @@ function renderPost(post) {
                 <p>${esc(f.a)}</p>
             </details>`).join('\n');
 
+  // La foto del artículo sale de assets/photos/credits.json — trabajo propio de
+  // TapePhoto — y su crédito va bajo la imagen, igual que en el resto del
+  // portafolio. Antes cada post compartía el mismo og:image y ninguno mostraba
+  // una foto dentro del artículo, lo que es difícil de explicar en el blog de un
+  // fotógrafo.
+  const photo = photos.photoFor(post);
+  const photoUrl = photos.ogImage(photo, ORIGIN);
+
   const articleLd = {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -126,6 +136,7 @@ function renderPost(post) {
     dateModified: post.published,
     inLanguage: 'es',
     mainEntityOfPage: `${ORIGIN}/blog/${post.slug}.html`,
+    image: photoUrl,
     author: {
       '@type': 'Person',
       '@id': `${ORIGIN}/#carlos`,
@@ -159,7 +170,11 @@ function renderPost(post) {
     <meta property="og:title" content="${esc(post.title)}">
     <meta property="og:description" content="${esc(post.description)}">
     <meta property="og:url" content="${ORIGIN}/blog/${post.slug}.html">
-    <meta property="og:image" content="${ORIGIN}/images/tape_lifestyle_setup.jpg">
+    <meta property="og:image" content="${photoUrl}">
+    <meta property="og:image:width" content="${photo.width}">
+    <meta property="og:image:height" content="${photo.height}">
+    <meta property="og:image:alt" content="${esc(photo.alt_es)}">
+    <meta name="twitter:image" content="${photoUrl}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -182,6 +197,8 @@ ${HEADER}
             <p class="article-tag">${esc(post.tag)}</p>
             <h1>${esc(post.title)}</h1>
             <p class="article-meta">Publicado el ${esc(label)} &middot; ${esc(post.readTime)} de lectura</p>
+
+${photos.figureHtml(photo)}
 
             <p class="article-lede">${esc(post.lede)}</p>
 
@@ -214,6 +231,7 @@ ${FOOTER}
 
 function renderIndex(db) {
   const cards = db.items.map((it) => `            <article class="blog-card">
+${it.img ? `                <a class="blog-card-thumb" href="${esc(it.slug)}.html"><img src="..${esc(it.img)}" width="560" height="315" alt="${esc(it.imgAlt || '')}" loading="lazy" decoding="async"></a>` : ''}
                 <p class="article-tag">${esc(it.tag)}</p>
                 <h2><a href="${esc(it.slug)}.html">${esc(it.title)}</a></h2>
                 <p class="blog-card-meta">${esc(dateLabel(it.published))} &middot; ${esc(it.readTime)} de lectura</p>
@@ -299,6 +317,8 @@ function addToIndex(db, post) {
     description: post.description,
     readTime: post.readTime,
     published: post.published,
+    img: photos.smFile(photos.photoFor(post).file),
+    imgAlt: photos.photoFor(post).alt_es,
   });
   db.updated = post.published;
 }
@@ -328,6 +348,16 @@ function main() {
   }
   fs.mkdirSync(PUBLISHED_DIR, { recursive: true });
   fs.mkdirSync(BLOG_DIR, { recursive: true });
+
+  // --rebuild-index regenera blog/index.html desde _deploy/blog-index.json sin
+  // publicar nada. Necesario cuando cambia el markup de las tarjetas — como al
+  // agregarles la miniatura del artículo.
+  if (process.argv.includes('--rebuild-index')) {
+    const db = loadIndexDb();
+    if (!DRY) fs.writeFileSync(path.join(BLOG_DIR, 'index.html'), renderIndex(db), 'utf8');
+    console.log(`blog/index.html regenerado desde ${db.items.length} artículo(s).`);
+    return;
+  }
 
   const queued = fs.readdirSync(QUEUE_DIR).filter((f) => f.endsWith('.json')).sort();
   if (!queued.length) {

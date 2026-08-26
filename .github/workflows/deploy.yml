@@ -26,6 +26,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Verify photo attribution
+        run: node _ci/validate-photo-attribution.mjs
+
       - name: Preflight — verify secrets
         run: |
           if [ -z "${{ secrets.FTP_HOST }}" ] || [ -z "${{ secrets.FTP_USER }}" ] || [ -z "${{ secrets.FTP_PASSWORD }}" ]; then

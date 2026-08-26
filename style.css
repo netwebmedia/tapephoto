@@ -1605,3 +1605,19 @@ body {
     .blog-page { padding-top: 120px; }
     .article-cta { padding: 28px 20px; }
 }
+
+/* Foto de portada del artículo y su crédito.
+   El crédito acompaña a la imagen en la propia página: es la regla que sigue
+   todo el portafolio, y en las fotos con licencia CC BY es una condición de la
+   licencia, no un adorno. Registro: assets/photos/credits.json. */
+.article-photo { margin: 0 0 28px; }
+.article-photo img {
+    width: 100%; height: auto; display: block;
+    aspect-ratio: 16 / 9; object-fit: cover; border-radius: 8px;
+}
+.article-photo figcaption {
+    margin-top: 8px; font-size: 12.5px; line-height: 1.5; opacity: .72;
+}
+.article-photo figcaption a { color: inherit; }
+.blog-card-thumb { display: block; margin: 0 0 14px; border-radius: 8px; overflow: hidden; aspect-ratio: 16 / 9; }
+.blog-card-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
