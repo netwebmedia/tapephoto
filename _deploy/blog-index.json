@@ -2,6 +2,16 @@
   "updated": "2026-08-26",
   "items": [
     {
+      "slug": "preparar-la-sesion-errores",
+      "title": "Los errores más comunes al preparar un espacio antes de una sesión de fotos",
+      "tag": "Técnica",
+      "description": "Lo que más veces arruina una sesión de fotos y no tiene que ver con la cámara: limpiar en vez de despejar, dejar la preparación para el mismo día, luces mezcladas y no saber para qué son las fotos.",
+      "readTime": "7 min",
+      "published": "2026-08-26",
+      "img": "/assets/photos/tecnica-equipo-sm.jpg",
+      "imgAlt": "Cámara montada en trípode lista para grabar"
+    },
+    {
       "slug": "fotos-para-portales-errores",
       "title": "Fotos para portales inmobiliarios: los errores que dejan una publicación sin visitas",
       "tag": "Inmobiliaria",
