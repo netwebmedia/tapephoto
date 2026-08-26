@@ -1,6 +1,16 @@
 {
-  "updated": "2026-08-25",
+  "updated": "2026-08-26",
   "items": [
+    {
+      "slug": "fotos-para-portales-errores",
+      "title": "Fotos para portales inmobiliarios: los errores que dejan una publicación sin visitas",
+      "tag": "Inmobiliaria",
+      "description": "Los errores más comunes al subir fotos a un portal inmobiliario: la portada equivocada, el orden al azar, fotos verticales de teléfono y galerías de tres imágenes. Cómo corregirlos antes de bajar el precio.",
+      "readTime": "8 min",
+      "published": "2026-08-26",
+      "img": "/assets/photos/inmobiliaria-aerea-sm.jpg",
+      "imgAlt": "Vista aérea de un sector residencial"
+    },
     {
       "slug": "fotos-de-producto-guia",
       "title": "Fotografía de producto para un negocio local: guía para quien nunca la ha encargado",
