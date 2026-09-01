@@ -93,3 +93,9 @@ RewriteRule ^([^.]+)$ /$1.html [R=301,L,QSA]
   # resource loads, so they need no entry here.
   Header always set Content-Security-Policy "default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://*.google-analytics.com https://*.googletagmanager.com; connect-src 'self' https://netwebmedia.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; object-src 'none'; frame-ancestors 'self'; base-uri 'self'; form-action 'self'"
 </IfModule>
+
+# The FTP deploy action (SamKirkland/FTP-Deploy-Action) writes its sync-state
+# file into the docroot: a JSON inventory of every deployed path + hash. It was
+# web-readable (sibling property climalerta.com served it 200 on 2026-09-01).
+# The action reads it back over FTP, so an HTTP 404 costs deploys nothing.
+RedirectMatch 404 (^|/)\.ftp-deploy-sync-state
