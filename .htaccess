@@ -25,6 +25,18 @@ RewriteCond %{HTTPS} off [OR]
 RewriteCond %{HTTP_HOST} ^www\. [NC]
 RewriteRule ^(.*)$ https://tapephoto.com/$1 [L,R=301]
 
+# Extension-less top-level paths (e.g. /services) 404'd while /blog (no
+# extension either) correctly 301'd to /blog/ — that asymmetry was just
+# Apache's own mod_dir DirectorySlash firing for a real directory, with
+# nothing equivalent for a bare path whose real file is <name>.html.
+# Redirect (not an internal rewrite) so /services.html — the URL every
+# canonical tag and internal link already uses — stays the one indexable
+# copy (audit-fix LOW, 2026-09-01).
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+RewriteRule ^([^.]+)$ /$1.html [R=301,L,QSA]
+
 # Cache policy: images 1 year immutable, HTML never cached,
 # CSS/JS short cache with revalidation
 <IfModule mod_headers.c>
