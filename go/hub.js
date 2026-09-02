@@ -31,7 +31,59 @@
     window.gtag('event', name, params);
   }
 
+  /* First-party telemetry — the in-house Linktree analytics. One POST per
+     view / click / share to api-php (data-api), JSON as text/plain so there is
+     no CORS preflight; sendBeacon survives the page unloading on a tap. */
+  function beacon(kind, extra) {
+    if (!ds.api || !ds.prop) return;
+    var payload = JSON.stringify({
+      property: ds.prop, kind: kind, label: extra.label || null,
+      url: extra.url || null, path: location.pathname, ref: document.referrer || null
+    });
+    try {
+      if (navigator.sendBeacon &&
+          navigator.sendBeacon(ds.api, new Blob([payload], { type: 'text/plain' }))) return;
+      fetch(ds.api, { method: 'POST', body: payload, keepalive: true, mode: 'cors',
+                      credentials: 'omit', headers: { 'Content-Type': 'text/plain' } })
+        .catch(function () {});
+    } catch (err) { /* telemetry must never break the hub */ }
+  }
+  beacon('view', {});
+
   document.body.className = 'js';
+
+  var shareBtn = document.querySelector('[data-share]');
+  if (shareBtn) {
+    shareBtn.addEventListener('click', function () {
+      var url = shareBtn.getAttribute('data-url');
+      track('bio_share', { link_url: url });
+      beacon('share', { url: url });
+      if (navigator.share) {
+        navigator.share({ title: document.title, url: url }).catch(function () {});
+        return;
+      }
+      var reveal = function () {   // no share sheet, no clipboard: show the URL under the QR
+        var q = document.getElementById('qr'), b = document.querySelector('.qrbtn');
+        if (q) { q.hidden = false; if (b) b.setAttribute('aria-expanded', 'true'); }
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(url).then(function () {
+          var was = shareBtn.textContent;
+          shareBtn.textContent = shareBtn.getAttribute('data-done');
+          setTimeout(function () { shareBtn.textContent = was; }, 1800);
+        }, reveal);
+      } else { reveal(); }
+    });
+  }
+  var qrBtn = document.querySelector('.qrbtn'), qr = document.getElementById('qr');
+  if (qrBtn && qr) {
+    qrBtn.addEventListener('click', function () {
+      var open = qr.hidden;
+      qr.hidden = !open;
+      qrBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      if (open) { track('bio_qr_open', {}); }
+    });
+  }
   var tabs = [].slice.call(document.querySelectorAll('[role="tab"]'));
   if (!tabs.length) return;
   var secondId = tabs[1] ? tabs[1].getAttribute('aria-controls') : null;
@@ -74,6 +126,7 @@
     }
     if (el && el !== document) {
       track('bio_click', { link_label: el.getAttribute('data-t'), link_url: el.href });
+      beacon('click', { label: el.getAttribute('data-t'), url: el.href });
     }
   });
 })();

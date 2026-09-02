@@ -53,4 +53,14 @@ a:focus-visible,button:focus-visible{outline:2px solid #0A0A0A;outline-offset:2p
 .all{display:block;text-align:center;color:#666666;font-size:14px;margin-top:14px}
 footer{text-align:center;color:#666666;font-size:14px;margin-top:32px}
 footer a{color:#666666}
+.foot-actions{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-bottom:14px}
+.share,.qrbtn{background:transparent;border:1px solid #E5E5E5;color:#666666;border-radius:999px;
+ padding:8px 16px;font:inherit;font-size:14px;cursor:pointer}
+.share:hover,.qrbtn:hover,.share:focus-visible,.qrbtn:focus-visible{color:#0A0A0A;border-color:#666666}
+.qrbtn[aria-expanded="true"]{color:#0A0A0A;border-color:#666666}
+.qr{margin:0 auto 14px;width:196px}
+.qr img{display:block;width:196px;height:196px;background:#fff;padding:8px;border-radius:12px}
+.qr p{font-size:12px;margin-top:8px;color:#666666}
+.nojs .qr[hidden]{display:block}
+.nojs .share,.nojs .qrbtn{display:none}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
