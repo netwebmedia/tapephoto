@@ -40,7 +40,7 @@ RewriteRule ^([^.]+)$ /$1.html [R=301,L,QSA]
 # Cache policy: images 1 year immutable, HTML never cached,
 # CSS/JS short cache with revalidation
 <IfModule mod_headers.c>
-  <FilesMatch "\.(jpg|jpeg|png|gif|webp|avif|svg|ico)$">
+  <FilesMatch "\.(jpg|jpeg|png|gif|webp|avif|svg|ico|woff2)$">
     Header set Cache-Control "public, max-age=31536000, immutable"
   </FilesMatch>
   <FilesMatch "\.(html)$">
@@ -65,6 +65,10 @@ RewriteRule ^([^.]+)$ /$1.html [R=301,L,QSA]
   Header always set X-Content-Type-Options "nosniff"
   Header always set Referrer-Policy "strict-origin-when-cross-origin"
   Header always set X-Frame-Options "SAMEORIGIN"
+  # Added 2026-09-02 (Don Gaston scorecard "Fix first"): the site uses none of
+  # these browser features, so deny them outright; also stops any third-party
+  # script that ever lands here from asking for them.
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
 
   # Enforced CSP (not Report-Only). Audited 2026-08-18 over every page in this
   # repo AND the live blog output, because the blog machine publishes here
@@ -86,8 +90,10 @@ RewriteRule ^([^.]+)$ /$1.html [R=301,L,QSA]
   # js/analytics.js injects gtag at runtime, so googletagmanager needs script-src
   # and the collect beacon + pixel need connect-src and img-src. All three are
   # required — miss one and GA4 reports nothing while the page looks perfect.
-  # Google Fonts is the only other third party: the stylesheet from
-  # fonts.googleapis.com, the faces from fonts.gstatic.com.
+  # Google Fonts moved in-house on 2026-09-02 (/fonts/, @font-face at the top
+  # of style.css) so the critical path has no third-party origin. The
+  # fonts.googleapis.com / fonts.gstatic.com allowances stay: they cost
+  # nothing and protect any page or blog post that still carries the old link.
   #
   # Outbound links (instagram.com, facebook.com, wa.me) are anchor hrefs, not
   # resource loads, so they need no entry here.

@@ -175,10 +175,13 @@ function renderPost(post) {
     <meta property="og:image:height" content="${photo.height}">
     <meta property="og:image:alt" content="${esc(photo.alt_es)}">
     <meta name="twitter:image" content="${photoUrl}">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <!-- Fonts are self-hosted (@font-face at the top of style.css); preload the two above-the-fold faces. -->
+    <link rel="preload" href="/fonts/inter-300-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/playfair-display-400-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../style.css?v=20260902">
     <script type="application/ld+json">
 ${JSON.stringify(articleLd, null, 2)}
     </script>
@@ -186,7 +189,7 @@ ${JSON.stringify(articleLd, null, 2)}
 ${JSON.stringify(faqLd, null, 2)}
     </script>
     <!-- Analytics: the GA4 Measurement ID lives in analytics.js (one place, whole site). -->
-    <script src="../analytics.js"></script>
+    <script src="../analytics.js" defer></script>
 </head>
 <body>
 
@@ -221,7 +224,7 @@ ${faqHtml}
 
 ${FOOTER}
 
-    <script src="../main.js"></script>
+    <script src="../main.js" defer></script>
 </body>
 </html>
 `;
@@ -263,15 +266,18 @@ ${it.img ? `                <a class="blog-card-thumb" href="${esc(it.slug)}.htm
     <meta property="og:description" content="Gu&iacute;as de fotograf&iacute;a inmobiliaria, corporativa, de hoteles y drone en La Serena y Coquimbo.">
     <meta property="og:url" content="${ORIGIN}/blog/">
     <meta property="og:image" content="${ORIGIN}/images/tape_lifestyle_setup.jpg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <!-- Fonts are self-hosted (@font-face at the top of style.css); preload the two above-the-fold faces. -->
+    <link rel="preload" href="/fonts/inter-300-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/playfair-display-400-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../style.css?v=20260902">
     <script type="application/ld+json">
 ${JSON.stringify(ld, null, 2)}
     </script>
     <!-- Analytics: the GA4 Measurement ID lives in analytics.js (one place, whole site). -->
-    <script src="../analytics.js"></script>
+    <script src="../analytics.js" defer></script>
 </head>
 <body>
 
@@ -294,7 +300,7 @@ ${cards}
 
 ${FOOTER}
 
-    <script src="../main.js"></script>
+    <script src="../main.js" defer></script>
 </body>
 </html>
 `;
