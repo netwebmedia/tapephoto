@@ -15,12 +15,15 @@
     <meta property="og:url" content="https://tapephoto.com/contacto.html">
     <meta property="og:image" content="https://tapephoto.com/images/coastal_aerial.jpg">
     <meta property="og:locale" content="es_CL">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <!-- Fonts are self-hosted (@font-face at the top of style.css); preload the two above-the-fold faces. -->
+    <link rel="preload" href="/fonts/inter-300-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/playfair-display-400-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="style.css?v=20260902">
     <!-- Analytics: the GA4 Measurement ID lives in analytics.js (one place, whole site). -->
-    <script src="analytics.js"></script>
+    <script src="analytics.js" defer></script>
 </head>
 <body>
 
@@ -106,6 +109,6 @@
         </div>
     </footer>
 
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
 </body>
 </html>

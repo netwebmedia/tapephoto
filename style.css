@@ -1,3 +1,36 @@
+/* -- Self-hosted web fonts (tools/selfhost-google-fonts.py, 2026-09-02) --
+   Was a fonts.googleapis.com stylesheet + fonts.gstatic.com faces: two extra
+   origins on the critical path and the largest render-blocking item on every
+   page (854 ms on the live homepage). Served from /fonts/ now; the variable
+   files carry the whole weight range each page used (Inter 300-700, Playfair
+   400-700 upright + italic). font-display: optional = zero layout shift; the
+   browser waits ~100 ms and otherwise keeps the fallback for that page view.
+   Latin subset only; other scripts fall back through the unicode-range. */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: optional;
+  src: url(/fonts/inter-300-700.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: optional;
+  src: url(/fonts/playfair-display-400-700.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 400 700;
+  font-display: optional;
+  src: url(/fonts/playfair-display-400-700-italic.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 /*
    TapePhoto Design System
    Full-canvas, immersive photography portfolio
@@ -501,13 +534,24 @@ body {
     border-top: 1px solid rgba(255,255,255,0.06);
 }
 
-/* 2.59:1 -> 6.26:1 */
+/* Explicit greys, no opacity: the 0.55 on the paragraph multiplied with the
+   links' own opacity and axe measured the links at 4.3:1 (2026-09-02
+   Lighthouse). #A3A3A3 on #0A0A0A = 7.9:1; links #D4D4D4 = 13.4:1 and
+   underlined so they are not distinguished by colour alone. */
 .footer-bottom p {
     font-size: 0.65rem;
     letter-spacing: 0.1em;
-    opacity: 0.55;
+    color: #A3A3A3;
     text-transform: uppercase;
 }
+
+.footer-bottom p a {
+    color: #D4D4D4;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.footer-bottom p a:hover { color: var(--white); }
 
 /* ============ LIGHTBOX ============ */
 .lightbox {
@@ -828,12 +872,12 @@ body {
 .footer-credit { margin-top: 10px; }
 
 .footer-credit a {
-    color: var(--white);
-    text-decoration: none;
-    opacity: 0.8;
+    color: #D4D4D4;
+    text-decoration: underline;
+    text-underline-offset: 2px;
 }
 
-.footer-credit a:hover { text-decoration: underline; }
+.footer-credit a:hover { color: var(--white); }
 
 /* ============ CONTACT FORM STATES ============ */
 .hp-field {

@@ -13,10 +13,13 @@
     <meta property="og:url" content="https://tapephoto.com/">
     <meta property="og:image" content="https://tapephoto.com/images/tape_aerial_coast.jpg">
     <meta name="twitter:card" content="summary_large_image">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <!-- Fonts are self-hosted (@font-face at the top of style.css); preload the two above-the-fold faces. -->
+    <link rel="preload" href="/fonts/inter-300-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/playfair-display-400-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="style.css?v=20260902">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -76,17 +79,17 @@
     }
     </script>
     <!-- Analytics: the GA4 Measurement ID lives in analytics.js (one place, whole site). -->
-    <script src="analytics.js"></script>
+    <script src="analytics.js" defer></script>
 </head>
 <body>
 
     <!-- Full-screen hero -->
     <section class="hero" id="home">
-        <img src="images/jackblack_lebowski.jpg" alt="Jack Black at Lebowski Fest, Los Angeles" class="hero-img">
+        <img src="images/jackblack_lebowski.jpg" alt="Jack Black at Lebowski Fest, Los Angeles" class="hero-img" width="1080" height="720" fetchpriority="high">
         <div class="hero-overlay"></div>
         <header class="header">
             <a href="index.html" class="logo logo-mark" aria-label="tapephoto">
-                <img src="images/logo.svg" alt="tapephoto" />
+                <img src="images/logo.svg" alt="tapephoto" width="240" height="64">
             </a>
             <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav">
                 <span></span><span></span>
@@ -122,7 +125,7 @@
         <div class="photo-grid">
             <!-- Row 1: wide aerial + tall concert -->
             <div class="photo-item photo-wide">
-                <img src="images/tape_aerial_coast.jpg" alt="Coastal Aerial Drone Photography" loading="lazy">
+                <img src="images/tape_aerial_coast.jpg" alt="Coastal Aerial Drone Photography" width="1600" height="900" loading="lazy">
                 <div class="photo-overlay">
                     <span class="photo-category">Aerial</span>
                     <h3>Coastal Views</h3>
@@ -130,7 +133,7 @@
             </div>
 
             <div class="photo-item photo-tall">
-                <img src="images/tape_music_concert.jpg" alt="Live Concert Performance" loading="lazy">
+                <img src="images/tape_music_concert.jpg" alt="Live Concert Performance" width="1600" height="1066" loading="lazy">
                 <div class="photo-overlay">
                     <span class="photo-category">Concert</span>
                     <h3>On Stage</h3>
@@ -139,7 +142,7 @@
 
             <!-- Row 2: IndyCar + portrait -->
             <div class="photo-item">
-                <img src="images/tape_motorsport_indycar.jpg" alt="IndyCar Racing - US Concrete" loading="lazy">
+                <img src="images/tape_motorsport_indycar.jpg" alt="IndyCar Racing - US Concrete" width="1365" height="910" loading="lazy">
                 <div class="photo-overlay">
                     <span class="photo-category">Motorsport</span>
                     <h3>IndyCar</h3>
@@ -147,7 +150,7 @@
             </div>
 
             <div class="photo-item">
-                <img src="images/tape_portrait_carlos.jpg" alt="Carlos Martinez - Self Portrait" loading="lazy">
+                <img src="images/tape_portrait_carlos.jpg" alt="Carlos Martinez - Self Portrait" width="960" height="960" loading="lazy">
                 <div class="photo-overlay">
                     <span class="photo-category">Portrait</span>
                     <h3>Behind the Lens</h3>
@@ -156,7 +159,7 @@
 
             <!-- Row 3: WRC Ford jump wide + IndyCar Sato -->
             <div class="photo-item photo-wide">
-                <img src="images/tape_rally_ford_jump.jpg" alt="WRC Ford Fiesta mid-air jump with forest sun rays" loading="lazy">
+                <img src="images/tape_rally_ford_jump.jpg" alt="WRC Ford Fiesta mid-air jump with forest sun rays" width="1600" height="1066" loading="lazy">
                 <div class="photo-overlay">
                     <span class="photo-category">Motorsport</span>
                     <h3>Airborne</h3>
@@ -164,7 +167,7 @@
             </div>
 
             <div class="photo-item">
-                <img src="images/tape_indycar_sato.jpg" alt="Takuma Sato Panasonic IndyCar panning" loading="lazy">
+                <img src="images/tape_indycar_sato.jpg" alt="Takuma Sato Panasonic IndyCar panning" width="1440" height="959" loading="lazy">
                 <div class="photo-overlay">
                     <span class="photo-category">Motorsport</span>
                     <h3>Sato / Panasonic</h3>
@@ -173,7 +176,7 @@
 
             <!-- Row 4: wildlife wide + landscape -->
             <div class="photo-item photo-wide">
-                <img src="images/tape_wildlife_caiman.jpg" alt="Caiman wildlife close-up" loading="lazy">
+                <img src="images/tape_wildlife_caiman.jpg" alt="Caiman wildlife close-up" width="1440" height="960" loading="lazy">
                 <div class="photo-overlay">
                     <span class="photo-category">Wildlife</span>
                     <h3>Into the Wild</h3>
@@ -181,7 +184,7 @@
             </div>
 
             <div class="photo-item">
-                <img src="images/tape_landscape_sunset.jpg" alt="Sunset Landscape Photography" loading="lazy">
+                <img src="images/tape_landscape_sunset.jpg" alt="Sunset Landscape Photography" width="1600" height="1066" loading="lazy">
                 <div class="photo-overlay">
                     <span class="photo-category">Landscape</span>
                     <h3>Golden Hour</h3>
@@ -190,7 +193,7 @@
 
             <!-- Row 5: Hyundai rally + vertical rally jump tall -->
             <div class="photo-item">
-                <img src="images/tape_rally_hyundai.jpg" alt="WRC Hyundai i20 mid-air on dirt stage" loading="lazy">
+                <img src="images/tape_rally_hyundai.jpg" alt="WRC Hyundai i20 mid-air on dirt stage" width="1600" height="1066" loading="lazy">
                 <div class="photo-overlay">
                     <span class="photo-category">Motorsport</span>
                     <h3>Hyundai WRC</h3>
@@ -198,7 +201,7 @@
             </div>
 
             <div class="photo-item photo-tall">
-                <img src="images/tape_rally_vertical.jpg" alt="WRC rally car jump - vertical composition" loading="lazy">
+                <img src="images/tape_rally_vertical.jpg" alt="WRC rally car jump - vertical composition" width="1066" height="1600" loading="lazy">
                 <div class="photo-overlay">
                     <span class="photo-category">Motorsport</span>
                     <h3>Liftoff</h3>
@@ -207,7 +210,7 @@
 
             <!-- Row 6: urban SF + IndyCar corner -->
             <div class="photo-item">
-                <img src="images/tape_urban_sanfrancisco.jpg" alt="San Francisco Skyline - Urban Cityscape" loading="lazy">
+                <img src="images/tape_urban_sanfrancisco.jpg" alt="San Francisco Skyline - Urban Cityscape" width="1440" height="908" loading="lazy">
                 <div class="photo-overlay">
                     <span class="photo-category">Urban</span>
                     <h3>San Francisco</h3>
@@ -215,7 +218,7 @@
             </div>
 
             <div class="photo-item">
-                <img src="images/tape_indycar_corner.jpg" alt="IndyCar on corner - panning" loading="lazy">
+                <img src="images/tape_indycar_corner.jpg" alt="IndyCar on corner - panning" width="1600" height="1067" loading="lazy">
                 <div class="photo-overlay">
                     <span class="photo-category">Motorsport</span>
                     <h3>Apex</h3>
@@ -224,7 +227,7 @@
 
             <!-- Row 7: Citroen flags wide + Toyota fog -->
             <div class="photo-item photo-wide">
-                <img src="images/tape_rally_citroen_flags.jpg" alt="WRC Citroen powering through crowd and flags" loading="lazy">
+                <img src="images/tape_rally_citroen_flags.jpg" alt="WRC Citroen powering through crowd and flags" width="1600" height="1066" loading="lazy">
                 <div class="photo-overlay">
                     <span class="photo-category">Motorsport</span>
                     <h3>Home Crowd</h3>
@@ -232,7 +235,7 @@
             </div>
 
             <div class="photo-item">
-                <img src="images/tape_rally_toyota_fog.jpg" alt="WRC Toyota emerging from fog" loading="lazy">
+                <img src="images/tape_rally_toyota_fog.jpg" alt="WRC Toyota emerging from fog" width="1600" height="1066" loading="lazy">
                 <div class="photo-overlay">
                     <span class="photo-category">Motorsport</span>
                     <h3>Through the Fog</h3>
@@ -241,7 +244,7 @@
 
             <!-- Row 8: concert B&W second + portrait hat -->
             <div class="photo-item">
-                <img src="images/tape_concert_mic.jpg" alt="Concert performance in black and white - at the mic" loading="lazy">
+                <img src="images/tape_concert_mic.jpg" alt="Concert performance in black and white - at the mic" width="1440" height="1080" loading="lazy">
                 <div class="photo-overlay">
                     <span class="photo-category">Concert</span>
                     <h3>The Mic</h3>
@@ -249,7 +252,7 @@
             </div>
 
             <div class="photo-item">
-                <img src="images/tape_portrait_hat.jpg" alt="Portrait of woman in hat - editorial" loading="lazy">
+                <img src="images/tape_portrait_hat.jpg" alt="Portrait of woman in hat - editorial" width="1440" height="1440" loading="lazy">
                 <div class="photo-overlay">
                     <span class="photo-category">Portrait</span>
                     <h3>Editorial</h3>
@@ -258,7 +261,7 @@
 
             <!-- Row 9: nightscape wide + rally Citroen slide -->
             <div class="photo-item photo-wide">
-                <img src="images/tape_nightscape_lights.jpg" alt="City Lights From Above - B&amp;W Nightscape" loading="lazy">
+                <img src="images/tape_nightscape_lights.jpg" alt="City Lights From Above - B&amp;W Nightscape" width="1600" height="1067" loading="lazy">
                 <div class="photo-overlay">
                     <span class="photo-category">Nightscape</span>
                     <h3>City Lights</h3>
@@ -266,7 +269,7 @@
             </div>
 
             <div class="photo-item">
-                <img src="images/tape_rally_citroen_slide.jpg" alt="WRC Citroen power-sliding through dust" loading="lazy">
+                <img src="images/tape_rally_citroen_slide.jpg" alt="WRC Citroen power-sliding through dust" width="1600" height="1066" loading="lazy">
                 <div class="photo-overlay">
                     <span class="photo-category">Motorsport</span>
                     <h3>Sideways</h3>
@@ -275,7 +278,7 @@
 
             <!-- Row 10: pits/paddock wide + photographer setup -->
             <div class="photo-item photo-wide">
-                <img src="images/tape_motorsport_pits.jpg" alt="Motorsport paddock and pit lane" loading="lazy">
+                <img src="images/tape_motorsport_pits.jpg" alt="Motorsport paddock and pit lane" width="1600" height="1200" loading="lazy">
                 <div class="photo-overlay">
                     <span class="photo-category">Motorsport</span>
                     <h3>In the Pits</h3>
@@ -283,7 +286,7 @@
             </div>
 
             <div class="photo-item">
-                <img src="images/tape_lifestyle_setup.jpg" alt="Camera and tripod setup - behind the scenes" loading="lazy">
+                <img src="images/tape_lifestyle_setup.jpg" alt="Camera and tripod setup - behind the scenes" width="1440" height="1440" loading="lazy">
                 <div class="photo-overlay">
                     <span class="photo-category">Lifestyle</span>
                     <h3>The Setup</h3>
@@ -294,7 +297,7 @@
 
     <!-- Full-width statement -->
     <section class="statement-section">
-        <img src="images/tape_aerial_coast.jpg" alt="Aerial Photography" class="statement-bg">
+        <img src="images/tape_aerial_coast.jpg" alt="Aerial Photography" class="statement-bg" width="1600" height="900" loading="lazy">
         <div class="statement-overlay"></div>
         <div class="statement-content">
             <blockquote>
@@ -309,7 +312,7 @@
         <div class="footer-inner">
             <div class="footer-brand">
                 <a href="index.html" class="logo logo-mark" aria-label="tapephoto">
-                    <img src="images/logo.svg" alt="tapephoto" />
+                    <img src="images/logo.svg" alt="tapephoto" width="240" height="64">
                 </a>
                 <p>Carlos Martinez Photography<br>Coquimbo, Chile</p>
                 <div class="footer-contact">
@@ -344,6 +347,6 @@
         <img src="" alt="" class="lightbox-img">
     </div>
 
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
 </body>
 </html>
