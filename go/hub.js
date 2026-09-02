@@ -62,13 +62,17 @@
         navigator.share({ title: document.title, url: url }).catch(function () {});
         return;
       }
-      if (navigator.clipboard) {
+      var reveal = function () {   // no share sheet, no clipboard: show the URL under the QR
+        var q = document.getElementById('qr'), b = document.querySelector('.qrbtn');
+        if (q) { q.hidden = false; if (b) b.setAttribute('aria-expanded', 'true'); }
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
         navigator.clipboard.writeText(url).then(function () {
           var was = shareBtn.textContent;
           shareBtn.textContent = shareBtn.getAttribute('data-done');
           setTimeout(function () { shareBtn.textContent = was; }, 1800);
-        }, function () {});
-      }
+        }, reveal);
+      } else { reveal(); }
     });
   }
   var qrBtn = document.querySelector('.qrbtn'), qr = document.getElementById('qr');
