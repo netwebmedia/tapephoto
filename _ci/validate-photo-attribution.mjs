@@ -21,6 +21,13 @@ import { fileURLToPath } from "node:url";
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const ORIGIN = "https://tapephoto.com";
 
+// COMPARISON KEYS, not the URL we render. Every lookup goes through normalise()
+// below, which strips the scheme difference, /deed.<lang> and the trailing slash,
+// so these are deliberately written in that stripped form and must stay that way —
+// adding the trailing slash here matches nothing and would fail every third-party
+// photo the moment one is added. The href that actually ships is credits.json's
+// license_url, which must carry the trailing slash: creativecommons.org 301s the
+// bare form, and an attribution link is a licence condition, not decoration.
 const ALLOWED_LICENCES = new Set([
   "https://creativecommons.org/licenses/by/2.0",
   "https://creativecommons.org/licenses/by/3.0",
