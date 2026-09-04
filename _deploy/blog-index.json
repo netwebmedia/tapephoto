@@ -1,6 +1,16 @@
 {
-  "updated": "2026-08-31",
+  "updated": "2026-09-04",
   "items": [
+    {
+      "slug": "derechos-de-uso-de-las-fotos",
+      "title": "Derechos de uso de las fotos: qué puedes publicar, dónde y por cuánto tiempo",
+      "tag": "Empresas",
+      "description": "Quién es dueño de las fotos que encargaste, para qué las puedes usar y qué conviene dejar por escrito antes de la sesión, explicado sin tecnicismos.",
+      "readTime": "7 min",
+      "published": "2026-09-04",
+      "img": "/assets/photos/empresas-retrato-sm.jpg",
+      "imgAlt": "Retrato en exteriores con luz natural"
+    },
     {
       "slug": "la-hora-del-dia-decide-la-foto",
       "title": "La hora del día decide la foto: luz natural y qué no se arregla en edición",
