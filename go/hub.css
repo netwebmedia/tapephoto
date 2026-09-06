@@ -63,4 +63,10 @@ footer a{color:#666666}
 .qr p{font-size:12px;margin-top:8px;color:#666666}
 .nojs .qr[hidden]{display:block}
 .nojs .share,.nojs .qrbtn{display:none}
+.more{margin-top:26px;padding-top:18px;border-top:1px solid #E5E5E5}
+.more .sec{margin-bottom:10px}
+.more ul{flex-direction:row;flex-wrap:wrap;justify-content:center;gap:6px 14px}
+.more li{list-style:none}
+.more a{color:#666666;font-size:14px;text-decoration:none}
+.more a:hover,.more a:focus-visible{color:#0A0A0A;text-decoration:underline}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
