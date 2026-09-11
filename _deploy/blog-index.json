@@ -2,6 +2,126 @@
   "updated": "2026-09-11",
   "items": [
     {
+      "slug": "video-aereo-vs-foto-aerea-cuando-conviene-cada-uno",
+      "title": "Video aéreo o foto aérea: cuándo conviene cada uno para una propiedad",
+      "tag": "Drone",
+      "description": "El drone puede entregar fotos fijas o video en movimiento, y no siempre conviene pedir los dos. Qué tipo de propiedad se beneficia más de cada formato y por qué el costo y el uso final deciden la elección.",
+      "readTime": "7 min",
+      "published": "2026-09-11",
+      "img": "/assets/photos/drone-coquimbo-sm.jpg",
+      "imgAlt": "Coquimbo visto desde el aire"
+    },
+    {
+      "slug": "que-es-resolucion-para-web-y-por-que-importa",
+      "title": "Qué significa \"resolución para web\" y por qué importa al publicar en un portal",
+      "tag": "Técnica",
+      "description": "Un fotógrafo entrega archivos en distintas resoluciones según el uso, y no siempre queda claro por qué. Una explicación simple de qué es la resolución para web, por qué existe, y qué pasa si se usa la equivocada.",
+      "readTime": "7 min",
+      "published": "2026-09-11",
+      "img": "/assets/photos/empresas-retrato-2-sm.jpg",
+      "imgAlt": "Retrato en primer plano con luz de tarde"
+    },
+    {
+      "slug": "permisos-de-vuelo-drone-en-chile-lo-basico",
+      "title": "Drone para fotografía inmobiliaria: lo básico sobre permisos que un corredor debería saber",
+      "tag": "Drone",
+      "description": "Antes de pedir tomas aéreas de una propiedad, vale la pena entender por qué el fotógrafo pregunta por zonas restringidas, altura máxima y cercanía a aeródromos. Una introducción general, no asesoría legal.",
+      "readTime": "8 min",
+      "published": "2026-09-11",
+      "img": "/assets/photos/drone-ciudad-noche-sm.jpg",
+      "imgAlt": "Las luces de la ciudad vistas desde el aire de noche"
+    },
+    {
+      "slug": "mejor-epoca-del-ano-para-fotos-turisticas-en-coquimbo",
+      "title": "Mejor época del año para fotografiar un negocio turístico en Coquimbo y La Serena",
+      "tag": "Turismo",
+      "description": "El paisaje de la región cambia bastante entre temporada alta y temporada baja. Cuándo conviene realmente fotografiar un hotel, una cabaña o un tour, y por qué la fecha ideal no siempre es la que parece obvia.",
+      "readTime": "7 min",
+      "published": "2026-09-11",
+      "img": "/assets/photos/turismo-atardecer-sm.jpg",
+      "imgAlt": "Atardecer sobre la bahía"
+    },
+    {
+      "slug": "matrimonios-y-celebraciones-corporativas-fotografia",
+      "title": "Matrimonios en recintos con uso corporativo: qué cambia cuando el evento no es de la empresa dueña del lugar",
+      "tag": "Eventos",
+      "description": "Un hotel, un viñedo o un club de campo que arrienda su espacio para matrimonios necesita fotografía distinta a la de su operación diaria. Qué implica cubrir un evento privado dentro de un espacio comercial.",
+      "readTime": "7 min",
+      "published": "2026-09-11",
+      "img": "/assets/photos/turismo-ciudad-sm.jpg",
+      "imgAlt": "Panorámica urbana desde un cerro"
+    },
+    {
+      "slug": "fotos-de-linkedin-para-un-equipo-profesional",
+      "title": "Fotos de LinkedIn para un equipo profesional: en qué se diferencian de un retrato cualquiera",
+      "tag": "Empresas",
+      "description": "Una foto de perfil profesional no es solo un retrato con buena luz: tiene un formato, un contexto y un propósito distintos a cualquier otra foto de una persona. Qué diferencia una sesión de LinkedIn de una sesión corporativa genérica.",
+      "readTime": "7 min",
+      "published": "2026-09-11",
+      "img": "/assets/photos/tecnica-equipo-sm.jpg",
+      "imgAlt": "Cámara montada en trípode lista para grabar"
+    },
+    {
+      "slug": "fotografo-de-evento-vs-cobertura-de-prensa",
+      "title": "Fotógrafo de evento o cobertura tipo prensa: no son lo mismo, y conviene saber cuál se necesita",
+      "tag": "Eventos",
+      "description": "Contratar cobertura fotográfica para un evento corporativo puede significar dos cosas distintas: un registro completo del evento, o material editorial listo para prensa y redes. Confundirlas produce entregas que no sirven para lo que se necesitaba.",
+      "readTime": "7 min",
+      "published": "2026-09-11",
+      "img": "/assets/photos/eventos-indycar-sm.jpg",
+      "imgAlt": "Un monoplaza tomando una curva del circuito"
+    },
+    {
+      "slug": "fotografiar-un-lanzamiento-de-producto-o-feria",
+      "title": "Fotografiar un lanzamiento de producto o una feria comercial: qué momentos no se pueden repetir",
+      "tag": "Eventos",
+      "description": "A diferencia de una sesión de producto en estudio, un lanzamiento o una feria ocurre una sola vez, en vivo, frente a personas reales. Qué hay que anticipar antes de que empiece, porque después no hay segunda oportunidad.",
+      "readTime": "7 min",
+      "published": "2026-09-11",
+      "img": "/assets/photos/eventos-microfono-sm.jpg",
+      "imgAlt": "Un vocalista frente al micrófono en un show"
+    },
+    {
+      "slug": "fotografiar-turismo-astronomico-y-observatorios",
+      "title": "Fotografiar turismo astronómico: el desafío de mostrar de día algo que ocurre de noche",
+      "tag": "Turismo",
+      "description": "La región es reconocida por sus cielos y su turismo astronómico, pero fotografiar esa experiencia tiene un problema particular: buena parte de lo que se vende ocurre en total oscuridad. Cómo se resuelve esa tensión.",
+      "readTime": "8 min",
+      "published": "2026-09-11",
+      "img": "/assets/photos/turismo-atardecer-sm.jpg",
+      "imgAlt": "Atardecer sobre la bahía"
+    },
+    {
+      "slug": "fotografiar-propiedad-en-verde-construccion",
+      "title": "Fotografiar una propiedad en verde: qué se puede mostrar antes de que esté terminada",
+      "tag": "Inmobiliaria",
+      "description": "Vender en verde significa vender algo que todavía no existe. Qué puede fotografiar realmente un fotógrafo en una obra a medio construir, y qué recursos reemplazan a la propiedad terminada mientras tanto.",
+      "readTime": "7 min",
+      "published": "2026-09-11",
+      "img": "/assets/photos/inmobiliaria-cover-sm.jpg",
+      "imgAlt": "Portada: bloques isométricos superpuestos"
+    },
+    {
+      "slug": "fotografiar-procesos-productivos-y-talleres",
+      "title": "Fotografiar procesos productivos y talleres: mostrar cómo se hace algo, no solo el resultado",
+      "tag": "Empresas",
+      "description": "Una fábrica, un taller o una cocina en funcionamiento tienen algo que un producto terminado no muestra: el trabajo detrás. Cómo se fotografía un proceso en movimiento sin interrumpir la producción real.",
+      "readTime": "8 min",
+      "published": "2026-09-11",
+      "img": "/assets/photos/empresas-retrato-sm.jpg",
+      "imgAlt": "Retrato en exteriores con luz natural"
+    },
+    {
+      "slug": "fotografia-para-tours-y-actividades-turisticas",
+      "title": "Fotografía para tours y actividades turísticas: qué esperar de una sesión en movimiento",
+      "tag": "Turismo",
+      "description": "Excursiones, cabalgatas, kayak, avistamiento de estrellas: fotografiar una actividad turística no es lo mismo que fotografiar un hotel. Qué cambia cuando el sujeto no está quieto y el entorno no se controla del todo.",
+      "readTime": "7 min",
+      "published": "2026-09-11",
+      "img": "/assets/photos/turismo-ciudad-sm.jpg",
+      "imgAlt": "Panorámica urbana desde un cerro"
+    },
+    {
       "slug": "fotografia-aerea-para-parcelas-y-fundos",
       "title": "Fotografía aérea para parcelas y fundos: qué muestra el drone que una visita a pie no puede",
       "tag": "Drone",
