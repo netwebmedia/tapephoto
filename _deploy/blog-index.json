@@ -1,6 +1,106 @@
 {
-  "updated": "2026-09-08",
+  "updated": "2026-09-11",
   "items": [
+    {
+      "slug": "fotografia-aerea-para-parcelas-y-fundos",
+      "title": "Fotografía aérea para parcelas y fundos: qué muestra el drone que una visita a pie no puede",
+      "tag": "Drone",
+      "description": "Una parcela de varias hectáreas es casi imposible de entender caminándola. Qué información entrega realmente una toma aérea sobre deslindes, topografía y uso del suelo, y cómo prepararla antes del vuelo.",
+      "readTime": "8 min",
+      "published": "2026-09-11",
+      "img": "/assets/photos/drone-coquimbo-sm.jpg",
+      "imgAlt": "Coquimbo visto desde el aire"
+    },
+    {
+      "slug": "foto-vertical-vs-horizontal-redes-y-portales",
+      "title": "Foto vertical u horizontal: por qué el mismo encuadre no sirve para redes sociales y para un portal",
+      "tag": "Técnica",
+      "description": "Una misma sesión de fotos suele terminar publicada en varios lugares distintos, y cada uno espera un formato diferente. Por qué pedir el formato correcto desde la sesión evita recortes forzados después.",
+      "readTime": "7 min",
+      "published": "2026-09-11",
+      "img": "/assets/photos/tecnica-pits-sm.jpg",
+      "imgAlt": "Trabajo de cobertura desde los pits"
+    },
+    {
+      "slug": "errores-del-corredor-al-coordinar-la-sesion",
+      "title": "Errores frecuentes del corredor al coordinar una sesión de fotos, no del dueño",
+      "tag": "Inmobiliaria",
+      "description": "La mayoría de las guías hablan de cómo debe preparar la propiedad el dueño. Esta habla del otro lado: los errores de coordinación que comete el corredor y que arruinan una sesión antes de que empiece.",
+      "readTime": "7 min",
+      "published": "2026-09-11",
+      "img": "/assets/photos/inmobiliaria-cover-sm.jpg",
+      "imgAlt": "Portada: bloques isométricos superpuestos"
+    },
+    {
+      "slug": "edicion-de-fotos-inmobiliarias-que-se-corrige-y-que-no",
+      "title": "Edición de fotos inmobiliarias: qué se corrige y qué cruza la línea hacia lo engañoso",
+      "tag": "Técnica",
+      "description": "Toda foto inmobiliaria pasa por algún nivel de edición. La pregunta importante no es si se edita, sino dónde está la línea entre corregir y engañar, y por qué cruzarla termina saliendo caro.",
+      "readTime": "8 min",
+      "published": "2026-09-11",
+      "img": "/assets/photos/inmobiliaria-aerea-sm.jpg",
+      "imgAlt": "Vista aérea de un sector residencial"
+    },
+    {
+      "slug": "departamentos-pequenos-fotografia-inmobiliaria",
+      "title": "Fotografiar departamentos pequeños: cómo se ven más amplios sin exagerar",
+      "tag": "Inmobiliaria",
+      "description": "Un departamento de 35 o 45 metros no necesita lentes que lo deformen para verse bien publicado. Qué hace que un espacio chico se lea amplio en foto, y dónde está la línea entre mostrar bien y mostrar mentira.",
+      "readTime": "8 min",
+      "published": "2026-09-11",
+      "img": "/assets/photos/inmobiliaria-aerea-sm.jpg",
+      "imgAlt": "Vista aérea de un sector residencial"
+    },
+    {
+      "slug": "cuantas-fotos-necesita-una-publicacion-inmobiliaria",
+      "title": "Cuántas fotos necesita realmente una publicación inmobiliaria",
+      "tag": "Inmobiliaria",
+      "description": "Publicar 8 fotos o publicar 40 no es una decisión de gusto: depende del tipo de propiedad, del portal y de qué necesita ver alguien antes de agendar una visita. Una guía de cantidad y orden, no solo de calidad.",
+      "readTime": "7 min",
+      "published": "2026-09-11",
+      "img": "/assets/photos/inmobiliaria-aerea-sm.jpg",
+      "imgAlt": "Vista aérea de un sector residencial"
+    },
+    {
+      "slug": "cuantas-fotos-entrega-un-fotografo-de-evento-y-en-cuanto-tiempo",
+      "title": "Cuántas fotos entrega un fotógrafo de evento, y en cuánto tiempo",
+      "tag": "Eventos",
+      "description": "Después de contratar cobertura para un evento, la pregunta que casi todos hacen es cuántas fotos van a recibir y cuándo. Qué determina esos números y por qué varían tanto entre un evento y otro.",
+      "readTime": "7 min",
+      "published": "2026-09-11",
+      "img": "/assets/photos/eventos-concierto-sm.jpg",
+      "imgAlt": "Un cantante en vivo, fotografiado en blanco y negro"
+    },
+    {
+      "slug": "crear-un-banco-de-imagenes-propio-para-la-empresa",
+      "title": "Cómo crear un banco de imágenes propio para la empresa en una sola sesión",
+      "tag": "Empresas",
+      "description": "En vez de contratar sesiones sueltas cada vez que se necesita una foto nueva, una empresa puede planificar un encargo que le deje un banco de imágenes propio para usar durante meses. Cómo planificar esa sesión.",
+      "readTime": "8 min",
+      "published": "2026-09-11",
+      "img": "/assets/photos/empresas-calle-sm.jpg",
+      "imgAlt": "Escena urbana en una estación"
+    },
+    {
+      "slug": "como-preparar-al-personal-antes-de-la-sesion",
+      "title": "Cómo preparar al personal, no solo el local, antes de una sesión corporativa",
+      "tag": "Empresas",
+      "description": "Las guías de preparación suelen hablar del espacio: orden, limpieza, iluminación. Pocas hablan de preparar a las personas que van a aparecer en las fotos, y ahí también hay decisiones que cambian el resultado.",
+      "readTime": "7 min",
+      "published": "2026-09-11",
+      "img": "/assets/photos/empresas-retrato-2-sm.jpg",
+      "imgAlt": "Retrato en primer plano con luz de tarde"
+    },
+    {
+      "slug": "airbnb-vs-hotel-formal-que-cambia-en-las-fotos",
+      "title": "Airbnb o arriendo de temporada vs hotel formal: qué cambia en la fotografía",
+      "tag": "Turismo",
+      "description": "Un departamento en arriendo de temporada y un hotel se fotografían con lógicas distintas, aunque ambos vendan una estadía. Qué espera ver realmente quien reserva en cada tipo de plataforma.",
+      "readTime": "7 min",
+      "published": "2026-09-11",
+      "img": "/assets/photos/turismo-atardecer-sm.jpg",
+      "imgAlt": "Atardecer sobre la bahía"
+    },
     {
       "slug": "iluminacion-natural-fotografia-inmobiliaria",
       "title": "Cómo dominar la iluminación natural en fotografia inmobiliaria",
