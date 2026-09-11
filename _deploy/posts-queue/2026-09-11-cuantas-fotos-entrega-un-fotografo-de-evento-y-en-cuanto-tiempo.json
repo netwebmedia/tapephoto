@@ -1,0 +1,74 @@
+{
+  "title": "Cuántas fotos entrega un fotógrafo de evento, y en cuánto tiempo",
+  "slug": "cuantas-fotos-entrega-un-fotografo-de-evento-y-en-cuanto-tiempo",
+  "tag": "Eventos",
+  "description": "Después de contratar cobertura para un evento, la pregunta que casi todos hacen es cuántas fotos van a recibir y cuándo. Qué determina esos números y por qué varían tanto entre un evento y otro.",
+  "lede": "Una de las preguntas más comunes después de contratar cobertura fotográfica de un evento es simple: ¿cuántas fotos voy a recibir, y en cuánto tiempo? La respuesta honesta es que depende de varios factores —duración del evento, cantidad de momentos relevantes, alcance acordado— y que no existe un número universal correcto. Entender qué determina esos números ayuda a acordar expectativas claras antes del evento, en vez de descubrirlas después.",
+  "readTime": "7 min",
+  "faq": [
+    {
+      "q": "¿Es normal recibir menos fotos de las que se esperaban?",
+      "a": "Depende de qué se haya acordado antes del evento. Si la expectativa de cantidad nunca se conversó, es fácil que ambas partes tengan una idea distinta de lo que es razonable. Por eso conviene preguntar directamente, al momento de contratar, un rango aproximado de fotos entregadas según la duración del evento, en vez de asumir un número y descubrir después que era distinto."
+    },
+    {
+      "q": "¿Por qué el fotógrafo entrega menos fotos de las que tomó durante el evento?",
+      "a": "Porque parte del trabajo profesional es la selección: descartar fotos borrosas, repetidas, con los ojos cerrados o mal encuadradas, y quedarse con las que realmente representan bien el evento. Un fotógrafo que entrega absolutamente todo lo que disparó, sin filtrar, está transfiriendo ese trabajo de selección al cliente, lo que generalmente termina en un archivo enorme y difícil de usar."
+    },
+    {
+      "q": "¿El tiempo de entrega es el mismo para todos los eventos?",
+      "a": "No, varía según la cantidad de fotos a procesar y el nivel de edición acordado. Un evento corto con pocas fotos puede entregarse en pocos días; un evento largo, con cientos de fotos y edición cuidada, razonablemente toma más tiempo. Acordar un plazo estimado antes del evento, y no solo confiar en que llegará pronto, evita la incertidumbre de no saber cuándo esperar el material."
+    }
+  ],
+  "sections": [
+    {
+      "type": "h2",
+      "text": "No existe un número universal correcto"
+    },
+    {
+      "type": "p",
+      "text": "La cantidad de fotos entregadas después de un evento depende de tantas variables —duración, cantidad de momentos distintos, número de asistentes, si hay uno o más fotógrafos cubriendo— que cualquier cifra genérica sería engañosa. Lo que sí es razonable es que la cantidad entregada guarde relación con la duración y la riqueza del evento: un lanzamiento de dos horas con pocos momentos distintos no debería producir la misma cantidad de fotos que un matrimonio de ocho horas con múltiples etapas."
+    },
+    {
+      "type": "h2",
+      "text": "Qué determina que un evento produzca más o menos fotos"
+    },
+    {
+      "type": "p",
+      "text": "La duración es el factor más obvio, pero no el único. La cantidad de momentos claramente distintos dentro del evento también importa: una ceremonia seguida de un cóctel y luego una fiesta tiene tres etapas visualmente distintas que merecen cobertura propia, mientras que una charla corporativa de una hora, sin mayor variación de escena, produce naturalmente menos material aprovechable."
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Duración total del evento cubierto.",
+        "Cantidad de etapas o momentos distintos dentro del mismo evento.",
+        "Número de personas o grupos relevantes a fotografiar por separado.",
+        "Si se contrató uno o más fotógrafos cubriendo simultáneamente.",
+        "El nivel de edición acordado: una selección básica entrega menos fotos que una cobertura exhaustiva con edición individual de cada una."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "La selección es trabajo, no un paso automático"
+    },
+    {
+      "type": "p",
+      "text": "Durante un evento en movimiento, es normal que un fotógrafo dispare bastante más de lo que finalmente entrega, precisamente porque muchos momentos requieren varios intentos para lograr la toma correcta: alguien parpadeó, el encuadre no quedó del todo bien, la expresión no fue la ideal. Filtrar ese material y quedarse con lo mejor de cada momento es parte del valor que aporta un fotógrafo profesional, no un paso que debería saltarse para entregar más cantidad."
+    },
+    {
+      "type": "h2",
+      "text": "Acordar el plazo de entrega desde antes, no preguntarlo después"
+    },
+    {
+      "type": "p",
+      "text": "El tiempo de edición varía según cuántas fotos hay que procesar y qué tan detallada sea la edición acordada. Preguntar un plazo estimado antes del evento —no una fecha exacta necesariamente, pero sí un rango razonable— evita la incertidumbre de escribir varias veces preguntando cuándo va a llegar el material, y le da al fotógrafo margen para hacer bien su trabajo de selección y edición sin sentirse apurado."
+    },
+    {
+      "type": "h2",
+      "text": "Qué preguntar antes de contratar, para evitar sorpresas"
+    },
+    {
+      "type": "p",
+      "text": "Preguntar por un rango aproximado de fotos entregadas según la duración del evento, el plazo estimado de entrega, y el formato en que se recibirá el material —galería en línea, archivo descargable, entrega física— son tres preguntas simples que, hechas antes de contratar, evitan la mayoría de los malentendidos que surgen después de un evento."
+    }
+  ]
+}

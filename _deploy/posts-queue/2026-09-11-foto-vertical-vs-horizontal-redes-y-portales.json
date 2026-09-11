@@ -1,0 +1,70 @@
+{
+  "title": "Foto vertical u horizontal: por qué el mismo encuadre no sirve para redes sociales y para un portal",
+  "slug": "foto-vertical-vs-horizontal-redes-y-portales",
+  "tag": "Técnica",
+  "description": "Una misma sesión de fotos suele terminar publicada en varios lugares distintos, y cada uno espera un formato diferente. Por qué pedir el formato correcto desde la sesión evita recortes forzados después.",
+  "lede": "Es habitual que las mismas fotos de una sesión terminen usándose en un portal inmobiliario, en el sitio web propio y en redes sociales, y cada uno de esos lugares favorece un formato distinto: horizontal, vertical o cuadrado. Cuando la sesión se planifica pensando solo en uno de esos usos, las fotos terminan recortadas de forma forzada para los demás, perdiendo composición y a veces cortando elementos importantes de la imagen.",
+  "readTime": "7 min",
+  "faq": [
+    {
+      "q": "¿Se puede recortar una foto horizontal para convertirla en vertical después?",
+      "a": "Se puede, pero con pérdidas. Recortar una foto horizontal a un formato vertical significa descartar buena parte de los costados de la imagen, y si el elemento principal estaba centrado pensando en el formato horizontal, el resultado recortado puede verse descentrado o con espacio vacío poco favorecedor. Cuando se sabe de antemano que una foto se va a necesitar en ambos formatos, es mejor pedirle al fotógrafo que la componga dejando margen suficiente para ambos recortes desde el principio."
+    },
+    {
+      "q": "¿Qué formato conviene priorizar si solo se puede elegir uno?",
+      "a": "Depende de dónde se vaya a usar principalmente la foto. Si el uso principal es un portal inmobiliario o el sitio web propio, el horizontal suele ser más seguro, porque sigue siendo el formato estándar en la mayoría de esas plataformas. Si el uso principal es contenido para historias o publicaciones de redes sociales orientadas a celular, el vertical rinde mejor, porque ocupa toda la pantalla sin franjas vacías."
+    },
+    {
+      "q": "¿El formato cuadrado sigue siendo relevante?",
+      "a": "Menos que antes, pero todavía tiene su lugar en ciertas publicaciones de feed en redes sociales y en miniaturas de catálogo. No es indispensable pedirlo como formato principal de la sesión, pero sí vale la pena que el fotógrafo componga algunas tomas clave con suficiente margen como para poder recortarlas a cuadrado sin perder el elemento principal, en caso de que se necesite más adelante."
+    }
+  ],
+  "sections": [
+    {
+      "type": "h2",
+      "text": "Cada plataforma decide su propio formato preferido"
+    },
+    {
+      "type": "p",
+      "text": "Los portales inmobiliarios tradicionales, en su gran mayoría, muestran las fotos en formato horizontal, porque así se ha construido su interfaz desde el principio. Las historias y publicaciones verticales de redes sociales, en cambio, están pensadas para pantallas de celular sostenidas en vertical, y una foto horizontal ahí queda con franjas vacías arriba y abajo, o recortada de forma que pierde parte de la composición original."
+    },
+    {
+      "type": "h2",
+      "text": "El problema de fotografiar pensando en un solo formato"
+    },
+    {
+      "type": "p",
+      "text": "Cuando un fotógrafo compone una toma pensando exclusivamente en el formato horizontal, ubica el elemento principal —una habitación completa, una persona, un producto— aprovechando todo el ancho disponible. Si esa misma foto se recorta después a vertical, es común que el elemento principal quede en el borde del encuadre recortado, o que se pierda parte de él por completo."
+    },
+    {
+      "type": "p",
+      "text": "La solución no es evitar el formato horizontal, que sigue siendo necesario para portales y sitios web, sino avisar de antemano que la foto también se necesitará en formato vertical, para que el fotógrafo componga con margen suficiente alrededor del elemento principal y esa foto se pueda recortar en ambas direcciones sin perder lo importante."
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Portales inmobiliarios y sitios web: formato horizontal, el estándar más seguro.",
+        "Historias y contenido de pantalla completa en redes sociales: formato vertical.",
+        "Publicaciones de feed en redes sociales: horizontal, vertical o cuadrado según la plataforma y la tendencia del momento.",
+        "Fotos de perfil y miniaturas: formato cuadrado o circular, según la plataforma.",
+        "Avisar todos los usos previstos antes de la sesión, no después de recibir las fotos."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Componer con margen es más eficiente que fotografiar dos veces"
+    },
+    {
+      "type": "p",
+      "text": "Repetir una sesión completa solo para cubrir distintos formatos rara vez es necesario ni eficiente. La alternativa práctica es que el fotógrafo, sabiendo de antemano qué formatos se van a necesitar, componga las tomas más importantes dejando espacio adicional alrededor del elemento principal, de forma que esa misma foto se pueda recortar después en distintas proporciones sin perder lo esencial de la composición."
+    },
+    {
+      "type": "h2",
+      "text": "Definir los formatos necesarios antes de agendar la sesión"
+    },
+    {
+      "type": "p",
+      "text": "La forma más simple de evitar recortes forzados después es hacer una lista breve, antes de la sesión, de todos los lugares donde las fotos se van a publicar: portal inmobiliario, sitio web, Instagram, Facebook. De esa lista sale directamente qué formatos se necesitan, y comunicarle esa lista al fotógrafo con anticipación es lo que le permite planificar la composición de cada toma pensando en todos esos usos desde el principio, en vez de resolver el problema con recortes de emergencia más adelante."
+    }
+  ]
+}

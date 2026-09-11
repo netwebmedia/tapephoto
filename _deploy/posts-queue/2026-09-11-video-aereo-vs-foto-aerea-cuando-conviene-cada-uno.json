@@ -1,0 +1,74 @@
+{
+  "title": "Video aéreo o foto aérea: cuándo conviene cada uno para una propiedad",
+  "slug": "video-aereo-vs-foto-aerea-cuando-conviene-cada-uno",
+  "tag": "Drone",
+  "description": "El drone puede entregar fotos fijas o video en movimiento, y no siempre conviene pedir los dos. Qué tipo de propiedad se beneficia más de cada formato y por qué el costo y el uso final deciden la elección.",
+  "lede": "Cuando un corredor decide sumar drone a una sesión, casi siempre asume que el resultado va a ser una foto aérea fija, como una toma más del set. Pero el mismo vuelo puede entregar video en movimiento, y elegir entre uno u otro —o ambos— no es solo una decisión de presupuesto: depende de dónde se va a usar el material y qué está tratando de comunicar sobre la propiedad.",
+  "readTime": "7 min",
+  "faq": [
+    {
+      "q": "¿El video aéreo reemplaza a la foto aérea o son complementarios?",
+      "a": "Son complementarios más que sustitutos. La foto aérea funciona en portales inmobiliarios, que en su mayoría todavía priorizan imágenes fijas, y sirve como portada visual clara. El video funciona en redes sociales y en publicaciones donde el formato lo permite, y transmite algo que la foto no puede: la sensación de recorrer el entorno. Muchas sesiones rinden mejor pidiendo ambos del mismo vuelo, en vez de elegir uno solo."
+    },
+    {
+      "q": "¿Un video aéreo cuesta mucho más que una foto aérea?",
+      "a": "El costo varía según el alcance de cada encargo. Como ambos formatos suelen capturarse en el mismo vuelo, agregar video a una sesión que ya incluye foto aérea normalmente cuesta menos que contratar cada uno por separado en visitas distintas. Lo que sí cambia el costo es el tiempo de edición: un video bien editado, con cortes y transiciones, toma más trabajo de posproducción que seleccionar y ajustar una foto fija."
+    },
+    {
+      "q": "¿Para qué tipo de propiedad conviene más el video que la foto?",
+      "a": "Terrenos grandes, parcelas, propiedades con recorridos de acceso largos o entornos naturales relevantes —cerros, viñedos, cercanía al mar— suelen beneficiarse más del video, porque el movimiento comunica escala y contexto de una forma que una sola foto fija no logra. Un departamento en altura, en cambio, generalmente se explica bien con una o dos fotos aéreas y no necesita más que eso."
+    }
+  ],
+  "sections": [
+    {
+      "type": "h2",
+      "text": "Qué comunica cada formato que el otro no"
+    },
+    {
+      "type": "p",
+      "text": "Una foto aérea fija muestra una relación espacial en un instante: dónde está la propiedad respecto a la calle, el vecindario, la costa o la cordillera. Es información que se procesa rápido, en el tiempo que alguien tarda en mirar una imagen dentro de una publicación. El video aéreo, en cambio, comunica recorrido: cómo se llega, qué se ve al acercarse, cómo cambia el entorno alrededor. Es información más lenta, que exige que la persona se detenga a mirar en vez de solo pasar el ojo por una miniatura."
+    },
+    {
+      "type": "h2",
+      "text": "Dónde se va a usar el material, la pregunta que decide todo"
+    },
+    {
+      "type": "p",
+      "text": "Antes de decidir entre foto y video, conviene preguntar dónde va a vivir ese contenido. Un portal inmobiliario tradicional está construido alrededor de galerías de fotos fijas, y un video aéreo ahí puede terminar sin verse, dependiendo de si el portal lo soporta bien. Instagram y otras redes sociales, en cambio, favorecen el video, especialmente en formato vertical corto, y ahí una foto aérea fija rinde mucho menos que un recorrido en movimiento."
+    },
+    {
+      "type": "p",
+      "text": "Un corredor que publica principalmente en portales necesita, sobre todo, buenas fotos aéreas. Uno que también promociona sus propiedades en redes sociales se beneficia de tener ambos formatos disponibles, aunque los use en canales distintos."
+    },
+    {
+      "type": "h2",
+      "text": "El tipo de propiedad también inclina la balanza"
+    },
+    {
+      "type": "p",
+      "text": "Una parcela de varias hectáreas, un fundo con distintos sectores de cultivo, o una propiedad con un camino de acceso largo, son casos donde una sola foto aérea no alcanza a mostrar toda la extensión ni la relación entre sus distintas partes. Ahí el video, recorriendo el terreno de un punto a otro, comunica escala de una forma que ninguna foto fija logra igualar."
+    },
+    {
+      "type": "p",
+      "text": "En el otro extremo, una casa en un loteo urbano estándar, con un terreno de dimensiones normales, generalmente se explica completamente con dos o tres fotos aéreas: una que muestre la propiedad y su entorno inmediato, y otra que muestre su relación con la manzana o el sector."
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Parcelas y fundos grandes: video recomendado, para comunicar escala y recorrido.",
+        "Casas con terreno amplio o piscina: foto aérea suele bastar, video es un extra si hay presupuesto.",
+        "Departamentos en altura: generalmente basta con una o dos fotos aéreas, video rara vez aporta.",
+        "Propiedades con entorno natural destacado —cerro, mar, viñedo cercano—: video recomendado.",
+        "Loteos urbanos estándar: foto aérea suficiente en la mayoría de los casos."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Un mismo vuelo, dos entregables distintos"
+    },
+    {
+      "type": "p",
+      "text": "Vale la pena entender que, técnicamente, un mismo vuelo de drone puede capturar tanto fotos fijas como video, sin necesidad de duplicar el tiempo en el aire. Eso hace que, salvo por el trabajo adicional de edición, pedir ambos formatos en una misma sesión sea razonable en términos de tiempo y costo, y es una pregunta que vale la pena hacer directamente al fotógrafo antes de decidir cuál excluir."
+    }
+  ]
+}

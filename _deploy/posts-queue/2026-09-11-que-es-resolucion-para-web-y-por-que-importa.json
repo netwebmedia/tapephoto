@@ -1,0 +1,73 @@
+{
+  "title": "Qué significa \"resolución para web\" y por qué importa al publicar en un portal",
+  "slug": "que-es-resolucion-para-web-y-por-que-importa",
+  "tag": "Técnica",
+  "description": "Un fotógrafo entrega archivos en distintas resoluciones según el uso, y no siempre queda claro por qué. Una explicación simple de qué es la resolución para web, por qué existe, y qué pasa si se usa la equivocada.",
+  "lede": "Es común que un fotógrafo entregue dos versiones del mismo set de fotos: una en alta resolución y otra en \"resolución para web\", y que el cliente no entienda bien la diferencia ni por qué le entregan menos calidad en apariencia. La explicación es simple una vez que se entiende para qué sirve cada versión, y usar la equivocada en el lugar equivocado tiene consecuencias concretas, tanto en la experiencia del usuario como en cómo se ve la propia publicación.",
+  "readTime": "7 min",
+  "faq": [
+    {
+      "q": "¿Por qué no se sube directamente la foto de máxima calidad a todos lados?",
+      "a": "Porque un archivo de máxima calidad pesa mucho más de lo necesario para mostrarse en una pantalla, y ese peso extra hace que la página cargue más lento sin ninguna ganancia visual perceptible, ya que la pantalla no puede mostrar más detalle del que su propia resolución permite. Subir el archivo pesado no mejora cómo se ve la foto en el navegador, solo hace que la página tarde más en cargar."
+    },
+    {
+      "q": "¿Se pierde calidad real al reducir una foto a resolución para web?",
+      "a": "En la práctica, no de forma perceptible en una pantalla normal, si la reducción se hizo bien. La resolución para web se calcula específicamente para que la imagen se vea nítida en el tamaño en que se va a mostrar, ni más grande ni más pequeña de lo necesario. El archivo original de alta resolución sigue existiendo para usos que sí lo requieren, como imprimir la foto en un formato grande."
+    },
+    {
+      "q": "¿Quién debería preocuparse de este ajuste, el fotógrafo o quien sube las fotos al sitio?",
+      "a": "Idealmente ambos coordinan, pero la responsabilidad final suele estar en quien sube las fotos al portal o al sitio web, porque es quien decide en qué plataforma va a vivir la imagen. Un buen fotógrafo entrega ambas versiones para facilitar esa tarea, pero corresponde a quien administra la publicación asegurarse de usar la versión correcta en cada lugar."
+    }
+  ],
+  "sections": [
+    {
+      "type": "h2",
+      "text": "La resolución mide detalle, no calidad de la foto en sí"
+    },
+    {
+      "type": "p",
+      "text": "Resolución se refiere a cuántos puntos de información, o píxeles, contiene una imagen. Más píxeles significan más detalle capturado, lo que resulta útil para imprimir en formatos grandes o hacer acercamientos sin que se vea pixelado. Pero una pantalla de computador o celular solo puede mostrar una cantidad limitada de píxeles a la vez, así que un archivo con muchísimo más detalle del que la pantalla puede desplegar no se ve mejor: solo pesa más."
+    },
+    {
+      "type": "h2",
+      "text": "Qué problema concreto genera subir el archivo equivocado"
+    },
+    {
+      "type": "p",
+      "text": "Cuando se sube un archivo de máxima resolución a un sitio web o a un portal, sin comprimir ni ajustar, la página tarda más en cargar cada imagen. En un contexto donde un comprador está comparando varias propiedades o varios proveedores a la vez, una página que carga lento pierde su atención antes de que las fotos siquiera terminen de mostrarse. Ese es el costo invisible de usar el archivo equivocado: no se nota en la calidad de la imagen, se nota en la paciencia del visitante."
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Archivo de alta resolución: para imprimir, ampliar, o cualquier uso donde se necesite el máximo detalle posible.",
+        "Archivo en resolución para web: para publicar en portales, sitios web y redes sociales, donde la pantalla no aprovecha más detalle del necesario.",
+        "Subir el archivo pesado a la web ralentiza la carga sin mejorar la calidad visible.",
+        "Subir el archivo liviano a una impresión grande sí produce pérdida visible de calidad."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Por qué un fotógrafo entrega ambas versiones"
+    },
+    {
+      "type": "p",
+      "text": "Entregar el archivo original de alta resolución y una versión optimizada para web es una práctica estándar precisamente porque cada una sirve a un uso distinto. El archivo pesado se guarda para el día en que se necesite imprimir un afiche, un catálogo o material publicitario de gran formato. El archivo liviano se usa en el día a día: sitio web, portales, redes sociales, presentaciones digitales."
+    },
+    {
+      "type": "h2",
+      "text": "Cómo saber si una foto está en el formato correcto para publicarla"
+    },
+    {
+      "type": "p",
+      "text": "Sin necesidad de conocimientos técnicos avanzados, hay una señal práctica: si el archivo pesa varios megabytes y la página tarda notoriamente en cargar las fotos, probablemente se está usando la versión de alta resolución donde correspondía usar la versión para web. La mayoría de los portales inmobiliarios y plataformas de publicación, además, tienen sus propios límites de tamaño de archivo, lo que en muchos casos resuelve el problema automáticamente al rechazar o comprimir archivos demasiado pesados."
+    },
+    {
+      "type": "h2",
+      "text": "Un detalle técnico con impacto directo en el negocio"
+    },
+    {
+      "type": "p",
+      "text": "Aunque suene como un tecnicismo menor, elegir el archivo correcto para cada uso tiene un impacto directo y medible: páginas que cargan rápido retienen mejor a los visitantes, y eso se traduce en más tiempo mirando las fotos, más probabilidad de agendar una visita o hacer contacto, y una mejor experiencia general de la publicación."
+    }
+  ]
+}

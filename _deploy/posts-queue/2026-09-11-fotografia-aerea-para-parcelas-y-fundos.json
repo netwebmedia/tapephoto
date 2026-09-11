@@ -1,0 +1,78 @@
+{
+  "title": "Fotografía aérea para parcelas y fundos: qué muestra el drone que una visita a pie no puede",
+  "slug": "fotografia-aerea-para-parcelas-y-fundos",
+  "tag": "Drone",
+  "description": "Una parcela de varias hectáreas es casi imposible de entender caminándola. Qué información entrega realmente una toma aérea sobre deslindes, topografía y uso del suelo, y cómo prepararla antes del vuelo.",
+  "lede": "Cuando la propiedad que se vende tiene varias hectáreas, el problema no es mostrarla bonita: es mostrarla completa. Una parcela o un fundo caminado a pie se experimenta en fragmentos, un sector a la vez, y quien no conoce el terreno difícilmente arma en su cabeza cómo se relacionan los distintos sectores entre sí. La fotografía aérea resuelve exactamente ese problema, y en este tipo de propiedad no es un lujo: es casi la única forma de mostrar lo que realmente se está vendiendo.",
+  "readTime": "8 min",
+  "faq": [
+    {
+      "q": "¿El drone puede reemplazar un plano o levantamiento topográfico?",
+      "a": "No, y no debería presentarse como tal. Una toma aérea muestra el terreno de forma visual y ayuda a entender su forma general, pero no reemplaza un plano con medidas exactas, deslindes legales certificados ni un levantamiento topográfico profesional. Son herramientas complementarias: el plano da la información técnica y legal, la foto aérea da el contexto visual que ayuda a un comprador a entender esa información de un vistazo."
+    },
+    {
+      "q": "¿Conviene volar el drone en distintas épocas del año para una parcela agrícola?",
+      "a": "Si el uso agrícola es parte de lo que se está vendiendo, sí puede convertirse en algo relevante mostrar el terreno en distintas etapas: un cultivo en producción se ve muy distinto en floración que después de la cosecha. No siempre es necesario ni práctico hacerlo, pero para propiedades donde el valor agrícola pesa mucho en la decisión, coordinar el vuelo con la época de mayor actividad visual del cultivo puede hacer una diferencia real en la publicación."
+    },
+    {
+      "q": "¿Qué pasa si la parcela tiene vecinos muy cerca de los deslindes?",
+      "a": "Es una situación común y manejable: el vuelo se planifica para mostrar el terreno propio con claridad sin necesidad de sobrevolar en detalle las propiedades vecinas más de lo estrictamente necesario para dar contexto. Un fotógrafo con experiencia en este tipo de propiedades sabe encuadrar la toma para que el foco quede en el terreno que se vende, no en lo que hay alrededor."
+    }
+  ],
+  "sections": [
+    {
+      "type": "h2",
+      "text": "El problema específico de vender algo que no se recorre en un vistazo"
+    },
+    {
+      "type": "p",
+      "text": "Una casa se entiende recorriéndola en quince minutos. Una parcela de cinco, diez o veinte hectáreas no: incluso caminándola completa, es difícil retener en la cabeza cómo se conecta el sector de acceso con el sector productivo, dónde queda el agua, o qué tan lejos está una construcción de otra. Esa dificultad para formarse una imagen mental completa es, muchas veces, lo que hace que una propiedad rural tarde más en venderse, no necesariamente su precio o su calidad."
+    },
+    {
+      "type": "p",
+      "text": "Una o varias tomas aéreas bien planificadas resuelven ese problema de golpe: muestran, en una sola imagen, la relación entre todos los sectores del terreno, algo que ninguna cantidad de fotos a nivel de piso puede lograr por sí sola."
+    },
+    {
+      "type": "h2",
+      "text": "Qué información aporta realmente la toma aérea"
+    },
+    {
+      "type": "p",
+      "text": "Más allá de lo estético, una fotografía aérea de una parcela comunica cosas concretas: la forma general del terreno, su topografía —si es plano, con pendientes, con quebradas—, la relación entre el acceso y las construcciones existentes, la presencia de vegetación, cultivos o áreas despejadas, y su cercanía a caminos, cursos de agua o propiedades vecinas relevantes."
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Forma y proporción general del terreno, difícil de transmitir solo con medidas escritas.",
+        "Topografía: pendientes, sectores planos, quebradas o desniveles relevantes.",
+        "Relación entre el camino de acceso y las construcciones existentes.",
+        "Cobertura vegetal, cultivos o áreas de bosque, si corresponde al tipo de propiedad.",
+        "Cercanía visual a elementos de valor: cursos de agua, caminos principales, vistas destacadas."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Cómo preparar el terreno antes del vuelo"
+    },
+    {
+      "type": "p",
+      "text": "A diferencia de una casa, donde la preparación es orden y limpieza, en una parcela la preparación tiene más que ver con accesibilidad y claridad. Despejar el camino de acceso principal si está muy cubierto de vegetación, retirar maquinaria o vehículos estacionados en puntos que se van a fotografiar, y confirmar de antemano por dónde pasan exactamente los deslindes, ayuda a que el fotógrafo planifique una ruta de vuelo que muestre el terreno de la forma más clara posible."
+    },
+    {
+      "type": "h2",
+      "text": "Combinar altura general con detalle de sectores específicos"
+    },
+    {
+      "type": "p",
+      "text": "Una sola toma desde gran altura muestra el conjunto, pero pierde el detalle de elementos importantes: una construcción específica, un pozo, un sector de riego. Una sesión bien planificada combina tomas altas de conjunto con tomas más bajas y cercanas de los elementos que más pesan en la decisión de compra, de modo que la publicación tenga tanto el panorama completo como el detalle que confirma lo que promete el panorama."
+    },
+    {
+      "type": "h2",
+      "text": "El resultado final vale más que la suma de sus fotos"
+    },
+    {
+      "type": "p",
+      "text": "En una propiedad rural, el conjunto de tomas aéreas bien organizadas suele pesar más en la decisión de agendar una visita que cualquier otra parte de la publicación, porque es la única forma en que alguien que nunca ha estado ahí puede formarse una idea razonable de qué está evaluando comprar."
+    }
+  ]
+}

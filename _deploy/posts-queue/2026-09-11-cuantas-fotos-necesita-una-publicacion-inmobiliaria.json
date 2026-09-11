@@ -1,0 +1,83 @@
+{
+  "title": "Cuántas fotos necesita realmente una publicación inmobiliaria",
+  "slug": "cuantas-fotos-necesita-una-publicacion-inmobiliaria",
+  "tag": "Inmobiliaria",
+  "description": "Publicar 8 fotos o publicar 40 no es una decisión de gusto: depende del tipo de propiedad, del portal y de qué necesita ver alguien antes de agendar una visita. Una guía de cantidad y orden, no solo de calidad.",
+  "lede": "Un corredor suele preguntarse si le faltan fotos a una publicación, casi nunca si le sobran. Pero un exceso de fotos repetidas —tres ángulos casi iguales del mismo pasillo, cinco fotos del jardín desde el mismo punto— cansa tanto como la falta de fotos, y hace que las imágenes realmente importantes se pierdan en el scroll. La cantidad correcta depende del tipo de propiedad, y hay una lógica simple detrás de cuántas fotos pedir y en qué orden ponerlas.",
+  "readTime": "7 min",
+  "faq": [
+    {
+      "q": "¿Es mejor publicar pocas fotos muy buenas o muchas fotos parejas?",
+      "a": "Pocas fotos muy buenas casi siempre convierten mejor, pero hay un mínimo bajo el cual la publicación se ve incompleta y genera desconfianza. Para la mayoría de las propiedades ese mínimo está entre doce y quince fotos: lo suficiente para recorrer todos los ambientes principales sin dejar dudas sobre lo que no se muestra. Menos que eso suele leerse como que algo se está escondiendo."
+    },
+    {
+      "q": "¿Conviene repetir el mismo ambiente desde varios ángulos?",
+      "a": "Solo si cada ángulo aporta información distinta. Una sala grande puede necesitar dos tomas porque una sola no la muestra completa, pero repetir un dormitorio chico desde tres puntos casi siempre es redundante. La pregunta útil antes de subir una foto extra es si un comprador aprendería algo nuevo del espacio al verla, o si ya lo vio en la anterior."
+    },
+    {
+      "q": "¿El orden de las fotos en la publicación afecta las visitas?",
+      "a": "Sí, bastante. Los portales muestran la primera foto como miniatura en los resultados de búsqueda, así que esa imagen decide si alguien hace clic. Después, la mayoría de las personas mira las primeras cinco o seis fotos con atención y pasa rápido por el resto, así que ahí conviene poner los ambientes que más pesan en la decisión: living-comedor, cocina, dormitorio principal y fachada o vista, en ese orden aproximado."
+    }
+  ],
+  "sections": [
+    {
+      "type": "h2",
+      "text": "La cantidad depende del tipo de propiedad, no de una regla fija"
+    },
+    {
+      "type": "p",
+      "text": "Un departamento de un dormitorio necesita menos fotos que una casa de tres pisos con jardín, simplemente porque hay menos ambientes que mostrar. Forzar la misma cantidad de fotos en ambos casos produce dos problemas distintos: en el departamento, relleno repetitivo; en la casa grande, huecos que dejan al comprador con preguntas sin responder sobre ambientes que nunca aparecieron."
+    },
+    {
+      "type": "p",
+      "text": "Una forma simple de calcular el número es contar los ambientes que un visitante recorrería en una visita presencial y asignar entre una y tres fotos a cada uno, según su tamaño y su peso en la decisión. Living, cocina y dormitorio principal suelen merecer más de una foto. Un clóset o un lavadero, generalmente con una basta."
+    },
+    {
+      "type": "h2",
+      "text": "Lo que casi siempre falta"
+    },
+    {
+      "type": "p",
+      "text": "Las publicaciones que reciben menos consultas suelen compartir los mismos huecos: no muestran la fachada completa, no muestran ningún espacio exterior si la propiedad lo tiene, y no incluyen ninguna foto que dé referencia de la ubicación o el entorno inmediato. Un comprador que no puede ver cómo se ve la calle o el edificio desde afuera asume, con razón, que algo no se quiere mostrar."
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Fachada o entrada del edificio, siempre, aunque no sea la foto más atractiva.",
+        "Al menos una vista general del living-comedor que muestre la relación entre ambos espacios.",
+        "La cocina completa, no solo el mesón: los espacios de guardado importan en la decisión.",
+        "Cada dormitorio con al menos una foto que muestre tamaño y ventana.",
+        "Baños completos, no solo el lavamanos.",
+        "Espacios exteriores —balcón, terraza, jardín, estacionamiento— si la propiedad los tiene."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Lo que casi siempre sobra"
+    },
+    {
+      "type": "p",
+      "text": "El otro extremo también existe: publicaciones con treinta y cinco fotos donde quince son variaciones casi idénticas del mismo rincón. Eso no agrega información, agrega tiempo de scroll, y en un portal donde la persona compara varias propiedades a la vez, ese tiempo extra juega en contra. Detalles decorativos sin relación con la decisión de compra —un jarrón, una pintura de pared, el control remoto sobre la mesa— rara vez merecen su propia foto."
+    },
+    {
+      "type": "h2",
+      "text": "El orden importa tanto como la cantidad"
+    },
+    {
+      "type": "p",
+      "text": "La primera foto de la publicación funciona como la portada de un libro: decide si alguien sigue mirando. Esa imagen debería ser la más representativa de la propiedad completa, no la más artística ni la que más le gustó al fotógrafo. Generalmente es una vista amplia del living-comedor bien iluminado, o la fachada si es una casa con buen frente."
+    },
+    {
+      "type": "p",
+      "text": "Después de esa primera foto, el orden ideal sigue más o menos el recorrido natural de una visita: entrada, living, comedor, cocina, dormitorios de mayor a menor, baños, espacios exteriores y por último detalles o extras. Ese orden imita cómo se recorre la propiedad en persona, y hace que la publicación se lea como un paseo en lugar de una colección de fotos sueltas."
+    },
+    {
+      "type": "h2",
+      "text": "Coordinar la cantidad antes de la sesión, no después"
+    },
+    {
+      "type": "p",
+      "text": "El mejor momento para decidir cuántas fotos se necesitan es antes de la sesión, no revisando el resultado. Recorrer mentalmente la propiedad con el fotógrafo, ambiente por ambiente, y acordar qué se va a fotografiar y cuántas veces, evita tanto los huecos como el relleno, y hace que la sesión misma sea más eficiente porque no hay que volver sobre pasos ya hechos."
+    }
+  ]
+}
