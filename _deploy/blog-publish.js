@@ -45,6 +45,14 @@ const jsonText = (s) => String(s == null ? '' : s).replace(/\s+/g, ' ').trim();
 const MONTHS = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio',
   'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
 
+// Google renders roughly 60 characters of <title>; append the brand only when it
+// fits, otherwise the suffix just pushes the end of the headline out of view.
+function brandTitle(title) {
+  const core = String(title).trim();
+  const withBrand = core + ' | Blog TapePhoto';
+  return withBrand.length <= 60 ? withBrand : core;
+}
+
 function dateLabel(iso) {
   const [y, m, d] = iso.split('-').map(Number);
   return `${d} de ${MONTHS[m - 1]} de ${y}`;
@@ -161,7 +169,7 @@ function renderPost(post) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>${esc(post.title)} | Blog TapePhoto</title>
+    <title>${esc(brandTitle(post.title))}</title>
     <meta name="description" content="${esc(post.description)}">
     <link rel="canonical" href="${ORIGIN}/blog/${post.slug}.html">
     <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">

@@ -33,6 +33,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, true);
 
+    // Clicks to the service and contact pages — the step before WhatsApp or the
+    // form — so a report can say which post or landing page sent the visitor.
+    document.addEventListener('click', (e) => {
+        const a = e.target.closest && e.target.closest('a[href*="servicios"], a[href*="services"], a[href*="contact"]');
+        if (!a) return;
+        trackEvent('cta_click', { page_source: eventSource(), link_url: a.href });
+    }, true);
+
     // Mobile menu toggle
     const menuToggle = document.querySelector('.menu-toggle');
     const nav = document.querySelector('.nav');
