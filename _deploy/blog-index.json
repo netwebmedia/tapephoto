@@ -1,6 +1,16 @@
 {
-  "updated": "2026-09-11",
+  "updated": "2026-09-14",
   "items": [
+    {
+      "slug": "fotos-de-locales-comerciales-y-oficinas-para-arrendar",
+      "title": "Fotos de locales comerciales y oficinas para arrendar",
+      "tag": "Inmobiliaria",
+      "description": "Un local u oficina vacío se ve peor en foto que en persona. Qué fotos necesita un aviso comercial, cómo preparar el espacio y qué mira realmente un arrendatario de negocio.",
+      "readTime": "7 min",
+      "published": "2026-09-14",
+      "img": "/assets/photos/inmobiliaria-cover-sm.jpg",
+      "imgAlt": "Portada: bloques isométricos superpuestos"
+    },
     {
       "slug": "video-aereo-vs-foto-aerea-cuando-conviene-cada-uno",
       "title": "Video aéreo o foto aérea: cuándo conviene cada uno para una propiedad",
