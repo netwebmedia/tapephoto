@@ -1,6 +1,36 @@
 {
-  "updated": "2026-09-14",
+  "updated": "2026-09-15",
   "items": [
+    {
+      "slug": "staging-fotografia-como-decidir",
+      "title": "Staging o mostrar as-is: cómo decidir",
+      "tag": "Inmobiliaria",
+      "description": "Cuándo vale la pena invertir en staging para una sesión de fotos, cuándo es mejor fotografiar el espacio actual y por qué la decisión no es siempre la que parecería obvia.",
+      "readTime": "7 min",
+      "published": "2026-09-15",
+      "img": "/assets/photos/inmobiliaria-aerea-sm.jpg",
+      "imgAlt": "Vista aérea de un sector residencial"
+    },
+    {
+      "slug": "sesion-retakes-fotos-seguimiento",
+      "title": "Sesión de retakes: cuándo volver a fotografiar",
+      "tag": "Inmobiliaria",
+      "description": "Después de una sesión fotográfica inicial: cuándo se necesitan retakes, qué cambia en el mercado que lo justifica, y cuál es el plan para no desperdiciar dinero.",
+      "readTime": "7 min",
+      "published": "2026-09-15",
+      "img": "/assets/photos/inmobiliaria-cover-sm.jpg",
+      "imgAlt": "Portada: bloques isométricos superpuestos"
+    },
+    {
+      "slug": "iluminacion-artificial-interiores",
+      "title": "Iluminación artificial: fotos de interiores sin luz natural",
+      "tag": "Técnica",
+      "description": "Cómo fotografiar espacios interiores sin ventanas o cuando no hay luz natural disponible. Errores comunes con ampolletas, temperatura de color y el equipamiento mínimo que realmente funciona.",
+      "readTime": "7 min",
+      "published": "2026-09-15",
+      "img": "/assets/photos/tecnica-equipo-sm.jpg",
+      "imgAlt": "Cámara montada en trípode lista para grabar"
+    },
     {
       "slug": "fotos-de-locales-comerciales-y-oficinas-para-arrendar",
       "title": "Fotos de locales comerciales y oficinas para arrendar",
