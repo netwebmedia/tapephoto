@@ -50,6 +50,43 @@ const SUBJECTS = [
   { key: 'fotografia-restaurantes', prompt: 'fotografía para restaurantes y locales gastronómicos',              tag: 'Turismo' },
   { key: 'fotografia-eventos',      prompt: 'cobertura fotográfica de eventos corporativos',                     tag: 'Eventos' },
   { key: 'preparar-la-sesion',      prompt: 'cómo preparar un espacio o negocio antes de la sesión de fotos',    tag: 'Técnica' },
+
+  // ─── Ampliación 2026-09-16 ─────────────────────────────────────────────────
+  // Un subject = un post (ver topicBase). Con 10 subjects y 7 ya cubiertos, el
+  // generador tenía 3 posts de recorrido: financiar la API no habría llenado la
+  // cola, sólo habría comprado tres artículos. Esto es lo que faltaba de verdad.
+  //
+  // Verificado contra los 39 posts publicados: ninguno de estos temas tiene
+  // cobertura. Los 29 escritos a mano ya cubren luz, permisos de drone, staging,
+  // edición, resolución y recortes, así que nada de eso se repite acá.
+
+  // Inmobiliaria — el recorrido y el video, que el corpus no toca
+  { key: 'tour-virtual-360',        prompt: 'tours virtuales 360° para mostrar una propiedad sin visita presencial', tag: 'Inmobiliaria' },
+  { key: 'video-recorrido',         prompt: 'el video recorrido de una propiedad para portales y redes',           tag: 'Inmobiliaria' },
+  { key: 'antes-despues-remodelacion', prompt: 'fotografiar una remodelación antes y después',                     tag: 'Inmobiliaria' },
+  { key: 'marca-personal-corredor', prompt: 'fotos de marca personal para un corredor de propiedades',             tag: 'Inmobiliaria' },
+
+  // Drone — usos que no son la propiedad urbana ya cubierta
+  { key: 'drone-avance-obra',       prompt: 'registro aéreo del avance de una obra mes a mes',                     tag: 'Drone' },
+  { key: 'drone-agricola',          prompt: 'fotografía aérea para agricultura, parronales y packing del valle',   tag: 'Drone' },
+
+  // Empresas — rubros de la región sin cobertura
+  { key: 'fotos-google-business',   prompt: 'las fotos del perfil de Google Business de un negocio local',         tag: 'Empresas' },
+  { key: 'fotografia-industrial',   prompt: 'fotografía industrial y minera en la región',                         tag: 'Empresas' },
+  { key: 'fotografia-salud',        prompt: 'fotografía para clínicas, consultas y centros de salud',              tag: 'Empresas' },
+  { key: 'fotografia-gimnasios',    prompt: 'fotografía para gimnasios y centros deportivos',                      tag: 'Empresas' },
+  { key: 'fotografia-educacion',    prompt: 'fotografía para colegios y centros educativos',                       tag: 'Empresas' },
+  { key: 'fotografia-automotriz',   prompt: 'fotografía para automotoras y venta de vehículos',                    tag: 'Empresas' },
+  { key: 'video-corporativo',       prompt: 'el video corporativo corto para redes y sitio web',                   tag: 'Empresas' },
+  { key: 'como-cotizar',            prompt: 'cómo cotizar y comparar presupuestos de fotografía profesional',      tag: 'Empresas' },
+
+  // Turismo y comercio local
+  { key: 'fotografia-pisqueras',    prompt: 'fotografía para viñas y pisqueras del valle',                         tag: 'Turismo' },
+  { key: 'fotografia-retail',       prompt: 'fotografía de tiendas, vitrinas y retail local',                      tag: 'Turismo' },
+  { key: 'fotos-menu-delivery',     prompt: 'las fotos de menú para apps de delivery',                             tag: 'Turismo' },
+
+  // Técnica
+  { key: 'sesion-con-mal-tiempo',   prompt: 'qué pasa si el día de la sesión está nublado o con lluvia',           tag: 'Técnica' },
 ];
 
 const ANGLES = [
@@ -76,6 +113,30 @@ function* topicCombinations() {
       };
     }
   }
+}
+
+/* Un SUBJECT recibe UN post, cualquiera sea el ángulo.
+
+   La selección deduplicaba por slug exacto, y el slug es `subject-angle`. Los
+   cinco ángulos de un mismo subject son cinco slugs distintos, así que los cinco
+   pasaban: cinco artículos sobre el mismo tema, compitiendo entre sí por las
+   mismas búsquedas.
+
+   Medido el 2026-09-16, antes de que este generador tuviera crédito para correr:
+   7 de los 10 subjects YA tienen un post publicado, y el generador habría
+   escrito los otros 4 ángulos de cada uno — 28 gemelos en la primera corrida
+   financiada. El corpus está limpio hoy sólo porque el generador nunca pudo
+   correr; los 39 posts vivos se escribieron a mano.
+
+   Es el mismo defecto que Marpolis tenía en el monorepo (corregido el
+   2026-09-16, #1178): allí la ZONA sí era identidad y sólo colapsaba el ángulo.
+   Acá no hay zona — un subject es un subject. Google no elige entre cinco
+   páginas casi idénticas: no rankea ninguna. */
+const ANGLE_KEYS = ANGLES.map((a) => a.key);
+
+function topicBase(slug) {
+  const hit = ANGLE_KEYS.find((k) => String(slug).endsWith(`-${k}`));
+  return hit ? String(slug).slice(0, -(hit.length + 1)) : String(slug);
 }
 
 // ─── Utilities ───────────────────────────────────────────────────────────────
@@ -317,10 +378,16 @@ async function main() {
   const taken = existingSlugs();
   const takenTitles = existingTitles();
 
+  // Descarta también cualquier subject que ya tenga cobertura en OTRO ángulo,
+  // que es lo que produce gemelos. Ver topicBase().
+  const takenBases = new Set([...taken].map(topicBase));
   const chosen = [];
   for (const combo of topicCombinations()) {
     if (chosen.length >= COUNT) break;
     if (taken.has(combo.slug)) continue;
+    const base = topicBase(combo.slug);
+    if (takenBases.has(base)) continue;
+    takenBases.add(base);
     chosen.push(combo);
   }
   if (chosen.length < COUNT) {
