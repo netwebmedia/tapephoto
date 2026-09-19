@@ -1,6 +1,16 @@
 {
-  "updated": "2026-09-15",
+  "updated": "2026-09-19",
   "items": [
+    {
+      "slug": "fotos-para-el-perfil-de-empresa-en-google",
+      "title": "Fotos para tu perfil de empresa en Google: qué subir",
+      "tag": "Empresas",
+      "description": "Qué fotos conviene subir al perfil de empresa en Google Maps de un negocio local, en qué orden, y por qué las fotos que suben los clientes terminan hablando por ti si tú no lo haces.",
+      "readTime": "7 min",
+      "published": "2026-09-19",
+      "img": "/assets/photos/empresas-retrato-2-sm.jpg",
+      "imgAlt": "Retrato en primer plano con luz de tarde"
+    },
     {
       "slug": "staging-fotografia-como-decidir",
       "title": "Staging o mostrar as-is: cómo decidir",
