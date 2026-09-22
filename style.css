@@ -1047,6 +1047,13 @@ body {
     margin-bottom: 20px;
 }
 
+.service-price-note {
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: normal;
+    opacity: 0.65;
+}
+
 .service-card p {
     font-size: 0.95rem;
     line-height: 1.8;
