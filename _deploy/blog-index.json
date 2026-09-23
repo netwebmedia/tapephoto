@@ -1,6 +1,16 @@
 {
-  "updated": "2026-09-19",
+  "updated": "2026-09-23",
   "items": [
+    {
+      "slug": "fotografiar-propiedad-con-arrendatario-viviendo",
+      "title": "Fotografiar una propiedad con arrendatario viviendo",
+      "tag": "Inmobiliaria",
+      "description": "Cómo coordinar la sesión de fotos de una casa o departamento que todavía está arrendado: aviso, permisos, qué se fotografía y qué no, y cómo lograr buenas fotos sin invadir a quien vive ahí.",
+      "readTime": "7 min",
+      "published": "2026-09-23",
+      "img": "/assets/photos/inmobiliaria-aerea-sm.jpg",
+      "imgAlt": "Vista aérea de un sector residencial"
+    },
     {
       "slug": "fotos-para-el-perfil-de-empresa-en-google",
       "title": "Fotos para tu perfil de empresa en Google: qué subir",
