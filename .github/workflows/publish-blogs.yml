@@ -107,7 +107,7 @@ jobs:
         if: steps.hubkey.outputs.present == '1'
         run: |
           set -e
-          python3 -m pip install -q segno
+          python3 -m pip install -q pillow segno   # pillow: hub thumbnails + og card (build-linkinbio.py)
           # The generator resolves <external-root>/<repo-name>; the runner checks
           # this repo out at $GITHUB_WORKSPACE, whose basename IS the repo name.
           python3 _nwm/_deploy/build-linkinbio.py --property tapephoto --external-root "$(dirname "$GITHUB_WORKSPACE")"
