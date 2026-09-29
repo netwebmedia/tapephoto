@@ -423,6 +423,7 @@ function main() {
     fs.writeFileSync(INDEX_JSON, JSON.stringify(db, null, 2) + '\n', 'utf8');
     fs.writeFileSync(path.join(BLOG_DIR, 'index.html'), renderIndex(db), 'utf8');
     addToSitemap(`${ORIGIN}/blog/`, today, 'daily', '0.8');
+    try { require('./build-llms.js').build(); } catch (e) { console.warn('build-llms failed (non-fatal):', e.message); }
   }
 
   const left = fs.readdirSync(QUEUE_DIR).filter((f) => f.endsWith('.json')).length;
