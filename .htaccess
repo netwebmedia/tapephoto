@@ -14,6 +14,11 @@ ErrorDocument 404 /404.html
   Require all denied
 </FilesMatch>
 
+# Galleries v2 (2026-10-02): old slugs → new category-based slugs
+RedirectMatch 301 ^/galleries/long-beach-grand-prix-2018\.html$ /galleries/indycar-long-beach-2018.html
+RedirectMatch 301 ^/galleries/travel-landscapes\.html$ /galleries/coast-travel-wildlife.html
+RedirectMatch 301 ^/galleries/behind-the-lens\.html$ /galleries/portraits.html
+
 RewriteEngine On
 
 # Force HTTPS + canonical non-www host
