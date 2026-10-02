@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
         function openLightbox(index) {
             currentIndex = index;
             const img = photoItems[index].querySelector('img');
-            lightboxImg.src = img.src;
+            lightboxImg.src = img.dataset.full || img.src;
             lightboxImg.alt = img.alt;
             lightbox.classList.add('active');
             document.body.style.overflow = 'hidden';
@@ -93,12 +93,16 @@ document.addEventListener('DOMContentLoaded', () => {
         function navigate(dir) {
             currentIndex = (currentIndex + dir + photoItems.length) % photoItems.length;
             const img = photoItems[currentIndex].querySelector('img');
-            lightboxImg.src = img.src;
+            lightboxImg.src = img.dataset.full || img.src;
             lightboxImg.alt = img.alt;
         }
 
         photoItems.forEach((item, i) => {
             item.addEventListener('click', () => openLightbox(i));
+            // Gallery tiles are focusable (tabindex=0, role=button): open on Enter/Space too.
+            item.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openLightbox(i); }
+            });
         });
 
         closeBtn.addEventListener('click', closeLightbox);
