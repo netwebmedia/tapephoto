@@ -1727,3 +1727,8 @@ body {
     .gallery-cards, .home-galleries .gallery-cards { grid-template-columns: 1fr; }
     .gallery-cta, .gallery-more { padding-left: 16px; padding-right: 16px; }
 }
+
+/* Licensing pages (licensing.html / licencias.html): inline links inside the
+   rate-card bullet lists inherit the card colour instead of browser blue. */
+.service-card ul li a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+.service-card ul li a:hover { opacity: 0.7; }
