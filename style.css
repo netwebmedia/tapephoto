@@ -1739,3 +1739,17 @@ body {
    rate-card bullet lists inherit the card colour instead of browser blue. */
 .service-card ul li a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
 .service-card ul li a:hover { opacity: 0.7; }
+
+/* Galleries v2 — category sections (2026-10-02) */
+.gallery-jump { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 26px; }
+.gallery-jump a { color: var(--white); text-decoration: none; padding: 7px 14px; border: 1px solid rgba(255,255,255,0.25); border-radius: 999px; font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; }
+.gallery-jump a:hover { border-color: var(--white); }
+.gallery-section { padding: 30px 0 10px; scroll-margin-top: 90px; }
+.gallery-section-head { padding: 20px 40px 18px; display: flex; align-items: baseline; gap: 18px; flex-wrap: wrap; }
+.gallery-section-head h2 { font-family: var(--serif); font-size: clamp(1.6rem, 3vw, 2.4rem); letter-spacing: -0.5px; }
+.gallery-section-head p { font-size: 0.78rem; opacity: 0.6; letter-spacing: 0.05em; }
+.gallery-cta p a { color: var(--white); }
+@media (max-width: 600px) { .gallery-section-head { padding: 16px 16px 12px; } }
+.home-galleries .home-cats { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 1024px) { .home-galleries .home-cats { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .home-galleries .home-cats { grid-template-columns: 1fr; } }

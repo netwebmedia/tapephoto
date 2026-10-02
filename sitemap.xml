@@ -322,6 +322,18 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://tapephoto.com/licensing.html</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tapephoto.com/licencias.html</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://tapephoto.com/galleries/</loc>
     <lastmod>2026-10-02</lastmod>
     <changefreq>monthly</changefreq>
@@ -334,7 +346,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tapephoto.com/galleries/long-beach-grand-prix-2018.html</loc>
+    <loc>https://tapephoto.com/galleries/rally-raid-atacama.html</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tapephoto.com/galleries/indycar-long-beach-2018.html</loc>
     <lastmod>2026-10-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -346,13 +364,19 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://tapephoto.com/galleries/mtb-enduro-chile.html</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://tapephoto.com/galleries/del-mar-opening-day-2018.html</loc>
     <lastmod>2026-10-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tapephoto.com/galleries/tijuana-border-2019.html</loc>
+    <loc>https://tapephoto.com/galleries/st-patricks-parade-hermosa-beach.html</loc>
     <lastmod>2026-10-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -364,27 +388,57 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tapephoto.com/galleries/travel-landscapes.html</loc>
+    <loc>https://tapephoto.com/galleries/poker-tour.html</loc>
     <lastmod>2026-10-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tapephoto.com/galleries/behind-the-lens.html</loc>
+    <loc>https://tapephoto.com/galleries/live-music.html</loc>
     <lastmod>2026-10-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tapephoto.com/licensing.html</loc>
+    <loc>https://tapephoto.com/galleries/portraits.html</loc>
     <lastmod>2026-10-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tapephoto.com/licencias.html</loc>
+    <loc>https://tapephoto.com/galleries/tijuana-border-2019.html</loc>
     <lastmod>2026-10-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tapephoto.com/galleries/san-francisco-los-angeles.html</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tapephoto.com/galleries/las-vegas-nights.html</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tapephoto.com/galleries/aerial-drone.html</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tapephoto.com/galleries/andes-glaciers.html</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tapephoto.com/galleries/coast-travel-wildlife.html</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>

@@ -27,7 +27,7 @@ function header(total) {
 - [Fotografía inmobiliaria en La Serena y Coquimbo](${SITE}/fotografia-inmobiliaria-la-serena.html): interiors, exteriors and drone in one visit, for brokers and real estate firms
 - [Fotografía para hoteles y cabañas en La Serena](${SITE}/fotografia-hoteles-turismo-la-serena.html): rooms, common areas and aerials, ready for Booking and social media
 - [Fotografía para empresas en La Serena y Coquimbo](${SITE}/fotografia-empresas-la-serena.html): team, premises and product photography instead of stock images
-- [Galleries](${SITE}/galleries/): eight curated photo galleries — WRC Rally Chile 2019, Toyota Grand Prix of Long Beach 2018 (IndyCar), ISDE enduro in Chile, Opening Day at Del Mar 2018, Playas de Tijuana 2019, Lebowski Fest LA 2013, travel & landscapes, behind the lens
+- [Galleries](${SITE}/galleries/): 17 curated photo galleries in six categories — Motorsport (WRC Rally Chile 2019, rally raid in the Atacama, Grand Prix of Long Beach 2018, ISDE enduro, MTB enduro), Events (Del Mar Opening Day, Hermosa Beach St. Patrick's parade, Lebowski Fest, poker tour, live music), Portraits, Street & Cities (Playas de Tijuana, San Francisco & Los Angeles, Las Vegas nights), Aerial & Drone, Landscapes & Travel (Andes & glaciers; coast, travel & wildlife)
 - [About](${SITE}/about.html) · [Contact](${SITE}/contact.html) · [Contacto](${SITE}/contacto.html)
 - [Blog (Spanish)](${SITE}/blog/): practical guides for businesses, hotels and real estate brokers
 `;
