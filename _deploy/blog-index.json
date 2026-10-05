@@ -1,6 +1,16 @@
 {
-  "updated": "2026-09-27",
+  "updated": "2026-10-05",
   "items": [
+    {
+      "slug": "fotos-de-la-fachada-y-el-letrero-de-un-local",
+      "title": "Fotos de la fachada y el letrero de un local comercial",
+      "tag": "Empresas",
+      "description": "Cómo fotografiar la fachada de un local comercial: hora del día, ángulo, qué hacer con el letrero y los errores que hacen que el negocio se vea cerrado o descuidado en Google y las redes.",
+      "readTime": "6 min",
+      "published": "2026-10-05",
+      "img": "/assets/photos/empresas-retrato-2-sm.jpg",
+      "imgAlt": "Retrato en primer plano con luz de tarde"
+    },
     {
       "slug": "fotos-de-platos-para-apps-de-delivery",
       "title": "Fotos de platos para apps de delivery: qué funciona",
