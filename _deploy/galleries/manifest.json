@@ -1,0 +1,3619 @@
+{
+ "intro": "Full stories from the road, in seven chapters: world rally stages in the Chilean forest, raid buggies in the Atacama, IndyCar on the streets of Long Beach, race days and parades, faces, border light in Tijuana, glass towers in San Diego, the coast from the air, and the Andes. Every frame is my own work, re-edited and cropped for the web.",
+ "categories": [
+  {
+   "id": "motorsport",
+   "name": "Motorsport",
+   "short": "motorsport",
+   "blurb": "Rally, IndyCar, raid and enduro — gravel, asphalt, sand and air."
+  },
+  {
+   "id": "events",
+   "name": "Events & Live",
+   "short": "events",
+   "blurb": "Race days, parades, poker floors and stages."
+  },
+  {
+   "id": "portraits",
+   "name": "Portraits",
+   "short": "portraits",
+   "blurb": "Faces, studio and street."
+  },
+  {
+   "id": "street",
+   "name": "Street & Cities",
+   "short": "street",
+   "blurb": "Borders, boulevards and nights out."
+  },
+  {
+   "id": "architecture",
+   "name": "Architecture & Cities",
+   "short": "architecture",
+   "blurb": "Towers, waterfronts and plazas in hard light."
+  },
+  {
+   "id": "aerial",
+   "name": "Aerial & Drone",
+   "short": "aerial",
+   "blurb": "The coast and the city from above."
+  },
+  {
+   "id": "landscapes",
+   "name": "Landscapes & Travel",
+   "short": "landscapes",
+   "blurb": "Andes, Pacific, islands and wildlife."
+  }
+ ],
+ "galleries": [
+  {
+   "slug": "wrc-rally-chile-2019",
+   "title": "WRC Rally Chile 2019",
+   "category": "motorsport",
+   "label": "Motorsport",
+   "kicker": "Concepción, Chile · May 2019",
+   "intro": "Copec Rally Chile, round six of the 2019 FIA World Rally Championship and the first time the WRC ran in Chile. Fast gravel roads through the pine forests of the Biobío region, low autumn sun, and dust hanging in the light long after each car had gone.",
+   "cover": 0,
+   "cover_alt": "WRC Rally Chile 2019: a World Rally Car on a forest gravel stage near Concepción",
+   "updated": "2026-10-02",
+   "photos": [
+    {
+     "file": "wrc-rally-chile-2019-01",
+     "alt": "WRC Rally Chile 2019: a World Rally Car on a forest gravel stage near Concepción",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "wrc-rally-chile-2019-02",
+     "alt": "WRC Rally Chile 2019: a World Rally Car on a forest gravel stage near Concepción",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "wrc-rally-chile-2019-03",
+     "alt": "WRC Rally Chile 2019: a World Rally Car on a forest gravel stage near Concepción",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "wrc-rally-chile-2019-04",
+     "alt": "WRC Rally Chile 2019: a World Rally Car on a forest gravel stage near Concepción",
+     "w": 1600,
+     "h": 487,
+     "sw": 800,
+     "sh": 243
+    },
+    {
+     "file": "wrc-rally-chile-2019-05",
+     "alt": "WRC Rally Chile 2019: a World Rally Car on a forest gravel stage near Concepción",
+     "w": 1600,
+     "h": 1067,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "wrc-rally-chile-2019-06",
+     "alt": "WRC Rally Chile 2019: a World Rally Car on a forest gravel stage near Concepción",
+     "w": 1600,
+     "h": 495,
+     "sw": 800,
+     "sh": 247
+    },
+    {
+     "file": "wrc-rally-chile-2019-07",
+     "alt": "WRC Rally Chile 2019: a World Rally Car on a forest gravel stage near Concepción",
+     "w": 1600,
+     "h": 663,
+     "sw": 800,
+     "sh": 331
+    },
+    {
+     "file": "wrc-rally-chile-2019-08",
+     "alt": "WRC Rally Chile 2019: a World Rally Car on a forest gravel stage near Concepción",
+     "w": 1600,
+     "h": 573,
+     "sw": 800,
+     "sh": 286
+    },
+    {
+     "file": "wrc-rally-chile-2019-09",
+     "alt": "WRC Rally Chile 2019: a World Rally Car on a forest gravel stage near Concepción",
+     "w": 1600,
+     "h": 455,
+     "sw": 800,
+     "sh": 227
+    },
+    {
+     "file": "wrc-rally-chile-2019-10",
+     "alt": "WRC Rally Chile 2019: a World Rally Car on a forest gravel stage near Concepción",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "wrc-rally-chile-2019-11",
+     "alt": "WRC Rally Chile 2019: a World Rally Car on a forest gravel stage near Concepción",
+     "w": 1600,
+     "h": 451,
+     "sw": 800,
+     "sh": 225
+    },
+    {
+     "file": "wrc-rally-chile-2019-12",
+     "alt": "WRC Rally Chile 2019: a World Rally Car on a forest gravel stage near Concepción",
+     "w": 1600,
+     "h": 533,
+     "sw": 800,
+     "sh": 266
+    },
+    {
+     "file": "wrc-rally-chile-2019-13",
+     "alt": "WRC Rally Chile 2019: a World Rally Car on a forest gravel stage near Concepción",
+     "w": 1600,
+     "h": 607,
+     "sw": 800,
+     "sh": 304
+    },
+    {
+     "file": "wrc-rally-chile-2019-14",
+     "alt": "WRC Rally Chile 2019: a World Rally Car on a forest gravel stage near Concepción",
+     "w": 1600,
+     "h": 409,
+     "sw": 800,
+     "sh": 205
+    },
+    {
+     "file": "wrc-rally-chile-2019-15",
+     "alt": "WRC Rally Chile 2019: a World Rally Car on a forest gravel stage near Concepción",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "wrc-rally-chile-2019-16",
+     "alt": "WRC Rally Chile 2019: a World Rally Car on a forest gravel stage near Concepción",
+     "w": 1600,
+     "h": 538,
+     "sw": 800,
+     "sh": 269
+    },
+    {
+     "file": "wrc-rally-chile-2019-17",
+     "alt": "WRC Rally Chile 2019: a World Rally Car on a forest gravel stage near Concepción",
+     "w": 1600,
+     "h": 491,
+     "sw": 800,
+     "sh": 246
+    },
+    {
+     "file": "wrc-rally-chile-2019-18",
+     "alt": "WRC Rally Chile 2019: a World Rally Car on a forest gravel stage near Concepción",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "wrc-rally-chile-2019-19",
+     "alt": "WRC Rally Chile 2019: a World Rally Car on a forest gravel stage near Concepción",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "wrc-rally-chile-2019-20",
+     "alt": "WRC Rally Chile 2019: a World Rally Car on a forest gravel stage near Concepción",
+     "w": 1600,
+     "h": 477,
+     "sw": 800,
+     "sh": 238
+    },
+    {
+     "file": "wrc-rally-chile-2019-21",
+     "alt": "WRC Rally Chile 2019: a World Rally Car on a forest gravel stage near Concepción",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "wrc-rally-chile-2019-22",
+     "alt": "WRC Rally Chile 2019: a World Rally Car on a forest gravel stage near Concepción",
+     "w": 1600,
+     "h": 563,
+     "sw": 800,
+     "sh": 282
+    },
+    {
+     "file": "wrc-rally-chile-2019-23",
+     "alt": "WRC Rally Chile 2019: a World Rally Car on a forest gravel stage near Concepción",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "wrc-rally-chile-2019-24",
+     "alt": "WRC Rally Chile 2019: a World Rally Car on a forest gravel stage near Concepción",
+     "w": 1600,
+     "h": 532,
+     "sw": 800,
+     "sh": 266
+    }
+   ]
+  },
+  {
+   "slug": "rally-raid-atacama",
+   "title": "Rally Raid — Atacama Desert",
+   "category": "motorsport",
+   "label": "Motorsport",
+   "kicker": "Atacama, Chile",
+   "intro": "A Dakar-style raid buggy tested on the dunes and fesh-fesh of the Atacama: full-throttle jumps, sand walls, the crew digging it out, and the long empty horizon that makes the desert the hardest place on earth to race.",
+   "cover": 1,
+   "cover_alt": "Rally raid buggy jumping over desert dunes in the Atacama, Chile",
+   "updated": "2026-10-02",
+   "photos": [
+    {
+     "file": "rally-raid-atacama-01",
+     "alt": "Rally raid buggy jumping over desert dunes in the Atacama, Chile",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "rally-raid-atacama-02",
+     "alt": "Rally raid buggy jumping over desert dunes in the Atacama, Chile",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "rally-raid-atacama-03",
+     "alt": "Rally raid buggy jumping over desert dunes in the Atacama, Chile",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "rally-raid-atacama-04",
+     "alt": "Rally raid buggy jumping over desert dunes in the Atacama, Chile",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "rally-raid-atacama-05",
+     "alt": "Rally raid buggy jumping over desert dunes in the Atacama, Chile",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "rally-raid-atacama-06",
+     "alt": "Rally raid buggy jumping over desert dunes in the Atacama, Chile",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "rally-raid-atacama-07",
+     "alt": "Rally raid buggy jumping over desert dunes in the Atacama, Chile",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "rally-raid-atacama-08",
+     "alt": "Rally raid buggy jumping over desert dunes in the Atacama, Chile",
+     "w": 1600,
+     "h": 490,
+     "sw": 800,
+     "sh": 245
+    },
+    {
+     "file": "rally-raid-atacama-09",
+     "alt": "Rally raid buggy jumping over desert dunes in the Atacama, Chile",
+     "w": 1600,
+     "h": 522,
+     "sw": 800,
+     "sh": 261
+    },
+    {
+     "file": "rally-raid-atacama-10",
+     "alt": "Rally raid buggy jumping over desert dunes in the Atacama, Chile",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "rally-raid-atacama-11",
+     "alt": "Rally raid buggy jumping over desert dunes in the Atacama, Chile",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "rally-raid-atacama-12",
+     "alt": "Rally raid buggy jumping over desert dunes in the Atacama, Chile",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "rally-raid-atacama-13",
+     "alt": "Rally raid buggy jumping over desert dunes in the Atacama, Chile",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "rally-raid-atacama-14",
+     "alt": "Rally raid buggy jumping over desert dunes in the Atacama, Chile",
+     "w": 1600,
+     "h": 795,
+     "sw": 800,
+     "sh": 397
+    },
+    {
+     "file": "rally-raid-atacama-15",
+     "alt": "Rally raid buggy jumping over desert dunes in the Atacama, Chile",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "rally-raid-atacama-16",
+     "alt": "Rally raid buggy jumping over desert dunes in the Atacama, Chile",
+     "w": 1600,
+     "h": 788,
+     "sw": 800,
+     "sh": 394
+    },
+    {
+     "file": "rally-raid-atacama-17",
+     "alt": "Rally raid buggy jumping over desert dunes in the Atacama, Chile",
+     "w": 1600,
+     "h": 514,
+     "sw": 800,
+     "sh": 257
+    },
+    {
+     "file": "rally-raid-atacama-18",
+     "alt": "Rally raid buggy jumping over desert dunes in the Atacama, Chile",
+     "w": 1600,
+     "h": 483,
+     "sw": 800,
+     "sh": 241
+    },
+    {
+     "file": "rally-raid-atacama-19",
+     "alt": "Rally raid buggy jumping over desert dunes in the Atacama, Chile",
+     "w": 1600,
+     "h": 597,
+     "sw": 800,
+     "sh": 299
+    },
+    {
+     "file": "rally-raid-atacama-20",
+     "alt": "Rally raid buggy jumping over desert dunes in the Atacama, Chile",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "rally-raid-atacama-21",
+     "alt": "Rally raid buggy jumping over desert dunes in the Atacama, Chile",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "rally-raid-atacama-22",
+     "alt": "Rally raid buggy jumping over desert dunes in the Atacama, Chile",
+     "w": 1600,
+     "h": 750,
+     "sw": 800,
+     "sh": 375
+    },
+    {
+     "file": "rally-raid-atacama-23",
+     "alt": "Rally raid buggy jumping over desert dunes in the Atacama, Chile",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "rally-raid-atacama-24",
+     "alt": "Rally raid buggy jumping over desert dunes in the Atacama, Chile",
+     "w": 1600,
+     "h": 677,
+     "sw": 800,
+     "sh": 339
+    },
+    {
+     "file": "rally-raid-atacama-25",
+     "alt": "Rally raid buggy jumping over desert dunes in the Atacama, Chile",
+     "w": 1600,
+     "h": 1067,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "rally-raid-atacama-26",
+     "alt": "Rally raid buggy jumping over desert dunes in the Atacama, Chile",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "rally-raid-atacama-27",
+     "alt": "Rally raid buggy jumping over desert dunes in the Atacama, Chile",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "rally-raid-atacama-28",
+     "alt": "Rally raid buggy jumping over desert dunes in the Atacama, Chile",
+     "w": 1600,
+     "h": 677,
+     "sw": 800,
+     "sh": 339
+    },
+    {
+     "file": "rally-raid-atacama-29",
+     "alt": "Rally raid buggy jumping over desert dunes in the Atacama, Chile",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "rally-raid-atacama-30",
+     "alt": "Rally raid buggy jumping over desert dunes in the Atacama, Chile",
+     "w": 1600,
+     "h": 420,
+     "sw": 800,
+     "sh": 210
+    },
+    {
+     "file": "rally-raid-atacama-31",
+     "alt": "Rally raid buggy jumping over desert dunes in the Atacama, Chile",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "rally-raid-atacama-32",
+     "alt": "Rally raid buggy jumping over desert dunes in the Atacama, Chile",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "rally-raid-atacama-33",
+     "alt": "Rally raid buggy jumping over desert dunes in the Atacama, Chile",
+     "w": 1600,
+     "h": 403,
+     "sw": 800,
+     "sh": 202
+    },
+    {
+     "file": "rally-raid-atacama-34",
+     "alt": "Rally raid buggy jumping over desert dunes in the Atacama, Chile",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "rally-raid-atacama-35",
+     "alt": "Rally raid buggy jumping over desert dunes in the Atacama, Chile",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "rally-raid-atacama-36",
+     "alt": "Rally raid buggy jumping over desert dunes in the Atacama, Chile",
+     "w": 1600,
+     "h": 536,
+     "sw": 800,
+     "sh": 268
+    }
+   ]
+  },
+  {
+   "slug": "indycar-long-beach-2018",
+   "title": "Grand Prix of Long Beach 2018",
+   "category": "motorsport",
+   "label": "Motorsport",
+   "kicker": "Long Beach, California · April 2018",
+   "intro": "IndyCar and IMSA on the streets of Long Beach. Slow shutter, a steady pan and a lot of discarded frames to keep the car sharp while the concrete walls, grandstands and sponsor boards melt into speed.",
+   "cover": 3,
+   "cover_alt": "IndyCar panning shot at the 2018 Toyota Grand Prix of Long Beach",
+   "updated": "2026-10-02",
+   "photos": [
+    {
+     "file": "indycar-long-beach-2018-01",
+     "alt": "IndyCar panning shot at the 2018 Toyota Grand Prix of Long Beach",
+     "w": 1600,
+     "h": 790,
+     "sw": 800,
+     "sh": 395
+    },
+    {
+     "file": "indycar-long-beach-2018-02",
+     "alt": "IndyCar panning shot at the 2018 Toyota Grand Prix of Long Beach",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "indycar-long-beach-2018-03",
+     "alt": "IndyCar panning shot at the 2018 Toyota Grand Prix of Long Beach",
+     "w": 1600,
+     "h": 657,
+     "sw": 800,
+     "sh": 328
+    },
+    {
+     "file": "indycar-long-beach-2018-04",
+     "alt": "IndyCar panning shot at the 2018 Toyota Grand Prix of Long Beach",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "indycar-long-beach-2018-05",
+     "alt": "IndyCar panning shot at the 2018 Toyota Grand Prix of Long Beach",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "indycar-long-beach-2018-06",
+     "alt": "IndyCar panning shot at the 2018 Toyota Grand Prix of Long Beach",
+     "w": 1600,
+     "h": 562,
+     "sw": 800,
+     "sh": 281
+    },
+    {
+     "file": "indycar-long-beach-2018-07",
+     "alt": "IndyCar panning shot at the 2018 Toyota Grand Prix of Long Beach",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "indycar-long-beach-2018-08",
+     "alt": "IndyCar panning shot at the 2018 Toyota Grand Prix of Long Beach",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "indycar-long-beach-2018-09",
+     "alt": "IndyCar panning shot at the 2018 Toyota Grand Prix of Long Beach",
+     "w": 1600,
+     "h": 754,
+     "sw": 800,
+     "sh": 377
+    },
+    {
+     "file": "indycar-long-beach-2018-10",
+     "alt": "IndyCar panning shot at the 2018 Toyota Grand Prix of Long Beach",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "indycar-long-beach-2018-11",
+     "alt": "IndyCar panning shot at the 2018 Toyota Grand Prix of Long Beach",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "indycar-long-beach-2018-12",
+     "alt": "IndyCar panning shot at the 2018 Toyota Grand Prix of Long Beach",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "indycar-long-beach-2018-13",
+     "alt": "IndyCar panning shot at the 2018 Toyota Grand Prix of Long Beach",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "indycar-long-beach-2018-14",
+     "alt": "IndyCar panning shot at the 2018 Toyota Grand Prix of Long Beach",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "indycar-long-beach-2018-15",
+     "alt": "IndyCar panning shot at the 2018 Toyota Grand Prix of Long Beach",
+     "w": 1548,
+     "h": 609,
+     "sw": 800,
+     "sh": 315
+    },
+    {
+     "file": "indycar-long-beach-2018-16",
+     "alt": "IndyCar panning shot at the 2018 Toyota Grand Prix of Long Beach",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "indycar-long-beach-2018-17",
+     "alt": "IndyCar panning shot at the 2018 Toyota Grand Prix of Long Beach",
+     "w": 1600,
+     "h": 591,
+     "sw": 800,
+     "sh": 296
+    },
+    {
+     "file": "indycar-long-beach-2018-18",
+     "alt": "IndyCar panning shot at the 2018 Toyota Grand Prix of Long Beach",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "indycar-long-beach-2018-19",
+     "alt": "IndyCar panning shot at the 2018 Toyota Grand Prix of Long Beach",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "indycar-long-beach-2018-20",
+     "alt": "IndyCar panning shot at the 2018 Toyota Grand Prix of Long Beach",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    }
+   ]
+  },
+  {
+   "slug": "isde-chile-enduro",
+   "title": "ISDE Chile — Six Days of Enduro",
+   "category": "motorsport",
+   "label": "Motorsport",
+   "kicker": "Coastal Chile",
+   "intro": "The FIM International Six Days of Enduro, the oldest off-road event on the FIM calendar, held on Chile's central coast. Riders in the air over packed hillsides, sand roost in the turns and a beach final where panning turns the dunes into brushstrokes.",
+   "cover": 0,
+   "cover_alt": "Enduro rider jumping at the FIM International Six Days of Enduro in Chile",
+   "updated": "2026-10-02",
+   "photos": [
+    {
+     "file": "isde-chile-enduro-01",
+     "alt": "Enduro rider jumping at the FIM International Six Days of Enduro in Chile",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "isde-chile-enduro-02",
+     "alt": "Enduro rider jumping at the FIM International Six Days of Enduro in Chile",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "isde-chile-enduro-03",
+     "alt": "Enduro rider jumping at the FIM International Six Days of Enduro in Chile",
+     "w": 1600,
+     "h": 512,
+     "sw": 800,
+     "sh": 256
+    },
+    {
+     "file": "isde-chile-enduro-04",
+     "alt": "Enduro rider jumping at the FIM International Six Days of Enduro in Chile",
+     "w": 1600,
+     "h": 520,
+     "sw": 800,
+     "sh": 260
+    },
+    {
+     "file": "isde-chile-enduro-05",
+     "alt": "Enduro rider jumping at the FIM International Six Days of Enduro in Chile",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "isde-chile-enduro-06",
+     "alt": "Enduro rider jumping at the FIM International Six Days of Enduro in Chile",
+     "w": 1259,
+     "h": 1259,
+     "sw": 800,
+     "sh": 800
+    },
+    {
+     "file": "isde-chile-enduro-07",
+     "alt": "Enduro rider jumping at the FIM International Six Days of Enduro in Chile",
+     "w": 1600,
+     "h": 744,
+     "sw": 800,
+     "sh": 372
+    },
+    {
+     "file": "isde-chile-enduro-08",
+     "alt": "Enduro rider jumping at the FIM International Six Days of Enduro in Chile",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "isde-chile-enduro-09",
+     "alt": "Enduro rider jumping at the FIM International Six Days of Enduro in Chile",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "isde-chile-enduro-10",
+     "alt": "Enduro rider jumping at the FIM International Six Days of Enduro in Chile",
+     "w": 1600,
+     "h": 443,
+     "sw": 800,
+     "sh": 221
+    },
+    {
+     "file": "isde-chile-enduro-11",
+     "alt": "Enduro rider jumping at the FIM International Six Days of Enduro in Chile",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "isde-chile-enduro-12",
+     "alt": "Enduro rider jumping at the FIM International Six Days of Enduro in Chile",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "isde-chile-enduro-13",
+     "alt": "Enduro rider jumping at the FIM International Six Days of Enduro in Chile",
+     "w": 1600,
+     "h": 684,
+     "sw": 800,
+     "sh": 342
+    },
+    {
+     "file": "isde-chile-enduro-14",
+     "alt": "Enduro rider jumping at the FIM International Six Days of Enduro in Chile",
+     "w": 1600,
+     "h": 671,
+     "sw": 800,
+     "sh": 336
+    },
+    {
+     "file": "isde-chile-enduro-15",
+     "alt": "Enduro rider jumping at the FIM International Six Days of Enduro in Chile",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "isde-chile-enduro-16",
+     "alt": "Enduro rider jumping at the FIM International Six Days of Enduro in Chile",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "isde-chile-enduro-17",
+     "alt": "Enduro rider jumping at the FIM International Six Days of Enduro in Chile",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    }
+   ]
+  },
+  {
+   "slug": "mtb-enduro-chile",
+   "title": "Mountain Bike Enduro — Chile",
+   "category": "motorsport",
+   "label": "Motorsport",
+   "kicker": "Coquimbo Region, Chile",
+   "intro": "Downhill and enduro racing in the dry hills of the Coquimbo region: cactus, dust, a dirt kicker in front of the crowd and riders who commit to it anyway.",
+   "cover": 0,
+   "cover_alt": "Mountain bike rider jumping a dirt kicker at an enduro race in Chile",
+   "updated": "2026-10-02",
+   "photos": [
+    {
+     "file": "mtb-enduro-chile-01",
+     "alt": "Mountain bike rider jumping a dirt kicker at an enduro race in Chile",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "mtb-enduro-chile-02",
+     "alt": "Mountain bike rider jumping a dirt kicker at an enduro race in Chile",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "mtb-enduro-chile-03",
+     "alt": "Mountain bike rider jumping a dirt kicker at an enduro race in Chile",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "mtb-enduro-chile-04",
+     "alt": "Mountain bike rider jumping a dirt kicker at an enduro race in Chile",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "mtb-enduro-chile-05",
+     "alt": "Mountain bike rider jumping a dirt kicker at an enduro race in Chile",
+     "w": 1600,
+     "h": 738,
+     "sw": 800,
+     "sh": 369
+    },
+    {
+     "file": "mtb-enduro-chile-06",
+     "alt": "Mountain bike rider jumping a dirt kicker at an enduro race in Chile",
+     "w": 1600,
+     "h": 727,
+     "sw": 800,
+     "sh": 364
+    },
+    {
+     "file": "mtb-enduro-chile-07",
+     "alt": "Mountain bike rider jumping a dirt kicker at an enduro race in Chile",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "mtb-enduro-chile-08",
+     "alt": "Mountain bike rider jumping a dirt kicker at an enduro race in Chile",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "mtb-enduro-chile-09",
+     "alt": "Mountain bike rider jumping a dirt kicker at an enduro race in Chile",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "mtb-enduro-chile-10",
+     "alt": "Mountain bike rider jumping a dirt kicker at an enduro race in Chile",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "mtb-enduro-chile-11",
+     "alt": "Mountain bike rider jumping a dirt kicker at an enduro race in Chile",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "mtb-enduro-chile-12",
+     "alt": "Mountain bike rider jumping a dirt kicker at an enduro race in Chile",
+     "w": 1600,
+     "h": 678,
+     "sw": 800,
+     "sh": 339
+    },
+    {
+     "file": "mtb-enduro-chile-13",
+     "alt": "Mountain bike rider jumping a dirt kicker at an enduro race in Chile",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "mtb-enduro-chile-14",
+     "alt": "Mountain bike rider jumping a dirt kicker at an enduro race in Chile",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "mtb-enduro-chile-15",
+     "alt": "Mountain bike rider jumping a dirt kicker at an enduro race in Chile",
+     "w": 1600,
+     "h": 682,
+     "sw": 800,
+     "sh": 341
+    },
+    {
+     "file": "mtb-enduro-chile-16",
+     "alt": "Mountain bike rider jumping a dirt kicker at an enduro race in Chile",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "mtb-enduro-chile-17",
+     "alt": "Mountain bike rider jumping a dirt kicker at an enduro race in Chile",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "mtb-enduro-chile-18",
+     "alt": "Mountain bike rider jumping a dirt kicker at an enduro race in Chile",
+     "w": 1600,
+     "h": 633,
+     "sw": 800,
+     "sh": 316
+    },
+    {
+     "file": "mtb-enduro-chile-19",
+     "alt": "Mountain bike rider jumping a dirt kicker at an enduro race in Chile",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    }
+   ]
+  },
+  {
+   "slug": "del-mar-opening-day-2018",
+   "title": "Opening Day at Del Mar",
+   "category": "events",
+   "label": "Events",
+   "kicker": "Del Mar, California",
+   "intro": "Opening Day at the Del Mar racetrack, where the turf meets the surf: the hat contest, the paddock, the race from the roof, and the party that runs long after the last post.",
+   "cover": 3,
+   "cover_alt": "Crowd in hats and summer outfits on Opening Day at Del Mar racetrack",
+   "updated": "2026-10-02",
+   "photos": [
+    {
+     "file": "del-mar-opening-day-2018-01",
+     "alt": "Crowd in hats and summer outfits on Opening Day at Del Mar racetrack",
+     "w": 1600,
+     "h": 457,
+     "sw": 800,
+     "sh": 229
+    },
+    {
+     "file": "del-mar-opening-day-2018-02",
+     "alt": "Crowd in hats and summer outfits on Opening Day at Del Mar racetrack",
+     "w": 1600,
+     "h": 673,
+     "sw": 800,
+     "sh": 337
+    },
+    {
+     "file": "del-mar-opening-day-2018-03",
+     "alt": "Crowd in hats and summer outfits on Opening Day at Del Mar racetrack",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "del-mar-opening-day-2018-04",
+     "alt": "Crowd in hats and summer outfits on Opening Day at Del Mar racetrack",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "del-mar-opening-day-2018-05",
+     "alt": "Crowd in hats and summer outfits on Opening Day at Del Mar racetrack",
+     "w": 1600,
+     "h": 572,
+     "sw": 800,
+     "sh": 286
+    },
+    {
+     "file": "del-mar-opening-day-2018-06",
+     "alt": "Crowd in hats and summer outfits on Opening Day at Del Mar racetrack",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "del-mar-opening-day-2018-07",
+     "alt": "Crowd in hats and summer outfits on Opening Day at Del Mar racetrack",
+     "w": 1174,
+     "h": 782,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "del-mar-opening-day-2018-08",
+     "alt": "Crowd in hats and summer outfits on Opening Day at Del Mar racetrack",
+     "w": 1365,
+     "h": 910,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "del-mar-opening-day-2018-09",
+     "alt": "Crowd in hats and summer outfits on Opening Day at Del Mar racetrack",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "del-mar-opening-day-2018-10",
+     "alt": "Crowd in hats and summer outfits on Opening Day at Del Mar racetrack",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "del-mar-opening-day-2018-11",
+     "alt": "Crowd in hats and summer outfits on Opening Day at Del Mar racetrack",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "del-mar-opening-day-2018-12",
+     "alt": "Crowd in hats and summer outfits on Opening Day at Del Mar racetrack",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "del-mar-opening-day-2018-13",
+     "alt": "Crowd in hats and summer outfits on Opening Day at Del Mar racetrack",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "del-mar-opening-day-2018-14",
+     "alt": "Crowd in hats and summer outfits on Opening Day at Del Mar racetrack",
+     "w": 1067,
+     "h": 1600,
+     "sw": 533,
+     "sh": 800
+    },
+    {
+     "file": "del-mar-opening-day-2018-15",
+     "alt": "Crowd in hats and summer outfits on Opening Day at Del Mar racetrack",
+     "w": 1600,
+     "h": 1067,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "del-mar-opening-day-2018-16",
+     "alt": "Crowd in hats and summer outfits on Opening Day at Del Mar racetrack",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "del-mar-opening-day-2018-17",
+     "alt": "Crowd in hats and summer outfits on Opening Day at Del Mar racetrack",
+     "w": 1067,
+     "h": 1600,
+     "sw": 533,
+     "sh": 800
+    },
+    {
+     "file": "del-mar-opening-day-2018-18",
+     "alt": "Crowd in hats and summer outfits on Opening Day at Del Mar racetrack",
+     "w": 1243,
+     "h": 828,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "del-mar-opening-day-2018-19",
+     "alt": "Crowd in hats and summer outfits on Opening Day at Del Mar racetrack",
+     "w": 1600,
+     "h": 1067,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "del-mar-opening-day-2018-20",
+     "alt": "Crowd in hats and summer outfits on Opening Day at Del Mar racetrack",
+     "w": 1366,
+     "h": 1518,
+     "sw": 720,
+     "sh": 800
+    },
+    {
+     "file": "del-mar-opening-day-2018-21",
+     "alt": "Crowd in hats and summer outfits on Opening Day at Del Mar racetrack",
+     "w": 1600,
+     "h": 1067,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "del-mar-opening-day-2018-22",
+     "alt": "Crowd in hats and summer outfits on Opening Day at Del Mar racetrack",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "del-mar-opening-day-2018-23",
+     "alt": "Crowd in hats and summer outfits on Opening Day at Del Mar racetrack",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "del-mar-opening-day-2018-24",
+     "alt": "Crowd in hats and summer outfits on Opening Day at Del Mar racetrack",
+     "w": 1600,
+     "h": 1067,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "del-mar-opening-day-2018-25",
+     "alt": "Crowd in hats and summer outfits on Opening Day at Del Mar racetrack",
+     "w": 1067,
+     "h": 1600,
+     "sw": 533,
+     "sh": 800
+    },
+    {
+     "file": "del-mar-opening-day-2018-26",
+     "alt": "Crowd in hats and summer outfits on Opening Day at Del Mar racetrack",
+     "w": 1600,
+     "h": 1067,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "del-mar-opening-day-2018-27",
+     "alt": "Crowd in hats and summer outfits on Opening Day at Del Mar racetrack",
+     "w": 1600,
+     "h": 798,
+     "sw": 800,
+     "sh": 399
+    },
+    {
+     "file": "del-mar-opening-day-2018-28",
+     "alt": "Crowd in hats and summer outfits on Opening Day at Del Mar racetrack",
+     "w": 1600,
+     "h": 746,
+     "sw": 800,
+     "sh": 373
+    },
+    {
+     "file": "del-mar-opening-day-2018-29",
+     "alt": "Crowd in hats and summer outfits on Opening Day at Del Mar racetrack",
+     "w": 1365,
+     "h": 1365,
+     "sw": 800,
+     "sh": 800
+    },
+    {
+     "file": "del-mar-opening-day-2018-30",
+     "alt": "Crowd in hats and summer outfits on Opening Day at Del Mar racetrack",
+     "w": 1366,
+     "h": 1366,
+     "sw": 800,
+     "sh": 800
+    },
+    {
+     "file": "del-mar-opening-day-2018-31",
+     "alt": "Crowd in hats and summer outfits on Opening Day at Del Mar racetrack",
+     "w": 1600,
+     "h": 759,
+     "sw": 800,
+     "sh": 379
+    },
+    {
+     "file": "del-mar-opening-day-2018-32",
+     "alt": "Crowd in hats and summer outfits on Opening Day at Del Mar racetrack",
+     "w": 1600,
+     "h": 511,
+     "sw": 800,
+     "sh": 255
+    }
+   ]
+  },
+  {
+   "slug": "st-patricks-parade-hermosa-beach",
+   "title": "St. Patrick's Day Parade — Hermosa Beach",
+   "category": "events",
+   "label": "Events",
+   "kicker": "Hermosa Beach, California",
+   "intro": "Hermosa Beach's St. Patrick's Day parade down Pier Avenue: marching bands, folklórico dancers, classic cars, pipers, clowns, Darth Vader with the 501st, and a whole town in green.",
+   "cover": 7,
+   "cover_alt": "Marching band and classic cars at the Hermosa Beach St. Patrick's Day parade",
+   "updated": "2026-10-02",
+   "photos": [
+    {
+     "file": "st-patricks-parade-hermosa-beach-01",
+     "alt": "Marching band and classic cars at the Hermosa Beach St. Patrick's Day parade",
+     "w": 1600,
+     "h": 345,
+     "sw": 800,
+     "sh": 172
+    },
+    {
+     "file": "st-patricks-parade-hermosa-beach-02",
+     "alt": "Marching band and classic cars at the Hermosa Beach St. Patrick's Day parade",
+     "w": 1600,
+     "h": 792,
+     "sw": 800,
+     "sh": 396
+    },
+    {
+     "file": "st-patricks-parade-hermosa-beach-03",
+     "alt": "Marching band and classic cars at the Hermosa Beach St. Patrick's Day parade",
+     "w": 1600,
+     "h": 406,
+     "sw": 800,
+     "sh": 203
+    },
+    {
+     "file": "st-patricks-parade-hermosa-beach-04",
+     "alt": "Marching band and classic cars at the Hermosa Beach St. Patrick's Day parade",
+     "w": 1600,
+     "h": 645,
+     "sw": 800,
+     "sh": 323
+    },
+    {
+     "file": "st-patricks-parade-hermosa-beach-05",
+     "alt": "Marching band and classic cars at the Hermosa Beach St. Patrick's Day parade",
+     "w": 1600,
+     "h": 636,
+     "sw": 800,
+     "sh": 318
+    },
+    {
+     "file": "st-patricks-parade-hermosa-beach-06",
+     "alt": "Marching band and classic cars at the Hermosa Beach St. Patrick's Day parade",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "st-patricks-parade-hermosa-beach-07",
+     "alt": "Marching band and classic cars at the Hermosa Beach St. Patrick's Day parade",
+     "w": 1600,
+     "h": 565,
+     "sw": 800,
+     "sh": 282
+    },
+    {
+     "file": "st-patricks-parade-hermosa-beach-08",
+     "alt": "Marching band and classic cars at the Hermosa Beach St. Patrick's Day parade",
+     "w": 1600,
+     "h": 513,
+     "sw": 800,
+     "sh": 257
+    },
+    {
+     "file": "st-patricks-parade-hermosa-beach-09",
+     "alt": "Marching band and classic cars at the Hermosa Beach St. Patrick's Day parade",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "st-patricks-parade-hermosa-beach-10",
+     "alt": "Marching band and classic cars at the Hermosa Beach St. Patrick's Day parade",
+     "w": 1600,
+     "h": 559,
+     "sw": 800,
+     "sh": 279
+    },
+    {
+     "file": "st-patricks-parade-hermosa-beach-11",
+     "alt": "Marching band and classic cars at the Hermosa Beach St. Patrick's Day parade",
+     "w": 1600,
+     "h": 710,
+     "sw": 800,
+     "sh": 355
+    },
+    {
+     "file": "st-patricks-parade-hermosa-beach-12",
+     "alt": "Marching band and classic cars at the Hermosa Beach St. Patrick's Day parade",
+     "w": 1600,
+     "h": 491,
+     "sw": 800,
+     "sh": 246
+    },
+    {
+     "file": "st-patricks-parade-hermosa-beach-13",
+     "alt": "Marching band and classic cars at the Hermosa Beach St. Patrick's Day parade",
+     "w": 1600,
+     "h": 779,
+     "sw": 800,
+     "sh": 389
+    },
+    {
+     "file": "st-patricks-parade-hermosa-beach-14",
+     "alt": "Marching band and classic cars at the Hermosa Beach St. Patrick's Day parade",
+     "w": 1600,
+     "h": 673,
+     "sw": 800,
+     "sh": 337
+    },
+    {
+     "file": "st-patricks-parade-hermosa-beach-15",
+     "alt": "Marching band and classic cars at the Hermosa Beach St. Patrick's Day parade",
+     "w": 1600,
+     "h": 787,
+     "sw": 800,
+     "sh": 393
+    },
+    {
+     "file": "st-patricks-parade-hermosa-beach-16",
+     "alt": "Marching band and classic cars at the Hermosa Beach St. Patrick's Day parade",
+     "w": 1600,
+     "h": 422,
+     "sw": 800,
+     "sh": 211
+    },
+    {
+     "file": "st-patricks-parade-hermosa-beach-17",
+     "alt": "Marching band and classic cars at the Hermosa Beach St. Patrick's Day parade",
+     "w": 1600,
+     "h": 754,
+     "sw": 800,
+     "sh": 377
+    },
+    {
+     "file": "st-patricks-parade-hermosa-beach-18",
+     "alt": "Marching band and classic cars at the Hermosa Beach St. Patrick's Day parade",
+     "w": 1600,
+     "h": 722,
+     "sw": 800,
+     "sh": 361
+    },
+    {
+     "file": "st-patricks-parade-hermosa-beach-19",
+     "alt": "Marching band and classic cars at the Hermosa Beach St. Patrick's Day parade",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "st-patricks-parade-hermosa-beach-20",
+     "alt": "Marching band and classic cars at the Hermosa Beach St. Patrick's Day parade",
+     "w": 1600,
+     "h": 692,
+     "sw": 800,
+     "sh": 346
+    },
+    {
+     "file": "st-patricks-parade-hermosa-beach-21",
+     "alt": "Marching band and classic cars at the Hermosa Beach St. Patrick's Day parade",
+     "w": 1600,
+     "h": 745,
+     "sw": 800,
+     "sh": 372
+    },
+    {
+     "file": "st-patricks-parade-hermosa-beach-22",
+     "alt": "Marching band and classic cars at the Hermosa Beach St. Patrick's Day parade",
+     "w": 1365,
+     "h": 1365,
+     "sw": 800,
+     "sh": 800
+    },
+    {
+     "file": "st-patricks-parade-hermosa-beach-23",
+     "alt": "Marching band and classic cars at the Hermosa Beach St. Patrick's Day parade",
+     "w": 1600,
+     "h": 345,
+     "sw": 800,
+     "sh": 172
+    },
+    {
+     "file": "st-patricks-parade-hermosa-beach-24",
+     "alt": "Marching band and classic cars at the Hermosa Beach St. Patrick's Day parade",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "st-patricks-parade-hermosa-beach-25",
+     "alt": "Marching band and classic cars at the Hermosa Beach St. Patrick's Day parade",
+     "w": 1600,
+     "h": 636,
+     "sw": 800,
+     "sh": 318
+    },
+    {
+     "file": "st-patricks-parade-hermosa-beach-26",
+     "alt": "Marching band and classic cars at the Hermosa Beach St. Patrick's Day parade",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "st-patricks-parade-hermosa-beach-27",
+     "alt": "Marching band and classic cars at the Hermosa Beach St. Patrick's Day parade",
+     "w": 1365,
+     "h": 1152,
+     "sw": 800,
+     "sh": 675
+    },
+    {
+     "file": "st-patricks-parade-hermosa-beach-28",
+     "alt": "Marching band and classic cars at the Hermosa Beach St. Patrick's Day parade",
+     "w": 1600,
+     "h": 702,
+     "sw": 800,
+     "sh": 351
+    },
+    {
+     "file": "st-patricks-parade-hermosa-beach-29",
+     "alt": "Marching band and classic cars at the Hermosa Beach St. Patrick's Day parade",
+     "w": 1600,
+     "h": 671,
+     "sw": 800,
+     "sh": 336
+    },
+    {
+     "file": "st-patricks-parade-hermosa-beach-30",
+     "alt": "Marching band and classic cars at the Hermosa Beach St. Patrick's Day parade",
+     "w": 1600,
+     "h": 520,
+     "sw": 800,
+     "sh": 260
+    },
+    {
+     "file": "st-patricks-parade-hermosa-beach-31",
+     "alt": "Marching band and classic cars at the Hermosa Beach St. Patrick's Day parade",
+     "w": 1600,
+     "h": 452,
+     "sw": 800,
+     "sh": 226
+    }
+   ]
+  },
+  {
+   "slug": "lebowski-fest-la-2013",
+   "title": "Lebowski Fest LA 2013",
+   "category": "events",
+   "label": "Events",
+   "kicker": "Los Angeles · March 2013",
+   "intro": "Lebowski Fest in Los Angeles: a night of live music at the Saban Theatre and a bowling party full of Dudes, Walters, Jesuses, nihilists and Valkyries.",
+   "cover": 0,
+   "cover_alt": "Lebowski Fest fans in costume in Los Angeles, 2013",
+   "updated": "2026-10-02",
+   "photos": [
+    {
+     "file": "lebowski-fest-la-2013-01",
+     "alt": "Lebowski Fest fans in costume in Los Angeles, 2013",
+     "w": 1600,
+     "h": 572,
+     "sw": 800,
+     "sh": 286
+    },
+    {
+     "file": "lebowski-fest-la-2013-02",
+     "alt": "Lebowski Fest fans in costume in Los Angeles, 2013",
+     "w": 1600,
+     "h": 1067,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "lebowski-fest-la-2013-03",
+     "alt": "Lebowski Fest fans in costume in Los Angeles, 2013",
+     "w": 1600,
+     "h": 1067,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "lebowski-fest-la-2013-04",
+     "alt": "Lebowski Fest fans in costume in Los Angeles, 2013",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "lebowski-fest-la-2013-05",
+     "alt": "Lebowski Fest fans in costume in Los Angeles, 2013",
+     "w": 1600,
+     "h": 1067,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "lebowski-fest-la-2013-06",
+     "alt": "Lebowski Fest fans in costume in Los Angeles, 2013",
+     "w": 1600,
+     "h": 1067,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "lebowski-fest-la-2013-07",
+     "alt": "Lebowski Fest fans in costume in Los Angeles, 2013",
+     "w": 1600,
+     "h": 1067,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "lebowski-fest-la-2013-08",
+     "alt": "Lebowski Fest fans in costume in Los Angeles, 2013",
+     "w": 1600,
+     "h": 1067,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "lebowski-fest-la-2013-09",
+     "alt": "Lebowski Fest fans in costume in Los Angeles, 2013",
+     "w": 1600,
+     "h": 1067,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "lebowski-fest-la-2013-10",
+     "alt": "Lebowski Fest fans in costume in Los Angeles, 2013",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "lebowski-fest-la-2013-11",
+     "alt": "Lebowski Fest fans in costume in Los Angeles, 2013",
+     "w": 1600,
+     "h": 1067,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "lebowski-fest-la-2013-12",
+     "alt": "Lebowski Fest fans in costume in Los Angeles, 2013",
+     "w": 1600,
+     "h": 1067,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "lebowski-fest-la-2013-13",
+     "alt": "Lebowski Fest fans in costume in Los Angeles, 2013",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "lebowski-fest-la-2013-14",
+     "alt": "Lebowski Fest fans in costume in Los Angeles, 2013",
+     "w": 1600,
+     "h": 1067,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "lebowski-fest-la-2013-15",
+     "alt": "Lebowski Fest fans in costume in Los Angeles, 2013",
+     "w": 1600,
+     "h": 1067,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "lebowski-fest-la-2013-16",
+     "alt": "Lebowski Fest fans in costume in Los Angeles, 2013",
+     "w": 1600,
+     "h": 1067,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "lebowski-fest-la-2013-17",
+     "alt": "Lebowski Fest fans in costume in Los Angeles, 2013",
+     "w": 1600,
+     "h": 1067,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "lebowski-fest-la-2013-18",
+     "alt": "Lebowski Fest fans in costume in Los Angeles, 2013",
+     "w": 1600,
+     "h": 1067,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "lebowski-fest-la-2013-19",
+     "alt": "Lebowski Fest fans in costume in Los Angeles, 2013",
+     "w": 1600,
+     "h": 1067,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "lebowski-fest-la-2013-20",
+     "alt": "Lebowski Fest fans in costume in Los Angeles, 2013",
+     "w": 1600,
+     "h": 1067,
+     "sw": 800,
+     "sh": 533
+    }
+   ]
+  },
+  {
+   "slug": "poker-tour",
+   "title": "On the Poker Tour",
+   "category": "events",
+   "label": "Events",
+   "kicker": "LAPT & WSOP",
+   "intro": "Tournament poker from the Latin American Poker Tour to the World Series in Las Vegas: the table, the chips, the stare-downs and the trophy shots, photographed for the poker media.",
+   "cover": 9,
+   "cover_alt": "Poker player at the table during a Latin American Poker Tour event",
+   "updated": "2026-10-02",
+   "photos": [
+    {
+     "file": "poker-tour-01",
+     "alt": "Poker player at the table during a Latin American Poker Tour event",
+     "w": 1600,
+     "h": 439,
+     "sw": 800,
+     "sh": 220
+    },
+    {
+     "file": "poker-tour-02",
+     "alt": "Poker player at the table during a Latin American Poker Tour event",
+     "w": 1600,
+     "h": 1600,
+     "sw": 800,
+     "sh": 800
+    },
+    {
+     "file": "poker-tour-03",
+     "alt": "Poker player at the table during a Latin American Poker Tour event",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "poker-tour-04",
+     "alt": "Poker player at the table during a Latin American Poker Tour event",
+     "w": 1067,
+     "h": 1600,
+     "sw": 533,
+     "sh": 800
+    },
+    {
+     "file": "poker-tour-05",
+     "alt": "Poker player at the table during a Latin American Poker Tour event",
+     "w": 1067,
+     "h": 1600,
+     "sw": 533,
+     "sh": 800
+    },
+    {
+     "file": "poker-tour-06",
+     "alt": "Poker player at the table during a Latin American Poker Tour event",
+     "w": 1366,
+     "h": 910,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "poker-tour-07",
+     "alt": "Poker player at the table during a Latin American Poker Tour event",
+     "w": 1318,
+     "h": 1318,
+     "sw": 800,
+     "sh": 800
+    },
+    {
+     "file": "poker-tour-08",
+     "alt": "Poker player at the table during a Latin American Poker Tour event",
+     "w": 1600,
+     "h": 617,
+     "sw": 800,
+     "sh": 309
+    },
+    {
+     "file": "poker-tour-09",
+     "alt": "Poker player at the table during a Latin American Poker Tour event",
+     "w": 1067,
+     "h": 1600,
+     "sw": 533,
+     "sh": 800
+    },
+    {
+     "file": "poker-tour-10",
+     "alt": "Poker player at the table during a Latin American Poker Tour event",
+     "w": 1586,
+     "h": 1586,
+     "sw": 800,
+     "sh": 800
+    },
+    {
+     "file": "poker-tour-11",
+     "alt": "Poker player at the table during a Latin American Poker Tour event",
+     "w": 1600,
+     "h": 1600,
+     "sw": 800,
+     "sh": 800
+    },
+    {
+     "file": "poker-tour-12",
+     "alt": "Poker player at the table during a Latin American Poker Tour event",
+     "w": 1340,
+     "h": 1340,
+     "sw": 800,
+     "sh": 800
+    },
+    {
+     "file": "poker-tour-13",
+     "alt": "Poker player at the table during a Latin American Poker Tour event",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "poker-tour-14",
+     "alt": "Poker player at the table during a Latin American Poker Tour event",
+     "w": 1600,
+     "h": 746,
+     "sw": 800,
+     "sh": 373
+    },
+    {
+     "file": "poker-tour-15",
+     "alt": "Poker player at the table during a Latin American Poker Tour event",
+     "w": 1067,
+     "h": 1600,
+     "sw": 533,
+     "sh": 800
+    },
+    {
+     "file": "poker-tour-16",
+     "alt": "Poker player at the table during a Latin American Poker Tour event",
+     "w": 1600,
+     "h": 1067,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "poker-tour-17",
+     "alt": "Poker player at the table during a Latin American Poker Tour event",
+     "w": 1241,
+     "h": 1600,
+     "sw": 621,
+     "sh": 800
+    },
+    {
+     "file": "poker-tour-18",
+     "alt": "Poker player at the table during a Latin American Poker Tour event",
+     "w": 1240,
+     "h": 1600,
+     "sw": 620,
+     "sh": 800
+    },
+    {
+     "file": "poker-tour-19",
+     "alt": "Poker player at the table during a Latin American Poker Tour event",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "poker-tour-20",
+     "alt": "Poker player at the table during a Latin American Poker Tour event",
+     "w": 1067,
+     "h": 1600,
+     "sw": 533,
+     "sh": 800
+    },
+    {
+     "file": "poker-tour-21",
+     "alt": "Poker player at the table during a Latin American Poker Tour event",
+     "w": 1600,
+     "h": 335,
+     "sw": 800,
+     "sh": 168
+    },
+    {
+     "file": "poker-tour-22",
+     "alt": "Poker player at the table during a Latin American Poker Tour event",
+     "w": 1366,
+     "h": 1518,
+     "sw": 720,
+     "sh": 800
+    },
+    {
+     "file": "poker-tour-23",
+     "alt": "Poker player at the table during a Latin American Poker Tour event",
+     "w": 1241,
+     "h": 1600,
+     "sw": 621,
+     "sh": 800
+    },
+    {
+     "file": "poker-tour-24",
+     "alt": "Poker player at the table during a Latin American Poker Tour event",
+     "w": 1600,
+     "h": 519,
+     "sw": 800,
+     "sh": 259
+    },
+    {
+     "file": "poker-tour-25",
+     "alt": "Poker player at the table during a Latin American Poker Tour event",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    }
+   ]
+  },
+  {
+   "slug": "live-music",
+   "title": "Live Music",
+   "category": "events",
+   "label": "Events",
+   "kicker": "Stages & clubs",
+   "intro": "Small stages and big ones, mostly in black and white: the singer at the mic, the drummer in the strobe, the crowd a metre away.",
+   "cover": 9,
+   "cover_alt": "Singer performing on stage under coloured lights",
+   "updated": "2026-10-05",
+   "photos": [
+    {
+     "file": "live-music-01",
+     "alt": "Singer performing on stage under coloured lights",
+     "w": 1067,
+     "h": 1600,
+     "sw": 533,
+     "sh": 800
+    },
+    {
+     "file": "live-music-02",
+     "alt": "Singer performing on stage under coloured lights",
+     "w": 1067,
+     "h": 1600,
+     "sw": 533,
+     "sh": 800
+    },
+    {
+     "file": "live-music-03",
+     "alt": "Singer performing on stage under coloured lights",
+     "w": 1600,
+     "h": 1067,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "live-music-04",
+     "alt": "Singer performing on stage under coloured lights",
+     "w": 1241,
+     "h": 1600,
+     "sw": 621,
+     "sh": 800
+    },
+    {
+     "file": "live-music-05",
+     "alt": "Singer performing on stage under coloured lights",
+     "w": 1600,
+     "h": 1067,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "live-music-06",
+     "alt": "Singer performing on stage under coloured lights",
+     "w": 1067,
+     "h": 1600,
+     "sw": 533,
+     "sh": 800
+    },
+    {
+     "file": "live-music-07",
+     "alt": "Singer performing on stage under coloured lights",
+     "w": 1600,
+     "h": 1067,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "live-music-08",
+     "alt": "Singer performing on stage under coloured lights",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "live-music-09",
+     "alt": "Singer performing on stage under coloured lights",
+     "w": 1440,
+     "h": 960,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "live-music-10",
+     "alt": "Singer performing on stage under coloured lights",
+     "w": 1600,
+     "h": 1067,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "live-music-11",
+     "alt": "Singer performing on stage under coloured lights",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "live-music-12",
+     "alt": "Singer performing on stage under coloured lights",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "live-music-13",
+     "alt": "Singer performing on stage under coloured lights",
+     "w": 1067,
+     "h": 1600,
+     "sw": 533,
+     "sh": 800
+    },
+    {
+     "file": "live-music-14",
+     "alt": "Singer performing on stage under coloured lights",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "live-music-15",
+     "alt": "A large outdoor concert stage lit in blue with the crowd waiting in front",
+     "w": 1600,
+     "h": 1202,
+     "sw": 800,
+     "sh": 601
+    },
+    {
+     "file": "live-music-16",
+     "alt": "A band on a red-lit stage seen over the crowd at an outdoor concert",
+     "w": 1600,
+     "h": 1200,
+     "sw": 800,
+     "sh": 600
+    },
+    {
+     "file": "live-music-17",
+     "alt": "Crowd in black band T-shirts facing a stage full of red lights and haze",
+     "w": 1600,
+     "h": 1200,
+     "sw": 800,
+     "sh": 600
+    },
+    {
+     "file": "live-music-18",
+     "alt": "A guitarist and drummer on stage in green haze and yellow light",
+     "w": 1600,
+     "h": 1200,
+     "sw": 800,
+     "sh": 600
+    },
+    {
+     "file": "live-music-19",
+     "alt": "A flamenco singer with raised arm on a small garden stage at night",
+     "w": 1200,
+     "h": 1600,
+     "sw": 600,
+     "sh": 800
+    }
+   ]
+  },
+  {
+   "slug": "portraits",
+   "title": "Portraits",
+   "category": "portraits",
+   "label": "Portraits",
+   "kicker": "Studio & location",
+   "intro": "Natural light on the beach, a hard key in the studio, a face in the crowd. A running collection of people in front of the lens.",
+   "cover": 3,
+   "cover_alt": "Portrait photography by Carlos Martinez",
+   "updated": "2026-10-02",
+   "photos": [
+    {
+     "file": "portraits-01",
+     "alt": "Portrait photography by Carlos Martinez",
+     "w": 1067,
+     "h": 1600,
+     "sw": 533,
+     "sh": 800
+    },
+    {
+     "file": "portraits-02",
+     "alt": "Portrait photography by Carlos Martinez",
+     "w": 1067,
+     "h": 1600,
+     "sw": 533,
+     "sh": 800
+    },
+    {
+     "file": "portraits-03",
+     "alt": "Portrait photography by Carlos Martinez",
+     "w": 1241,
+     "h": 1600,
+     "sw": 621,
+     "sh": 800
+    },
+    {
+     "file": "portraits-04",
+     "alt": "Portrait photography by Carlos Martinez",
+     "w": 1067,
+     "h": 1600,
+     "sw": 533,
+     "sh": 800
+    },
+    {
+     "file": "portraits-05",
+     "alt": "Portrait photography by Carlos Martinez",
+     "w": 1067,
+     "h": 1600,
+     "sw": 533,
+     "sh": 800
+    },
+    {
+     "file": "portraits-06",
+     "alt": "Portrait photography by Carlos Martinez",
+     "w": 1067,
+     "h": 1600,
+     "sw": 533,
+     "sh": 800
+    },
+    {
+     "file": "portraits-07",
+     "alt": "Portrait photography by Carlos Martinez",
+     "w": 1534,
+     "h": 1534,
+     "sw": 800,
+     "sh": 800
+    },
+    {
+     "file": "portraits-08",
+     "alt": "Portrait photography by Carlos Martinez",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "portraits-09",
+     "alt": "Portrait photography by Carlos Martinez",
+     "w": 1365,
+     "h": 1365,
+     "sw": 800,
+     "sh": 800
+    },
+    {
+     "file": "portraits-10",
+     "alt": "Portrait photography by Carlos Martinez",
+     "w": 1240,
+     "h": 1600,
+     "sw": 620,
+     "sh": 800
+    },
+    {
+     "file": "portraits-11",
+     "alt": "Portrait photography by Carlos Martinez",
+     "w": 1240,
+     "h": 1600,
+     "sw": 620,
+     "sh": 800
+    },
+    {
+     "file": "portraits-12",
+     "alt": "Portrait photography by Carlos Martinez",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    }
+   ]
+  },
+  {
+   "slug": "tijuana-border-2019",
+   "title": "Playas de Tijuana",
+   "category": "street",
+   "label": "Street",
+   "kicker": "Tijuana, Mexico · January 2019",
+   "intro": "Playas de Tijuana, where the border fence runs down the beach and into the Pacific. Families on the boardwalk, painted steel, razor wire, and the same sunset for everyone.",
+   "cover": 6,
+   "cover_alt": "The border fence running into the Pacific at Playas de Tijuana at sunset",
+   "updated": "2026-10-05",
+   "photos": [
+    {
+     "file": "tijuana-border-2019-01",
+     "alt": "The border fence running into the Pacific at Playas de Tijuana at sunset",
+     "w": 1600,
+     "h": 558,
+     "sw": 800,
+     "sh": 279
+    },
+    {
+     "file": "tijuana-border-2019-02",
+     "alt": "The border fence running into the Pacific at Playas de Tijuana at sunset",
+     "w": 1600,
+     "h": 679,
+     "sw": 800,
+     "sh": 339
+    },
+    {
+     "file": "tijuana-border-2019-03",
+     "alt": "The border fence running into the Pacific at Playas de Tijuana at sunset",
+     "w": 1600,
+     "h": 430,
+     "sw": 800,
+     "sh": 215
+    },
+    {
+     "file": "tijuana-border-2019-04",
+     "alt": "The border fence running into the Pacific at Playas de Tijuana at sunset",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "tijuana-border-2019-05",
+     "alt": "The border fence running into the Pacific at Playas de Tijuana at sunset",
+     "w": 1600,
+     "h": 770,
+     "sw": 800,
+     "sh": 385
+    },
+    {
+     "file": "tijuana-border-2019-06",
+     "alt": "The border fence running into the Pacific at Playas de Tijuana at sunset",
+     "w": 1600,
+     "h": 514,
+     "sw": 800,
+     "sh": 257
+    },
+    {
+     "file": "tijuana-border-2019-07",
+     "alt": "The border fence running into the Pacific at Playas de Tijuana at sunset",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "tijuana-border-2019-08",
+     "alt": "The border fence running into the Pacific at Playas de Tijuana at sunset",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "tijuana-border-2019-09",
+     "alt": "The border fence running into the Pacific at Playas de Tijuana at sunset",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "tijuana-border-2019-10",
+     "alt": "The border fence running into the Pacific at Playas de Tijuana at sunset",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "tijuana-border-2019-11",
+     "alt": "The border fence running into the Pacific at Playas de Tijuana at sunset",
+     "w": 1600,
+     "h": 588,
+     "sw": 800,
+     "sh": 294
+    },
+    {
+     "file": "tijuana-border-2019-12",
+     "alt": "The border fence running into the Pacific at Playas de Tijuana at sunset",
+     "w": 1067,
+     "h": 1600,
+     "sw": 533,
+     "sh": 800
+    },
+    {
+     "file": "tijuana-border-2019-13",
+     "alt": "The border fence running into the Pacific at Playas de Tijuana at sunset",
+     "w": 1600,
+     "h": 743,
+     "sw": 800,
+     "sh": 371
+    },
+    {
+     "file": "tijuana-border-2019-14",
+     "alt": "The border fence running into the Pacific at Playas de Tijuana at sunset",
+     "w": 1600,
+     "h": 500,
+     "sw": 800,
+     "sh": 250
+    },
+    {
+     "file": "tijuana-border-2019-15",
+     "alt": "Trays of dried chilies and fruit at a market stall in Baja California",
+     "w": 1600,
+     "h": 1200,
+     "sw": 800,
+     "sh": 600
+    }
+   ]
+  },
+  {
+   "slug": "san-francisco-los-angeles",
+   "title": "San Francisco & Los Angeles",
+   "category": "street",
+   "label": "Street",
+   "kicker": "California",
+   "intro": "Two Californias: San Francisco from Twin Peaks, Chinatown lanterns, the Golden Gate at dusk; Los Angeles at Union Station, Disney Hall, the freeway and the piers at night.",
+   "cover": 6,
+   "cover_alt": "San Francisco skyline from Twin Peaks",
+   "updated": "2026-10-05",
+   "photos": [
+    {
+     "file": "san-francisco-los-angeles-01",
+     "alt": "San Francisco skyline from Twin Peaks",
+     "w": 1600,
+     "h": 505,
+     "sw": 800,
+     "sh": 252
+    },
+    {
+     "file": "san-francisco-los-angeles-02",
+     "alt": "San Francisco skyline from Twin Peaks",
+     "w": 1600,
+     "h": 1067,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "san-francisco-los-angeles-03",
+     "alt": "San Francisco skyline from Twin Peaks",
+     "w": 1600,
+     "h": 653,
+     "sw": 800,
+     "sh": 327
+    },
+    {
+     "file": "san-francisco-los-angeles-04",
+     "alt": "San Francisco skyline from Twin Peaks",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "san-francisco-los-angeles-05",
+     "alt": "San Francisco skyline from Twin Peaks",
+     "w": 1600,
+     "h": 423,
+     "sw": 800,
+     "sh": 212
+    },
+    {
+     "file": "san-francisco-los-angeles-06",
+     "alt": "San Francisco skyline from Twin Peaks",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "san-francisco-los-angeles-07",
+     "alt": "San Francisco skyline from Twin Peaks",
+     "w": 1440,
+     "h": 492,
+     "sw": 800,
+     "sh": 273
+    },
+    {
+     "file": "san-francisco-los-angeles-08",
+     "alt": "San Francisco skyline from Twin Peaks",
+     "w": 892,
+     "h": 594,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "san-francisco-los-angeles-09",
+     "alt": "San Francisco skyline from Twin Peaks",
+     "w": 1080,
+     "h": 503,
+     "sw": 800,
+     "sh": 373
+    },
+    {
+     "file": "san-francisco-los-angeles-10",
+     "alt": "San Francisco skyline from Twin Peaks",
+     "w": 1080,
+     "h": 720,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "san-francisco-los-angeles-11",
+     "alt": "San Francisco skyline from Twin Peaks",
+     "w": 1080,
+     "h": 438,
+     "sw": 800,
+     "sh": 324
+    },
+    {
+     "file": "san-francisco-los-angeles-12",
+     "alt": "San Francisco skyline from Twin Peaks",
+     "w": 1600,
+     "h": 456,
+     "sw": 800,
+     "sh": 228
+    },
+    {
+     "file": "san-francisco-los-angeles-13",
+     "alt": "San Francisco skyline from Twin Peaks",
+     "w": 1365,
+     "h": 910,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "san-francisco-los-angeles-14",
+     "alt": "San Francisco skyline from Twin Peaks",
+     "w": 1600,
+     "h": 779,
+     "sw": 800,
+     "sh": 389
+    },
+    {
+     "file": "san-francisco-los-angeles-15",
+     "alt": "San Francisco skyline from Twin Peaks",
+     "w": 1600,
+     "h": 544,
+     "sw": 800,
+     "sh": 272
+    },
+    {
+     "file": "san-francisco-los-angeles-16",
+     "alt": "San Francisco skyline from Twin Peaks",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "san-francisco-los-angeles-17",
+     "alt": "San Francisco skyline from Twin Peaks",
+     "w": 1600,
+     "h": 624,
+     "sw": 800,
+     "sh": 312
+    },
+    {
+     "file": "san-francisco-los-angeles-18",
+     "alt": "San Francisco skyline from Twin Peaks",
+     "w": 1600,
+     "h": 456,
+     "sw": 800,
+     "sh": 228
+    },
+    {
+     "file": "san-francisco-los-angeles-19",
+     "alt": "San Francisco skyline from Twin Peaks",
+     "w": 1600,
+     "h": 1067,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "san-francisco-los-angeles-20",
+     "alt": "San Francisco skyline from Twin Peaks",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "san-francisco-los-angeles-21",
+     "alt": "San Francisco skyline from Twin Peaks",
+     "w": 1600,
+     "h": 499,
+     "sw": 800,
+     "sh": 250
+    },
+    {
+     "file": "san-francisco-los-angeles-22",
+     "alt": "San Francisco skyline from Twin Peaks",
+     "w": 1600,
+     "h": 488,
+     "sw": 800,
+     "sh": 244
+    },
+    {
+     "file": "san-francisco-los-angeles-23",
+     "alt": "Palm trees and string lights over the pedestrian Pier Avenue at Hermosa Beach",
+     "w": 1600,
+     "h": 1200,
+     "sw": 800,
+     "sh": 600
+    }
+   ]
+  },
+  {
+   "slug": "las-vegas-nights",
+   "title": "Las Vegas Nights",
+   "category": "street",
+   "label": "Street",
+   "kicker": "Las Vegas, Nevada",
+   "intro": "The Strip after dark: the Mirage volcano, Caesars, the Venetian, light trails on Las Vegas Boulevard and street performers working the crowd.",
+   "cover": 12,
+   "cover_alt": "The Las Vegas Strip at night with light trails",
+   "updated": "2026-10-02",
+   "photos": [
+    {
+     "file": "las-vegas-nights-01",
+     "alt": "The Las Vegas Strip at night with light trails",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "las-vegas-nights-02",
+     "alt": "The Las Vegas Strip at night with light trails",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "las-vegas-nights-03",
+     "alt": "The Las Vegas Strip at night with light trails",
+     "w": 1080,
+     "h": 414,
+     "sw": 800,
+     "sh": 307
+    },
+    {
+     "file": "las-vegas-nights-04",
+     "alt": "The Las Vegas Strip at night with light trails",
+     "w": 1600,
+     "h": 455,
+     "sw": 800,
+     "sh": 227
+    },
+    {
+     "file": "las-vegas-nights-05",
+     "alt": "The Las Vegas Strip at night with light trails",
+     "w": 1600,
+     "h": 443,
+     "sw": 800,
+     "sh": 221
+    },
+    {
+     "file": "las-vegas-nights-06",
+     "alt": "The Las Vegas Strip at night with light trails",
+     "w": 1600,
+     "h": 527,
+     "sw": 800,
+     "sh": 263
+    },
+    {
+     "file": "las-vegas-nights-07",
+     "alt": "The Las Vegas Strip at night with light trails",
+     "w": 1067,
+     "h": 1600,
+     "sw": 533,
+     "sh": 800
+    },
+    {
+     "file": "las-vegas-nights-08",
+     "alt": "The Las Vegas Strip at night with light trails",
+     "w": 1067,
+     "h": 1600,
+     "sw": 533,
+     "sh": 800
+    },
+    {
+     "file": "las-vegas-nights-09",
+     "alt": "The Las Vegas Strip at night with light trails",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "las-vegas-nights-10",
+     "alt": "The Las Vegas Strip at night with light trails",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "las-vegas-nights-11",
+     "alt": "The Las Vegas Strip at night with light trails",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "las-vegas-nights-12",
+     "alt": "The Las Vegas Strip at night with light trails",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "las-vegas-nights-13",
+     "alt": "The Las Vegas Strip at night with light trails",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "las-vegas-nights-14",
+     "alt": "The Las Vegas Strip at night with light trails",
+     "w": 1600,
+     "h": 586,
+     "sw": 800,
+     "sh": 293
+    },
+    {
+     "file": "las-vegas-nights-15",
+     "alt": "The Las Vegas Strip at night with light trails",
+     "w": 1600,
+     "h": 612,
+     "sw": 800,
+     "sh": 306
+    },
+    {
+     "file": "las-vegas-nights-16",
+     "alt": "The Las Vegas Strip at night with light trails",
+     "w": 1365,
+     "h": 910,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "las-vegas-nights-17",
+     "alt": "The Las Vegas Strip at night with light trails",
+     "w": 1600,
+     "h": 443,
+     "sw": 800,
+     "sh": 221
+    },
+    {
+     "file": "las-vegas-nights-18",
+     "alt": "The Las Vegas Strip at night with light trails",
+     "w": 1365,
+     "h": 1365,
+     "sw": 800,
+     "sh": 800
+    },
+    {
+     "file": "las-vegas-nights-19",
+     "alt": "The Las Vegas Strip at night with light trails",
+     "w": 1600,
+     "h": 550,
+     "sw": 800,
+     "sh": 275
+    },
+    {
+     "file": "las-vegas-nights-20",
+     "alt": "The Las Vegas Strip at night with light trails",
+     "w": 1600,
+     "h": 439,
+     "sw": 800,
+     "sh": 220
+    },
+    {
+     "file": "las-vegas-nights-21",
+     "alt": "The Las Vegas Strip at night with light trails",
+     "w": 1024,
+     "h": 323,
+     "sw": 800,
+     "sh": 252
+    },
+    {
+     "file": "las-vegas-nights-22",
+     "alt": "The Las Vegas Strip at night with light trails",
+     "w": 1024,
+     "h": 330,
+     "sw": 800,
+     "sh": 258
+    },
+    {
+     "file": "las-vegas-nights-23",
+     "alt": "The Las Vegas Strip at night with light trails",
+     "w": 683,
+     "h": 765,
+     "sw": 683,
+     "sh": 765
+    },
+    {
+     "file": "las-vegas-nights-24",
+     "alt": "The Las Vegas Strip at night with light trails",
+     "w": 1024,
+     "h": 233,
+     "sw": 800,
+     "sh": 182
+    },
+    {
+     "file": "las-vegas-nights-25",
+     "alt": "The Las Vegas Strip at night with light trails",
+     "w": 1024,
+     "h": 390,
+     "sw": 800,
+     "sh": 305
+    },
+    {
+     "file": "las-vegas-nights-26",
+     "alt": "The Las Vegas Strip at night with light trails",
+     "w": 1024,
+     "h": 363,
+     "sw": 800,
+     "sh": 284
+    }
+   ]
+  },
+  {
+   "slug": "san-diego-waterfront",
+   "title": "San Diego Waterfront & Downtown",
+   "category": "architecture",
+   "label": "Architecture",
+   "kicker": "San Diego, California · August 2023",
+   "intro": "Glass towers against a hard blue sky, palm-lined promenades, the tall ship at its berth and the Embarcadero in midday light: a morning walking the San Diego waterfront with the lens kept wide.",
+   "cover": 0,
+   "cover_alt": "Glass residential towers and palm trees on a San Diego street under a deep blue sky",
+   "updated": "2026-10-05",
+   "photos": [
+    {
+     "file": "san-diego-waterfront-01",
+     "alt": "Glass residential towers and palm trees on a San Diego street under a deep blue sky",
+     "w": 1200,
+     "h": 1600,
+     "sw": 600,
+     "sh": 800
+    },
+    {
+     "file": "san-diego-waterfront-02",
+     "alt": "The tall ship Star of India moored at the San Diego Embarcadero",
+     "w": 1200,
+     "h": 1600,
+     "sw": 600,
+     "sh": 800
+    },
+    {
+     "file": "san-diego-waterfront-03",
+     "alt": "Modern waterfront office buildings and a marina promenade in downtown San Diego",
+     "w": 1600,
+     "h": 1200,
+     "sw": 800,
+     "sh": 600
+    },
+    {
+     "file": "san-diego-waterfront-04",
+     "alt": "The twin towers of the San Diego Embarcadero rising behind a green park",
+     "w": 1200,
+     "h": 1600,
+     "sw": 600,
+     "sh": 800
+    },
+    {
+     "file": "san-diego-waterfront-05",
+     "alt": "Skyscrapers lining an empty downtown San Diego street at midday",
+     "w": 1200,
+     "h": 1600,
+     "sw": 600,
+     "sh": 800
+    },
+    {
+     "file": "san-diego-waterfront-06",
+     "alt": "Two San Diego towers seen across the grass of Embarcadero Marina Park",
+     "w": 1200,
+     "h": 1600,
+     "sw": 600,
+     "sh": 800
+    },
+    {
+     "file": "san-diego-waterfront-07",
+     "alt": "A geodesic-domed pavilion on the San Diego bayfront promenade",
+     "w": 1600,
+     "h": 1200,
+     "sw": 800,
+     "sh": 600
+    }
+   ]
+  },
+  {
+   "slug": "aerial-drone",
+   "title": "Aerial & Drone",
+   "category": "aerial",
+   "label": "Aerial",
+   "kicker": "Chile & California",
+   "intro": "From above: La Serena and Coquimbo, Hermosa Beach and its pier, Tijuana from the sky, a city grid at night, and the slow curve of the Pacific coast.",
+   "cover": 0,
+   "cover_alt": "Aerial drone view of the coast and city",
+   "updated": "2026-10-02",
+   "photos": [
+    {
+     "file": "aerial-drone-01",
+     "alt": "Aerial drone view of the coast and city",
+     "w": 1600,
+     "h": 502,
+     "sw": 800,
+     "sh": 251
+    },
+    {
+     "file": "aerial-drone-02",
+     "alt": "Aerial drone view of the coast and city",
+     "w": 1600,
+     "h": 382,
+     "sw": 800,
+     "sh": 191
+    },
+    {
+     "file": "aerial-drone-03",
+     "alt": "Aerial drone view of the coast and city",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "aerial-drone-04",
+     "alt": "Aerial drone view of the coast and city",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "aerial-drone-05",
+     "alt": "Aerial drone view of the coast and city",
+     "w": 1080,
+     "h": 720,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "aerial-drone-06",
+     "alt": "Aerial drone view of the coast and city",
+     "w": 1080,
+     "h": 456,
+     "sw": 800,
+     "sh": 338
+    },
+    {
+     "file": "aerial-drone-07",
+     "alt": "Aerial drone view of the coast and city",
+     "w": 1600,
+     "h": 718,
+     "sw": 800,
+     "sh": 359
+    },
+    {
+     "file": "aerial-drone-08",
+     "alt": "Aerial drone view of the coast and city",
+     "w": 1600,
+     "h": 569,
+     "sw": 800,
+     "sh": 285
+    },
+    {
+     "file": "aerial-drone-09",
+     "alt": "Aerial drone view of the coast and city",
+     "w": 1535,
+     "h": 1294,
+     "sw": 800,
+     "sh": 674
+    },
+    {
+     "file": "aerial-drone-10",
+     "alt": "Aerial drone view of the coast and city",
+     "w": 1600,
+     "h": 516,
+     "sw": 800,
+     "sh": 258
+    },
+    {
+     "file": "aerial-drone-11",
+     "alt": "Aerial drone view of the coast and city",
+     "w": 1600,
+     "h": 574,
+     "sw": 800,
+     "sh": 287
+    },
+    {
+     "file": "aerial-drone-12",
+     "alt": "Aerial drone view of the coast and city",
+     "w": 1600,
+     "h": 502,
+     "sw": 800,
+     "sh": 251
+    },
+    {
+     "file": "aerial-drone-13",
+     "alt": "Aerial drone view of the coast and city",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "aerial-drone-14",
+     "alt": "Aerial drone view of the coast and city",
+     "w": 1500,
+     "h": 1000,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "aerial-drone-15",
+     "alt": "Aerial drone view of the coast and city",
+     "w": 1449,
+     "h": 966,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "aerial-drone-16",
+     "alt": "Aerial drone view of the coast and city",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "aerial-drone-17",
+     "alt": "Aerial drone view of the coast and city",
+     "w": 1600,
+     "h": 562,
+     "sw": 800,
+     "sh": 281
+    }
+   ]
+  },
+  {
+   "slug": "andes-glaciers",
+   "title": "Andes & Glaciers",
+   "category": "landscapes",
+   "label": "Landscapes",
+   "kicker": "Cordillera, Chile",
+   "intro": "High in the Chilean cordillera: a turquoise reservoir under painted hills, penitentes like a field of frozen knives, and a glacier that sits in the sun at four thousand metres.",
+   "cover": 9,
+   "cover_alt": "Glacier and penitentes in the Chilean Andes under a deep blue sky",
+   "updated": "2026-10-05",
+   "photos": [
+    {
+     "file": "andes-glaciers-01",
+     "alt": "Glacier and penitentes in the Chilean Andes under a deep blue sky",
+     "w": 1600,
+     "h": 713,
+     "sw": 800,
+     "sh": 356
+    },
+    {
+     "file": "andes-glaciers-02",
+     "alt": "Glacier and penitentes in the Chilean Andes under a deep blue sky",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "andes-glaciers-03",
+     "alt": "Glacier and penitentes in the Chilean Andes under a deep blue sky",
+     "w": 1600,
+     "h": 698,
+     "sw": 800,
+     "sh": 349
+    },
+    {
+     "file": "andes-glaciers-04",
+     "alt": "Glacier and penitentes in the Chilean Andes under a deep blue sky",
+     "w": 1600,
+     "h": 793,
+     "sw": 800,
+     "sh": 396
+    },
+    {
+     "file": "andes-glaciers-05",
+     "alt": "Glacier and penitentes in the Chilean Andes under a deep blue sky",
+     "w": 1067,
+     "h": 1600,
+     "sw": 533,
+     "sh": 800
+    },
+    {
+     "file": "andes-glaciers-06",
+     "alt": "Glacier and penitentes in the Chilean Andes under a deep blue sky",
+     "w": 1366,
+     "h": 1366,
+     "sw": 800,
+     "sh": 800
+    },
+    {
+     "file": "andes-glaciers-07",
+     "alt": "Glacier and penitentes in the Chilean Andes under a deep blue sky",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "andes-glaciers-08",
+     "alt": "Glacier and penitentes in the Chilean Andes under a deep blue sky",
+     "w": 1366,
+     "h": 1064,
+     "sw": 800,
+     "sh": 623
+    },
+    {
+     "file": "andes-glaciers-09",
+     "alt": "Glacier and penitentes in the Chilean Andes under a deep blue sky",
+     "w": 1600,
+     "h": 675,
+     "sw": 800,
+     "sh": 338
+    },
+    {
+     "file": "andes-glaciers-10",
+     "alt": "Glacier and penitentes in the Chilean Andes under a deep blue sky",
+     "w": 1600,
+     "h": 423,
+     "sw": 800,
+     "sh": 212
+    },
+    {
+     "file": "andes-glaciers-11",
+     "alt": "Glacier and penitentes in the Chilean Andes under a deep blue sky",
+     "w": 1600,
+     "h": 698,
+     "sw": 800,
+     "sh": 349
+    },
+    {
+     "file": "andes-glaciers-12",
+     "alt": "Glacier and penitentes in the Chilean Andes under a deep blue sky",
+     "w": 1600,
+     "h": 695,
+     "sw": 800,
+     "sh": 348
+    },
+    {
+     "file": "andes-glaciers-13",
+     "alt": "Glacier and penitentes in the Chilean Andes under a deep blue sky",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "andes-glaciers-14",
+     "alt": "Glacier and penitentes in the Chilean Andes under a deep blue sky",
+     "w": 1600,
+     "h": 442,
+     "sw": 800,
+     "sh": 221
+    },
+    {
+     "file": "andes-glaciers-15",
+     "alt": "Glacier and penitentes in the Chilean Andes under a deep blue sky",
+     "w": 1600,
+     "h": 409,
+     "sw": 800,
+     "sh": 204
+    },
+    {
+     "file": "andes-glaciers-16",
+     "alt": "Glacier and penitentes in the Chilean Andes under a deep blue sky",
+     "w": 1600,
+     "h": 415,
+     "sw": 800,
+     "sh": 207
+    },
+    {
+     "file": "andes-glaciers-17",
+     "alt": "Glacier and penitentes in the Chilean Andes under a deep blue sky",
+     "w": 1600,
+     "h": 595,
+     "sw": 800,
+     "sh": 297
+    },
+    {
+     "file": "andes-glaciers-18",
+     "alt": "Glacier and penitentes in the Chilean Andes under a deep blue sky",
+     "w": 1600,
+     "h": 422,
+     "sw": 800,
+     "sh": 211
+    },
+    {
+     "file": "andes-glaciers-19",
+     "alt": "Glacier and penitentes in the Chilean Andes under a deep blue sky",
+     "w": 1600,
+     "h": 457,
+     "sw": 800,
+     "sh": 229
+    },
+    {
+     "file": "andes-glaciers-20",
+     "alt": "Glacier and penitentes in the Chilean Andes under a deep blue sky",
+     "w": 1600,
+     "h": 693,
+     "sw": 800,
+     "sh": 346
+    },
+    {
+     "file": "andes-glaciers-21",
+     "alt": "Green vineyards in the Elqui Valley below dry brown Andean ridges",
+     "w": 1600,
+     "h": 1200,
+     "sw": 800,
+     "sh": 600
+    }
+   ]
+  },
+  {
+   "slug": "coast-travel-wildlife",
+   "title": "Coast, Travel & Wildlife",
+   "category": "landscapes",
+   "label": "Landscapes",
+   "kicker": "Chile, California & the islands",
+   "intro": "Easter Island moai, Pacific surf, pelicans and iguanas, fireworks over the bay, volcanoes, piers, skylines and the road in between — years of travelling with a camera.",
+   "cover": 14,
+   "cover_alt": "Travel and wildlife photography by Carlos Martinez",
+   "updated": "2026-10-05",
+   "photos": [
+    {
+     "file": "coast-travel-wildlife-01",
+     "alt": "Travel and wildlife photography by Carlos Martinez",
+     "w": 1600,
+     "h": 724,
+     "sw": 800,
+     "sh": 362
+    },
+    {
+     "file": "coast-travel-wildlife-02",
+     "alt": "Travel and wildlife photography by Carlos Martinez",
+     "w": 1600,
+     "h": 1067,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "coast-travel-wildlife-03",
+     "alt": "Travel and wildlife photography by Carlos Martinez",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "coast-travel-wildlife-04",
+     "alt": "Travel and wildlife photography by Carlos Martinez",
+     "w": 1600,
+     "h": 1067,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "coast-travel-wildlife-05",
+     "alt": "Travel and wildlife photography by Carlos Martinez",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "coast-travel-wildlife-06",
+     "alt": "Travel and wildlife photography by Carlos Martinez",
+     "w": 1600,
+     "h": 763,
+     "sw": 800,
+     "sh": 381
+    },
+    {
+     "file": "coast-travel-wildlife-07",
+     "alt": "Travel and wildlife photography by Carlos Martinez",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "coast-travel-wildlife-08",
+     "alt": "Travel and wildlife photography by Carlos Martinez",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "coast-travel-wildlife-09",
+     "alt": "Travel and wildlife photography by Carlos Martinez",
+     "w": 1600,
+     "h": 1067,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "coast-travel-wildlife-10",
+     "alt": "Travel and wildlife photography by Carlos Martinez",
+     "w": 1600,
+     "h": 1067,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "coast-travel-wildlife-11",
+     "alt": "Travel and wildlife photography by Carlos Martinez",
+     "w": 1600,
+     "h": 1067,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "coast-travel-wildlife-12",
+     "alt": "Travel and wildlife photography by Carlos Martinez",
+     "w": 1600,
+     "h": 336,
+     "sw": 800,
+     "sh": 168
+    },
+    {
+     "file": "coast-travel-wildlife-13",
+     "alt": "Travel and wildlife photography by Carlos Martinez",
+     "w": 1600,
+     "h": 609,
+     "sw": 800,
+     "sh": 305
+    },
+    {
+     "file": "coast-travel-wildlife-14",
+     "alt": "Travel and wildlife photography by Carlos Martinez",
+     "w": 1600,
+     "h": 1067,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "coast-travel-wildlife-15",
+     "alt": "Travel and wildlife photography by Carlos Martinez",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "coast-travel-wildlife-16",
+     "alt": "Travel and wildlife photography by Carlos Martinez",
+     "w": 1600,
+     "h": 739,
+     "sw": 800,
+     "sh": 370
+    },
+    {
+     "file": "coast-travel-wildlife-17",
+     "alt": "Travel and wildlife photography by Carlos Martinez",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "coast-travel-wildlife-18",
+     "alt": "Travel and wildlife photography by Carlos Martinez",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "coast-travel-wildlife-19",
+     "alt": "Travel and wildlife photography by Carlos Martinez",
+     "w": 1600,
+     "h": 620,
+     "sw": 800,
+     "sh": 310
+    },
+    {
+     "file": "coast-travel-wildlife-20",
+     "alt": "Travel and wildlife photography by Carlos Martinez",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "coast-travel-wildlife-21",
+     "alt": "Travel and wildlife photography by Carlos Martinez",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "coast-travel-wildlife-22",
+     "alt": "Travel and wildlife photography by Carlos Martinez",
+     "w": 1341,
+     "h": 1341,
+     "sw": 800,
+     "sh": 800
+    },
+    {
+     "file": "coast-travel-wildlife-23",
+     "alt": "Travel and wildlife photography by Carlos Martinez",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "coast-travel-wildlife-24",
+     "alt": "Travel and wildlife photography by Carlos Martinez",
+     "w": 1440,
+     "h": 587,
+     "sw": 800,
+     "sh": 326
+    },
+    {
+     "file": "coast-travel-wildlife-25",
+     "alt": "Travel and wildlife photography by Carlos Martinez",
+     "w": 1003,
+     "h": 668,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "coast-travel-wildlife-26",
+     "alt": "Travel and wildlife photography by Carlos Martinez",
+     "w": 1080,
+     "h": 720,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "coast-travel-wildlife-27",
+     "alt": "Travel and wildlife photography by Carlos Martinez",
+     "w": 1004,
+     "h": 1004,
+     "sw": 800,
+     "sh": 800
+    },
+    {
+     "file": "coast-travel-wildlife-28",
+     "alt": "Travel and wildlife photography by Carlos Martinez",
+     "w": 1600,
+     "h": 745,
+     "sw": 800,
+     "sh": 373
+    },
+    {
+     "file": "coast-travel-wildlife-29",
+     "alt": "Travel and wildlife photography by Carlos Martinez",
+     "w": 1600,
+     "h": 541,
+     "sw": 800,
+     "sh": 270
+    },
+    {
+     "file": "coast-travel-wildlife-30",
+     "alt": "Travel and wildlife photography by Carlos Martinez",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "coast-travel-wildlife-31",
+     "alt": "Travel and wildlife photography by Carlos Martinez",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "coast-travel-wildlife-32",
+     "alt": "Travel and wildlife photography by Carlos Martinez",
+     "w": 1600,
+     "h": 776,
+     "sw": 800,
+     "sh": 388
+    },
+    {
+     "file": "coast-travel-wildlife-33",
+     "alt": "Travel and wildlife photography by Carlos Martinez",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "coast-travel-wildlife-34",
+     "alt": "Travel and wildlife photography by Carlos Martinez",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "coast-travel-wildlife-35",
+     "alt": "Travel and wildlife photography by Carlos Martinez",
+     "w": 1600,
+     "h": 728,
+     "sw": 800,
+     "sh": 364
+    },
+    {
+     "file": "coast-travel-wildlife-36",
+     "alt": "Travel and wildlife photography by Carlos Martinez",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "coast-travel-wildlife-37",
+     "alt": "Travel and wildlife photography by Carlos Martinez",
+     "w": 1395,
+     "h": 930,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "coast-travel-wildlife-38",
+     "alt": "Travel and wildlife photography by Carlos Martinez",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "coast-travel-wildlife-39",
+     "alt": "Travel and wildlife photography by Carlos Martinez",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "coast-travel-wildlife-40",
+     "alt": "Travel and wildlife photography by Carlos Martinez",
+     "w": 1600,
+     "h": 1066,
+     "sw": 800,
+     "sh": 533
+    },
+    {
+     "file": "coast-travel-wildlife-41",
+     "alt": "Orange sunset clouds over the hills above La Serena, Chile",
+     "w": 1600,
+     "h": 1200,
+     "sw": 800,
+     "sh": 600
+    },
+    {
+     "file": "coast-travel-wildlife-42",
+     "alt": "A band of altocumulus clouds lit pink and orange at dusk over La Serena",
+     "w": 1600,
+     "h": 1200,
+     "sw": 800,
+     "sh": 600
+    },
+    {
+     "file": "coast-travel-wildlife-43",
+     "alt": "A deserted La Serena beach at dusk with palms and a lifeguard tower",
+     "w": 1600,
+     "h": 1155,
+     "sw": 800,
+     "sh": 577
+    },
+    {
+     "file": "coast-travel-wildlife-44",
+     "alt": "The pier and palm trees at San Clemente, California, on an overcast day",
+     "w": 1600,
+     "h": 1200,
+     "sw": 800,
+     "sh": 600
+    },
+    {
+     "file": "coast-travel-wildlife-45",
+     "alt": "A pier on San Diego Bay with the harbour breakwater in the foreground",
+     "w": 1600,
+     "h": 1200,
+     "sw": 800,
+     "sh": 600
+    },
+    {
+     "file": "coast-travel-wildlife-46",
+     "alt": "A Coaster commuter train arriving at a Del Mar platform at sunset",
+     "w": 1600,
+     "h": 1200,
+     "sw": 800,
+     "sh": 600
+    },
+    {
+     "file": "coast-travel-wildlife-47",
+     "alt": "Railway tracks running straight between sandy cuttings at Solana Beach",
+     "w": 1200,
+     "h": 1600,
+     "sw": 600,
+     "sh": 800
+    },
+    {
+     "file": "coast-travel-wildlife-48",
+     "alt": "Weeping willows over a clear stream in the Elqui Valley, Chile",
+     "w": 1600,
+     "h": 1319,
+     "sw": 800,
+     "sh": 660
+    },
+    {
+     "file": "coast-travel-wildlife-49",
+     "alt": "Koi swimming in a lily pond at a Southern California courtyard",
+     "w": 1600,
+     "h": 1200,
+     "sw": 800,
+     "sh": 600
+    },
+    {
+     "file": "coast-travel-wildlife-50",
+     "alt": "A widebody airliner on the tarmac at Santiago with the Andes behind",
+     "w": 1600,
+     "h": 1200,
+     "sw": 800,
+     "sh": 600
+    },
+    {
+     "file": "coast-travel-wildlife-51",
+     "alt": "The hotels along the first fairway of the Old Course at St Andrews, Scotland",
+     "w": 1600,
+     "h": 504,
+     "sw": 800,
+     "sh": 252
+    },
+    {
+     "file": "coast-travel-wildlife-52",
+     "alt": "The South Course sign and course clock at Torrey Pines Golf Course",
+     "w": 1600,
+     "h": 1200,
+     "sw": 800,
+     "sh": 600
+    },
+    {
+     "file": "coast-travel-wildlife-53",
+     "alt": "A raked sand bunker with sprinklers running on a Chilean links, mountains behind",
+     "w": 1600,
+     "h": 1200,
+     "sw": 800,
+     "sh": 600
+    }
+   ]
+  }
+ ]
+}
