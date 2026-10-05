@@ -76,11 +76,20 @@ document.addEventListener('DOMContentLoaded', () => {
         const photoItems = document.querySelectorAll('.photo-item');
         let currentIndex = 0;
 
+        // "License this photo": points the inquiry form at the frame on screen.
+        const licenseLink = lightbox.querySelector('.lightbox-license');
+        function pointLicenseLink(img) {
+            if (!licenseLink) return;
+            const file = (img.dataset.full || img.src).split('/').pop().replace(/\.jpg$/i, '');
+            licenseLink.href = licenseLink.getAttribute('href').split('?')[0].split('#')[0] + '?ref=' + encodeURIComponent(file) + '#inquiry';
+        }
+
         function openLightbox(index) {
             currentIndex = index;
             const img = photoItems[index].querySelector('img');
             lightboxImg.src = img.dataset.full || img.src;
             lightboxImg.alt = img.alt;
+            pointLicenseLink(img);
             lightbox.classList.add('active');
             document.body.style.overflow = 'hidden';
         }
@@ -95,6 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const img = photoItems[currentIndex].querySelector('img');
             lightboxImg.src = img.dataset.full || img.src;
             lightboxImg.alt = img.alt;
+            pointLicenseLink(img);
         }
 
         photoItems.forEach((item, i) => {
@@ -179,6 +189,43 @@ document.addEventListener('DOMContentLoaded', () => {
             return el ? el.value.trim() : '';
         }
 
+        // Licensing inquiry (licensing.html / licencias.html): same endpoint and form_id as
+        // the contact form, extra answers ride along as named keys AND are written into
+        // `message`, so the lead email/CRM row is readable even if the API ignores unknown
+        // keys. No prices are asked for or echoed back.
+        const isLicence = contactForm.hasAttribute('data-licence');
+        const LICENCE_FIELDS = [
+            ['ref', isES ? 'Imagen / descripción' : 'Image / description'],
+            ['use', isES ? 'Tipo de uso' : 'Type of use'],
+            ['media', isES ? 'Medio' : 'Media'],
+            ['duration', isES ? 'Plazo' : 'Duration'],
+            ['territory', isES ? 'Territorio' : 'Territory'],
+            ['deadline', isES ? 'Fecha límite' : 'Deadline'],
+            ['organization', isES ? 'Organización' : 'Organisation'],
+            ['details', isES ? 'Detalles' : 'Details']
+        ];
+        function licenceMessage() {
+            return LICENCE_FIELDS
+                .map(([key, label]) => [label, fieldValue(key)])
+                .filter(([, value]) => value)
+                .map(([label, value]) => label + ': ' + value)
+                .join('\n');
+        }
+        function licenceExtras() {
+            const extras = {};
+            LICENCE_FIELDS.forEach(([key]) => { const v = fieldValue(key); if (v) extras['licence_' + key] = v; });
+            return extras;
+        }
+        // Gallery buttons link to licensing.html?ref=<gallery-or-photo-slug>#inquiry.
+        // Only a plain slug is accepted, then written with .value (never as HTML).
+        if (isLicence) {
+            const refParam = new URLSearchParams(location.search).get('ref');
+            const refField = contactForm.querySelector('[name="ref"]');
+            if (refParam && refField && /^[a-z0-9._-]{2,90}$/i.test(refParam) && !refField.value) {
+                refField.value = (isES ? 'Galería / foto: ' : 'Gallery / photo: ') + refParam;
+            }
+        }
+
         function showError(message) {
             if (!statusBox) return;
             statusBox.textContent = '';
@@ -220,7 +267,8 @@ document.addEventListener('DOMContentLoaded', () => {
                             name: fieldValue('name'),
                             email: fieldValue('email'),
                             phone: fieldValue('phone'),
-                            message: fieldValue('message'),
+                            message: isLicence ? licenceMessage() : fieldValue('message'),
+                            ...(isLicence ? licenceExtras() : {}),
                             source: formSource,
                             lang: isES ? 'es' : 'en',
                             // Honeypot — humans leave this hidden field empty.
@@ -243,10 +291,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     wrap.style.cssText = 'text-align:center;padding:60px 0;';
                     const h = document.createElement('h2');
                     h.style.cssText = 'font-family:var(--serif);font-size:2rem;margin-bottom:16px;';
-                    h.textContent = T.sentTitle;
+                    h.textContent = contactForm.getAttribute('data-sent-title') || T.sentTitle;
                     const p = document.createElement('p');
                     p.style.cssText = 'opacity:0.5;margin-bottom:30px;';
-                    p.textContent = T.sentBody;
+                    p.textContent = contactForm.getAttribute('data-sent-body') || T.sentBody;
                     const btn = document.createElement('button');
                     // MUST be type=button. createElement defaults to "submit",
                     // and this button is appended back INSIDE .contact-form —
@@ -284,9 +332,38 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Archive search (galleries/index.html): filters the gallery cards by event, place,
+    // category or subject, using the data-keywords each card carries.
+    const gallerySearch = document.getElementById('gallery-search');
+    if (gallerySearch) {
+        const cards = Array.from(document.querySelectorAll('.gallery-card[data-keywords]'));
+        const sections = Array.from(document.querySelectorAll('.gallery-section'));
+        const status = document.getElementById('gallery-search-status');
+        const runSearch = () => {
+            const terms = gallerySearch.value.toLowerCase().split(/\s+/).filter(Boolean);
+            let shown = 0;
+            cards.forEach((card) => {
+                const hay = card.getAttribute('data-keywords');
+                const hit = terms.every((t) => hay.indexOf(t) !== -1);
+                card.hidden = !hit;
+                if (hit) shown++;
+            });
+            sections.forEach((sec) => { sec.hidden = !sec.querySelector('.gallery-card:not([hidden])'); });
+            if (status) {
+                status.textContent = terms.length
+                    ? (shown ? shown + ' ' + (shown === 1 ? 'gallery matches' : 'galleries match') : 'No gallery matches. Try another word, or ask for a contact sheet.')
+                    : '';
+            }
+        };
+        gallerySearch.addEventListener('input', runSearch);
+    }
+
+    // Respect reduced-motion: no scroll-linked parallax or fading for visitors who ask for less.
+    const reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
     // Parallax hero on scroll (uses requestAnimationFrame for performance)
     const hero = document.querySelector('.hero');
-    if (hero) {
+    if (hero && !reduceMotion) {
         const heroImg = hero.querySelector('.hero-img');
         const heroContent = hero.querySelector('.hero-content');
         let ticking = false;

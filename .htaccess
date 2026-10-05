@@ -48,13 +48,45 @@ RewriteRule ^([^.]+)$ /$1.html [R=301,L,QSA]
   <FilesMatch "\.(jpg|jpeg|png|gif|webp|avif|svg|ico|woff2)$">
     Header set Cache-Control "public, max-age=31536000, immutable"
   </FilesMatch>
+  # HTML: 5 minutes + stale-while-revalidate instead of no-cache (competitive
+  # report 2026-10-05); the blog publishes about once a day, so the lag is invisible.
   <FilesMatch "\.(html)$">
-    Header set Cache-Control "no-cache, must-revalidate"
+    Header set Cache-Control "public, max-age=300, stale-while-revalidate=3600"
+  </FilesMatch>
+  # Photos exist as .jpg + .jpg.avif + .jpg.webp (content negotiation below), so
+  # caches must key on Accept.
+  <FilesMatch "\.(jpe?g|avif|webp)$">
+    Header append Vary Accept
   </FilesMatch>
   <FilesMatch "\.(css|js)$">
     Header set Cache-Control "public, max-age=300, must-revalidate"
   </FilesMatch>
 </IfModule>
+
+# Compression: Brotli where the host has mod_brotli, gzip everywhere else
+<IfModule mod_brotli.c>
+  AddOutputFilterByType BROTLI_COMPRESS text/html text/css text/plain text/xml application/javascript application/json image/svg+xml
+</IfModule>
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/javascript application/json image/svg+xml
+</IfModule>
+
+# Modern image formats by content negotiation. images/*.jpg and every
+# galleries/img/**/*-sm.jpg grid thumbnail have <name>.jpg.avif and
+# <name>.jpg.webp siblings (_deploy/build-photo-variants.py). HTML keeps pointing at
+# the .jpg, which stays the universal fallback, the og:image and the ImageObject
+# contentUrl; a browser whose Accept header lists AVIF or WebP is answered with the
+# smaller file instead.
+<IfModule mod_mime.c>
+  AddType image/avif .avif
+  AddType image/webp .webp
+</IfModule>
+RewriteCond %{HTTP_ACCEPT} image/avif
+RewriteCond %{DOCUMENT_ROOT}/$1.$2.avif -f
+RewriteRule ^((?:images|galleries/img)/.+)\.(jpe?g)$ $1.$2.avif [T=image/avif,L]
+RewriteCond %{HTTP_ACCEPT} image/webp
+RewriteCond %{DOCUMENT_ROOT}/$1.$2.webp -f
+RewriteRule ^((?:images|galleries/img)/.+)\.(jpe?g)$ $1.$2.webp [T=image/webp,L]
 
 # Security headers
 #

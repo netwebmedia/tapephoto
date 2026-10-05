@@ -28,6 +28,8 @@ function header(total) {
 - [Fotografía para hoteles y cabañas en La Serena](${SITE}/fotografia-hoteles-turismo-la-serena.html): rooms, common areas and aerials, ready for Booking and social media
 - [Fotografía para empresas en La Serena y Coquimbo](${SITE}/fotografia-empresas-la-serena.html): team, premises and product photography instead of stock images
 - [Galleries](${SITE}/galleries/): 17 curated photo galleries in six categories — Motorsport (WRC Rally Chile 2019, rally raid in the Atacama, Grand Prix of Long Beach 2018, ISDE enduro, MTB enduro), Events (Del Mar Opening Day, Hermosa Beach St. Patrick's parade, Lebowski Fest, poker tour, live music), Portraits, Street & Cities (Playas de Tijuana, San Francisco & Los Angeles, Las Vegas nights), Aerial & Drone, Landscapes & Travel (Andes & glaciers; coast, travel & wildlife)
+- [Licensing (English)](${SITE}/licensing.html): license photographs from the archive (editorial online and print, books and broadcast, advertising, local-business use); written quote within 24 hours via an inquiry form (usage, media, duration, territory, deadline) or WhatsApp
+- [Licencias (Español)](${SITE}/licencias.html): the same licensing page in Spanish, with the inquiry form
 - [About](${SITE}/about.html) · [Contact](${SITE}/contact.html) · [Contacto](${SITE}/contacto.html)
 - [Blog (Spanish)](${SITE}/blog/): practical guides for businesses, hotels and real estate brokers
 `;
