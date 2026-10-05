@@ -66,28 +66,42 @@ jobs:
         id: gate
         env:
           KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           PENDING: ${{ steps.queue.outputs.pending }}
         run: |
           # ~1 post published per day, so 3 drafts ≈ 3 days of runway — enough to
           # absorb one missed Monday without the blog going quiet.
           LOW_WATER=3
-          if [ -n "$KEY" ]; then
+          if [ -n "$TOKEN" ] || [ -n "$KEY" ]; then
             echo "run=true" >> "$GITHUB_OUTPUT"
-            echo "✓ key present — refilling via the API"
+            if [ -n "$TOKEN" ]; then echo "✓ subscription token present — refilling via the Claude subscription"; else echo "✓ key present — refilling via the API"; fi
             exit 0
           fi
           echo "run=false" >> "$GITHUB_OUTPUT"
           if [ "$PENDING" -ge "$LOW_WATER" ]; then
-            echo "::notice::No ANTHROPIC_API_KEY in this repo, so the API refill is skipped — but $PENDING draft(s) are queued (low-water mark: $LOW_WATER), so publishing continues. Nothing to do."
+            echo "::notice::No CLAUDE_CODE_OAUTH_TOKEN or ANTHROPIC_API_KEY in this repo, so the API refill is skipped — but $PENDING draft(s) are queued (low-water mark: $LOW_WATER), so publishing continues. Nothing to do."
             exit 0
           fi
-          echo "::error::TapePhoto's blog queue is down to $PENDING draft(s) and there is no ANTHROPIC_API_KEY to refill it — the blog goes quiet within days. Either add drafts to _deploy/posts-queue/ (copy the shape of any file in _deploy/posts-queue/_published/), or add the key at https://github.com/netwebmedia/tapephoto/settings/secrets/actions/new and fund the account at https://console.anthropic.com/settings/billing"
+          echo "::error::TapePhoto's blog queue is down to $PENDING draft(s) and there is no CLAUDE_CODE_OAUTH_TOKEN or ANTHROPIC_API_KEY to refill it — the blog goes quiet within days. Either add drafts to _deploy/posts-queue/ (copy the shape of any file in _deploy/posts-queue/_published/), or add CLAUDE_CODE_OAUTH_TOKEN (from \`claude setup-token\`, runs on the Claude subscription) at https://github.com/netwebmedia/tapephoto/settings/secrets/actions/new"
           exit 1
+
+      # Claude calls run on the Claude Max subscription when CLAUDE_CODE_OAUTH_TOKEN
+      # is set (see _deploy/lib/claude-call.js), with ANTHROPIC_API_KEY as the
+      # fallback. The SDK installs outside the repo so package.json stays untouched.
+      - name: Install Claude Agent SDK
+        if: steps.gate.outputs.run == 'true'
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+        run: |
+          if [ -z "$CLAUDE_CODE_OAUTH_TOKEN" ]; then echo "No CLAUDE_CODE_OAUTH_TOKEN -- calls use ANTHROPIC_API_KEY"; exit 0; fi
+          npm install --prefix "$RUNNER_TEMP/agent-sdk" --no-audit --no-fund --loglevel=error @anthropic-ai/claude-agent-sdk@^0.3
 
       - name: Generate posts
         if: steps.gate.outputs.run == 'true'
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          CLAUDE_AGENT_SDK_DIR: ${{ runner.temp }}/agent-sdk
         run: |
           COUNT="${{ github.event.inputs.count || '10' }}"
           node _deploy/blog-queue.js --count "$COUNT"

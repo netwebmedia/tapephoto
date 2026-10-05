@@ -8,7 +8,7 @@
 //   node _deploy/blog-queue.js                # add up to COUNT_DEFAULT posts
 //   node _deploy/blog-queue.js --count 4
 //
-// Requires: ANTHROPIC_API_KEY
+// Requires: CLAUDE_CODE_OAUTH_TOKEN (Claude subscription) or ANTHROPIC_API_KEY
 //
 // Topic space is combinatorial but deliberately small: 10 subjects x 5 angles
 // = 50 unique articles, ~7 weeks at 1/day. When it runs dry the script says so
@@ -16,12 +16,12 @@
 
 const fs = require('fs');
 const path = require('path');
+const { callClaude, claudeConfigured } = require('./lib/claude-call.js');
 
 process.chdir(path.join(__dirname, '..'));
 
 const QUEUE_DIR = path.join('_deploy', 'posts-queue');
 const PUBLISHED_DIR = path.join(QUEUE_DIR, '_published');
-const API_URL = 'https://api.anthropic.com/v1/messages';
 const MODEL = 'claude-haiku-4-5-20251001';
 const COUNT_DEFAULT = 10;          // weekly refill vs ~7/week drain = small buffer
 const MIN_WORDS = 750;             // hard floor; the prompt aims for ~1100
@@ -258,45 +258,14 @@ ESTRUCTURA — la extensión es un requisito, no una sugerencia
 async function generateOne(combo, apiKey) {
   const userPrompt = `Escribe un artículo para el blog de TapePhoto sobre: ${combo.prompt}`;
 
-  const ac = new AbortController();
-  const timer = setTimeout(() => ac.abort(), REQUEST_TIMEOUT_MS);
-  let res;
-  try {
-    res = await fetch(API_URL, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'x-api-key': apiKey,
-        'anthropic-version': '2023-06-01',
-      },
-      body: JSON.stringify({
-        model: MODEL,
-        max_tokens: 12000,
-        messages: [{ role: 'user', content: userPrompt }],
-        system: SYSTEM_PROMPT,
-      }),
-      signal: ac.signal,
-    });
-  } catch (e) {
-    if (e.name === 'AbortError') throw new Error(`API timeout after ${REQUEST_TIMEOUT_MS / 1000}s`);
-    throw e;
-  } finally {
-    clearTimeout(timer);
-  }
-
-  if (!res.ok) {
-    const body = await res.text();
-    // Out of credits / revoked key: no retry can succeed — abort the whole run
-    // instead of burning an attempt per topic on calls that cannot work.
-    if (res.status === 401 || res.status === 403 || /credit balance/i.test(body)) {
-      const e = new Error(`API blocked (${res.status}): ${body.slice(0, 300)}`);
-      e.isBlock = true;
-      throw e;
-    }
-    throw new Error(`API error ${res.status}: ${body.slice(0, 300)}`);
-  }
-
-  const data = await res.json();
+  const data = await callClaude({
+    apiKey,
+    model: MODEL,
+    maxTokens: 12000,
+    timeoutMs: REQUEST_TIMEOUT_MS,
+    system: SYSTEM_PROMPT,
+    user: userPrompt,
+  });
   return extractPost(data.content[0].text);
 }
 
@@ -367,8 +336,8 @@ function validate(post, takenTitles) {
 
 async function main() {
   const apiKey = process.env.ANTHROPIC_API_KEY;
-  if (!apiKey) {
-    console.error('Error: ANTHROPIC_API_KEY is not set');
+  if (!claudeConfigured()) {
+    console.error('Error: Neither CLAUDE_CODE_OAUTH_TOKEN nor ANTHROPIC_API_KEY is set');
     process.exit(1);
   }
 
