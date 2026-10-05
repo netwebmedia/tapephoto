@@ -89,7 +89,7 @@ const FOOTER = `    <footer class="footer">
                 </div>
             </div>
             <div class="footer-links">
-                <h4>Navigate</h4>
+                <h2></h2>
                 <a href="../index.html#work">Work</a>
                 <a href="../services.html">Services</a>
                 <a href="./">Blog</a>
@@ -97,7 +97,7 @@ const FOOTER = `    <footer class="footer">
                 <a href="../contact.html">Contact</a>
             </div>
             <div class="footer-social">
-                <h4>Follow</h4>
+                <h2></h2>
                 <a href="https://instagram.com/tapephotocom" target="_blank" rel="noopener">Instagram</a>
                 <a href="https://facebook.com/tapephoto" target="_blank" rel="noopener">Facebook</a>
             </div>
@@ -191,7 +191,7 @@ function renderPost(post) {
     <!-- Fonts are self-hosted (@font-face at the top of style.css); preload the two above-the-fold faces. -->
     <link rel="preload" href="/fonts/inter-300-700.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/playfair-display-400-700.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../style.css?v=20260902">
+    <link rel="stylesheet" href="../style.css?v=20261005">
     <script type="application/ld+json">
 ${JSON.stringify(articleLd, null, 2)}
     </script>
@@ -282,7 +282,7 @@ ${it.img ? `                <a class="blog-card-thumb" href="${esc(it.slug)}.htm
     <!-- Fonts are self-hosted (@font-face at the top of style.css); preload the two above-the-fold faces. -->
     <link rel="preload" href="/fonts/inter-300-700.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/playfair-display-400-700.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../style.css?v=20260902">
+    <link rel="stylesheet" href="../style.css?v=20261005">
     <script type="application/ld+json">
 ${JSON.stringify(ld, null, 2)}
     </script>
