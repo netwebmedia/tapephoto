@@ -123,6 +123,9 @@ body {
 /* Hero Instagram follow link */
 .hero-ig {
     display: inline-block;
+    max-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
     margin-top: 22px;
     padding: 10px 22px;
     border: 1px solid rgba(255,255,255,0.55);
@@ -927,6 +930,11 @@ body {
     letter-spacing: 0.15em;
     opacity: 0.5;
     margin-bottom: 16px;
+}
+
+.services-intro .cta-row {
+    justify-content: center;
+    margin-top: 28px;
 }
 
 .cta-row {
