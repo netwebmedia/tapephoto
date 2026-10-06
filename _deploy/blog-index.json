@@ -1,6 +1,16 @@
 {
-  "updated": "2026-10-05",
+  "updated": "2026-10-06",
   "items": [
+    {
+      "slug": "fotos-de-cabanas-y-alojamientos-pequenos-para-reservas-directas",
+      "title": "Fotos de cabañas y alojamientos pequeños para reservas directas",
+      "tag": "Turismo",
+      "description": "Qué fotografiar en una cabaña o alojamiento pequeño para atraer reservas directas: el orden de las fotos, los espacios clave, el entorno y los errores que alejan al huésped.",
+      "readTime": "7 min",
+      "published": "2026-10-06",
+      "img": "/assets/photos/turismo-atardecer-sm.jpg",
+      "imgAlt": "Atardecer sobre la bahía"
+    },
     {
       "slug": "fotos-de-la-fachada-y-el-letrero-de-un-local",
       "title": "Fotos de la fachada y el letrero de un local comercial",

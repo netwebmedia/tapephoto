@@ -6,7 +6,7 @@
 - Author: Carlos Martinez, photographer (Coquimbo, Chile). Instagram: https://instagram.com/tapephotocom
 - Contact: carlos@netwebmedia.com · WhatsApp +1 (442) 385-4585 (https://wa.me/14423854585)
 - Pricing published on the site: "starting at" CLP $100,000 (aerial and drone), CLP $150,000 (real estate photo + drone package), CLP $250,000 (motorsport and event coverage), CLP $150,000 (business and brand sessions); final quote via WhatsApp.
-- 43 Spanish-language blog articles published so far.
+- 44 Spanish-language blog articles published so far.
 
 ## Main pages
 - [Home / portfolio](https://tapephoto.com/): selected work, local business photography overview, FAQ
@@ -23,6 +23,7 @@
 
 ## Latest blog articles (Spanish, newest first)
 
+- [Fotos de cabañas y alojamientos pequeños para reservas directas](https://tapephoto.com/blog/fotos-de-cabanas-y-alojamientos-pequenos-para-reservas-directas.html) [Turismo]: Qué fotografiar en una cabaña o alojamiento pequeño para atraer reservas directas: el orden de las fotos, los espacios clave, el entorno y los errores que alejan al huésped.
 - [Fotos de la fachada y el letrero de un local comercial](https://tapephoto.com/blog/fotos-de-la-fachada-y-el-letrero-de-un-local.html) [Empresas]: Cómo fotografiar la fachada de un local comercial: hora del día, ángulo, qué hacer con el letrero y los errores que hacen que el negocio se vea cerrado o descuidado en Google y las redes.
 - [Fotos de platos para apps de delivery: qué funciona](https://tapephoto.com/blog/fotos-de-platos-para-apps-de-delivery.html) [Empresas]: Cómo preparar las fotos del menú para apps de delivery: qué plato fotografiar, cómo mostrar lo que realmente llega en la caja y los errores que hacen que el cliente elija otro local.
 - [Fotografiar una propiedad con arrendatario viviendo](https://tapephoto.com/blog/fotografiar-propiedad-con-arrendatario-viviendo.html) [Inmobiliaria]: Cómo coordinar la sesión de fotos de una casa o departamento que todavía está arrendado: aviso, permisos, qué se fotografía y qué no, y cómo lograr buenas fotos sin invadir a quien vive ahí.
@@ -42,7 +43,6 @@
 - [Fotografiar turismo astronómico: el desafío de mostrar de día algo que ocurre de noche](https://tapephoto.com/blog/fotografiar-turismo-astronomico-y-observatorios.html) [Turismo]: La región es reconocida por sus cielos y su turismo astronómico, pero fotografiar esa experiencia tiene un problema particular: buena parte de lo que se vende ocurre en total oscuridad. Cómo se resuelve esa tensión.
 - [Fotografiar una propiedad en verde: qué se puede mostrar antes de que esté terminada](https://tapephoto.com/blog/fotografiar-propiedad-en-verde-construccion.html) [Inmobiliaria]: Vender en verde significa vender algo que todavía no existe. Qué puede fotografiar realmente un fotógrafo en una obra a medio construir, y qué recursos reemplazan a la propiedad terminada mientras tanto.
 - [Fotografiar procesos productivos y talleres: mostrar cómo se hace algo, no solo el resultado](https://tapephoto.com/blog/fotografiar-procesos-productivos-y-talleres.html) [Empresas]: Una fábrica, un taller o una cocina en funcionamiento tienen algo que un producto terminado no muestra: el trabajo detrás. Cómo se fotografía un proceso en movimiento sin interrumpir la producción real.
-- [Fotografía para tours y actividades turísticas: qué esperar de una sesión en movimiento](https://tapephoto.com/blog/fotografia-para-tours-y-actividades-turisticas.html) [Turismo]: Excursiones, cabalgatas, kayak, avistamiento de estrellas: fotografiar una actividad turística no es lo mismo que fotografiar un hotel. Qué cambia cuando el sujeto no está quieto y el entorno no se controla del todo.
 
 ## More
 - Every article, one line each: https://tapephoto.com/llms-full.txt
