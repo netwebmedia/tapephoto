@@ -325,7 +325,7 @@ def patch_home():
         links = " &middot; ".join(f'<a href="{href}">{esc(name)}</a>' for name, href in PROOF)
         strip = (
             '    <section class="proof-strip" aria-label="Where the archive comes from">\n'
-            '        <p class="proof-lead">Photographed on location, 389 frames in 17 galleries. Archive highlights:</p>\n'
+            '        <p class="proof-lead">Photographed on location, 417 photographs in 18 galleries. Archive highlights:</p>\n'
             f'        <p class="proof-list">{links}</p>\n'
             '    </section>\n\n'
         )
@@ -388,10 +388,10 @@ def patch_sitemap():
     text, nl = read("sitemap.xml")
     orig = text
     for loc in ("https://tapephoto.com/", "https://tapephoto.com/licensing.html", "https://tapephoto.com/licencias.html", "https://tapephoto.com/galleries/", "https://tapephoto.com/services.html", "https://tapephoto.com/servicios.html"):
-        text = re.sub(r"(<loc>" + re.escape(loc) + r"</loc>\s*<lastmod>)[^<]+", r"\g<1>2026-10-05", text, count=1)
+        text = re.sub(r"(<loc>" + re.escape(loc) + r"</loc>\s*<lastmod>)([^<]+)", lambda m: m.group(1) + max(m.group(2), "2026-10-05"), text, count=1)
     for g in glob.glob(os.path.join(ROOT, "galleries", "*.html")):
         loc = f"{SITE}/galleries/{os.path.basename(g)}"
-        text = re.sub(r"(<loc>" + re.escape(loc) + r"</loc>\s*<lastmod>)[^<]+", r"\g<1>2026-10-05", text, count=1)
+        text = re.sub(r"(<loc>" + re.escape(loc) + r"</loc>\s*<lastmod>)([^<]+)", lambda m: m.group(1) + max(m.group(2), "2026-10-05"), text, count=1)
     write("sitemap.xml", text, nl, orig)
 
 
