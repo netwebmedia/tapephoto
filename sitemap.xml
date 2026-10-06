@@ -459,4 +459,20 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://tapephoto.com/privacy.html</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapephoto.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapephoto.com/privacidad.html"/>
+  </url>
+  <url>
+    <loc>https://tapephoto.com/privacidad.html</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapephoto.com/privacidad.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapephoto.com/privacy.html"/>
+  </url>
 </urlset>

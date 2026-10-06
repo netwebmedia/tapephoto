@@ -95,6 +95,7 @@ const FOOTER = `    <footer class="footer">
                 <a href="./">Blog</a>
                 <a href="../about.html">About</a>
                 <a href="../contact.html">Contact</a>
+                <a href="../privacy.html">Privacy</a>
             </div>
             <div class="footer-social">
                 <h2></h2>

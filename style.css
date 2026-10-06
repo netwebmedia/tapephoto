@@ -963,6 +963,16 @@ body {
     color: var(--black);
 }
 
+/* ============ LEGAL PAGES (privacy) ============ */
+.legal-page { background: var(--black); padding: 140px 24px 96px; }
+.legal-inner { max-width: 720px; margin: 0 auto; }
+.legal-inner h1 { font-family: var(--serif); font-size: clamp(2.2rem, 6vw, 3.4rem); line-height: 1.1; margin: 8px 0 12px; }
+.legal-inner h2 { font-family: var(--serif); font-size: 1.35rem; margin: 36px 0 10px; }
+.legal-inner p { line-height: 1.75; opacity: 0.85; margin: 0 0 14px; }
+.legal-inner .legal-updated { font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase; opacity: 0.55; }
+.legal-inner .legal-lead { font-size: 1.1rem; opacity: 0.95; }
+.legal-inner a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+
 /* ============ SERVICES PAGE ============ */
 .services-page {
     background: var(--black);
