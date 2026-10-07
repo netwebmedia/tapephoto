@@ -1,6 +1,16 @@
 {
-  "updated": "2026-10-06",
+  "updated": "2026-10-07",
   "items": [
+    {
+      "slug": "fotografiar-una-pisquera-o-vina-para-turismo",
+      "title": "Fotografiar una pisquera o viña para recibir visitas",
+      "tag": "Turismo",
+      "description": "Qué fotos necesita una pisquera, viña o bodega del Valle del Elqui o del Limarí que recibe visitantes: el proceso, el paisaje, la sala de catas y las personas, más allá de la foto de botella.",
+      "readTime": "7 min",
+      "published": "2026-10-07",
+      "img": "/assets/photos/turismo-atardecer-sm.jpg",
+      "imgAlt": "Atardecer sobre la bahía"
+    },
     {
       "slug": "drone-para-hoteles-y-cabanas-mostrar-el-entorno",
       "title": "Drone para hoteles y cabañas: cómo mostrar el entorno",
