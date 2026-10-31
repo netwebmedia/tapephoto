@@ -1,6 +1,16 @@
 {
-  "updated": "2026-10-30",
+  "updated": "2026-10-31",
   "items": [
+    {
+      "slug": "fotografia-fundaciones-ong-que-esperar",
+      "title": "Fotografía para fundaciones y ONG: qué esperar del proceso",
+      "tag": "Empresas",
+      "description": "Cómo funciona una sesión de fotografía para organizaciones sociales: agendamiento, duración, entregas y qué preguntar antes de contratar.",
+      "readTime": "8 min",
+      "published": "2026-10-31",
+      "img": "/assets/photos/empresas-retrato-sm.jpg",
+      "imgAlt": "Retrato en exteriores con luz natural"
+    },
     {
       "slug": "fotografia-cervecerias-errores",
       "title": "Fotografía en cervecerías y destilerías: errores que ahuyentan clientes",
